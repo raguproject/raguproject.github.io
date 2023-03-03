@@ -135,7 +135,7 @@ body {
 }
 
 .line-container {
-    padding-top: 40%;
+    padding-top: 36%;
     width: 100%;
     height: 100%;
 
@@ -401,6 +401,66 @@ h3 a .browse {
     opacity: 8%;
     z-index: -1;
 }
+
+#img-dishes {
+    position: relative;
+
+}
+
+#apetizers-drawing {
+    width: 20%;
+    position: absolute;
+    top: 160%;
+    left: 6%;
+}
+
+#first-drawing {
+    width: 20%;
+
+}
+
+#second-drawing {
+    width: 15%;
+
+}
+
+
+#side-drawing {
+    width: 20%;
+
+}
+
+#dressing-drawing {
+    width: 25%;
+    position: absolute;
+    left: 60%;
+    top: 150%;
+
+
+}
+
+#sauce-drawing {
+    width: 20%;
+
+
+}
+
+#dessert-drawing {
+    width: 25%;
+    position: absolute;
+    left: 60%;
+    top: 150%;
+
+}
+
+#beverage-drawing {
+    width: 28%;
+    position: absolute;
+    top: 65%;
+    right: 35%;
+
+}
+
 
 
 
