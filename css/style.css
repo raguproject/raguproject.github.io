@@ -1,0 +1,679 @@
+@font-face {
+    font-family: "Playfair";
+    src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url(/fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* root, header, body */
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --colorbg: #f8f8f8;
+    --base-text: #332421;
+    --red-text: #cc0b36;
+    --light-grey: #949494;
+}
+
+body {
+    background-color: var(--colorbg);
+    overflow-x: hidden;
+}
+
+/* Cookbooks and recipes images/buttons on the right */
+
+.img-cokbooks-recipes .cookbooks {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25%;
+    transition: transform .2s;
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+.img-cokbooks-recipes .cookbooks:hover {
+    transform: scale(1.1);
+}
+
+.img-cokbooks-recipes .recipes {
+    width: 56%;
+    right: 25%;
+    flex-direction: column;
+    padding-bottom: 25%;
+    transition: transform .2s;
+    display: flex;
+    margin-left: 4%;
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+.img-cokbooks-recipes .recipes:hover {
+    transform: scale(1.1);
+}
+
+.img-cokbooks-recipes {
+
+    padding-top: 20%;
+    position: absolute;
+    left: 91%;
+
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(600px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-600px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#chartdiv {
+    width: 90%;
+    height: 500px;
+    font-size: 12px;
+    border: 1px solid #332421;
+
+
+}
+
+#chartdiv_ingredients {
+    width: 100%;
+    height: 500px;
+    font-size: 12px;
+
+
+}
+
+#chartdiv_pie {
+    width: 80%;
+    height: 300px;
+    font-size: 12px;
+    padding: 10%;
+
+
+}
+
+
+/*canvas  {
+    border: 1px solid #332421;
+
+}*/
+
+/*red line and containers properties to allow the svg line scrolling */
+
+.wrapper {
+    position: relative;
+}
+
+.line-container {
+    padding-top: 40%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.whole-text {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+/* Horizontal Navbar */
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: "Playfair";
+    font-size: 21px;
+    color: var(--base-text);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    font-family: "Playfair";
+    font-size: 21px;
+    color: var(--red-text);
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    position: fixed;
+    padding-top: 5em;
+    background-color: var(--colorbg);
+    z-index: 10;
+}
+
+
+/* H1, H2, H3, red highlight on titles*/
+
+.h1,
+h1 {
+    font-family: "Playfair";
+    font-size: 100px;
+    color: var(--base-text);
+    padding-top: 45vh;
+    font-weight: bolder;
+}
+
+.h1,
+h1 .red-highlight {
+
+    color: var(--red-text);
+
+}
+
+.h2,
+h2 {
+    font-family: "Playfair";
+    font-size: 26px;
+    color: var(--base-text);
+    font-weight: lighter;
+    line-height: 1.6;
+    padding-bottom: 10%;
+}
+
+.h2,
+h2 .red-highlight {
+    color: var(--red-text);
+}
+
+.h3,
+h3 {
+    font-family: "Playfair";
+    font-size: 140%;
+    color: var(--base-text);
+
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+.h3,
+h3 .red-highlight {
+    font-family: "Playfair";
+    color: var(--red-text);
+}
+
+.h3,
+h3 a {
+    font-family: "Playfair";
+    text-decoration: none;
+    font-size: 70px;
+    color: var(--base-text);
+    padding-top: 25em;
+    font-weight: bolder;
+    line-height: 1;
+
+}
+
+.h3,
+h3 a .browse {
+    padding-top: 15em;
+}
+
+
+/* Sections */
+
+.home-title {
+    padding-bottom: 25%;
+
+
+}
+
+#sections {
+    transition: margin-left .5s;
+}
+
+.text {
+    padding-top: 200px;
+}
+
+.par {
+    font-family: "Garamond";
+    color: #949494;
+    font-size: 100%;
+}
+
+
+
+#sections #sections-opacity .section {
+    padding-bottom: 25% !important;
+}
+
+.text-red-thread {
+    font-family: "Playfair";
+}
+
+#word1,
+#word2,
+#word3 {
+    margin: 3%;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+/* Counters */
+
+
+.c-no {
+    height: 150px;
+}
+
+
+
+.counter-Txt {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Playfair";
+    color: #cc0b36;
+
+}
+
+.counter-Txt span {
+    display: block;
+    font-size: 60px;
+    color: #cc0b36;
+
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    .c-no {
+        height: 100%;
+    }
+
+    .counter-Txt {
+        margin-top: 35px;
+    }
+
+    .margin-bot-35 {
+        margin-bottom: 35px;
+    }
+}
+
+#intro #macchia-caffe {
+    width: 30%;
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    opacity: 8%;
+}
+
+#macchia {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    opacity: 8%;
+}
+
+#macchia_titolo {
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    opacity: 8%;
+}
+
+#macchia_discover {
+    width: 30%;
+    position: absolute;
+    top: 1%;
+    left: 27%;
+    opacity: 8%;
+    z-index: -1;
+}
+
+#macchia_pagina {
+    width: 30%;
+    position: absolute;
+    top: 47%;
+    right: 7%;
+    opacity: 8%;
+    z-index: -1;
+}
+
+#macchia_tre {
+    width: 30%;
+    position: absolute;
+    top: 61%;
+    left: 7%;
+    opacity: 8%;
+    z-index: -1;
+}
+
+#macchia_dishes {
+    width: 30%;
+    position: absolute;
+    top: 76%;
+    right: 7%;
+    opacity: 8%;
+    z-index: -1;
+}
+
+#macchia_woman {
+    width: 30%;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    opacity: 8%;
+    z-index: -1;
+}
+
+#macchia_fine {
+    width: 20%;
+    position: absolute;
+    top: 95%;
+    left: 35%;
+    opacity: 8%;
+    z-index: -1;
+}
+
+
+
+.reveal {
+    opacity: 1;
+}
+
+/*Sidebar */
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: none;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: "Playfair";
+    font-size: 40px;
+    color: var(--red-text);
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    color: var(--base-text);
+}
+
+#sidebar .sidebar-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#img-sidebar img {
+    width: 5%;
+    bottom: 3%;
+    left: 1%;
+    position: fixed;
+    animation: fadeInLeft 1.5s ease-in-out;
+
+}
+
+
+
+
+/* Animations */
+
+
+.fade-in {
+    animation: fadeIn 4s;
+}
+
+/* Filters + Index */
+
+#filter-sidebar-heading {
+    padding: 2%;
+    color: var(--red-text);
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1.7em;
+    border-bottom: 2px solid var(--red-text);
+}
+
+#filter-sidebar {
+    float: left;
+    width: 25%;
+    box-shadow: 5px 10px 18px #888888;
+    margin-top: 7%;
+    left: 2%;
+    padding: 4%;
+    position: fixed;
+}
+
+div #category {
+    overflow-y: scroll;
+    height: 100px;
+}
+
+div #ingredient {
+    overflow-y: scroll;
+    height: 100px;
+}
+
+div #provenance {
+    overflow-y: scroll;
+    height: 100px;
+}
+
+
+
+select,
+textarea {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair";
+}
+
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+
+}
+
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/* inline block */
+
+.ib {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+}
+
+.ib-m {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+}
+
+
+/* ul-reset */
+
+.ul-reset {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+
+.filter-item-inner {
+    border-bottom: 1px solid #33242161;
+}
+
+.filter-item-inner-heading {
+    position: relative;
+    padding: 10px;
+    padding-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-item-inner-heading.minus:after,
+.filter-item-inner-heading.plus:after {
+    position: absolute;
+    top: 33%;
+    right: 7.5%;
+    font-size: .6em;
+}
+
+.filter-item-inner-heading.minus:after {
+    content: "▲";
+}
+
+.filter-item-inner-heading.plus:after {
+    content: "▼";
+}
+
+.filter-attribute-list {
+    overflow: hidden;
+}
+
+.filter-attribute-list-inner {
+    padding: 0 10px 15px;
+}
+
+.filter-attribute-item {
+    padding-left: 10px;
+    margin-top: 5px;
+    color: var(--base-text);
+    font-family: "Garamond";
+}
+
+.filter-attribute-item:first-child {
+    margin-top: 0;
+}
+
+
+.letter-container .letter_space,
+ol {
+    font-family: "Playfair";
+    font-size: 70px;
+    color: var(--red-text);
+    padding-top: 10vh;
+    font-weight: bolder;
+    cursor: default;
+
+}
+
+.letter-container .letter_space,
+ol,
+.index_letters {
+    border-bottom: 1px solid;
+}
+
+#letter-container a {
+    font-size: 20px;
+    font-weight: lighter;
+    display: block;
+    padding-left: 5px;
+    margin-top: 5px;
+    color: var(--base-text);
+    font-family: "Garamond";
+    text-decoration: none;
+}
+
+#letter-container a:hover {
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 5px;
+    color: var(--red-text);
+    font-family: "Garamond";
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Keyframes */
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

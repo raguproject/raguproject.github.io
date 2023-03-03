@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragu - Reti e Archivi del Gusto</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/script/bootstrap.min.js"></script>
+    <script src="/script/recipes-index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    </script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html"><img src="/photos/ragu_logo.svg" style="width:70px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/recipes.html">recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">cookbooks</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="filter-page" class="container text-left">
+        <div class="row">
+            <div id="filter-section" class="col-md-4 col-sm-12">
+                <aside id="filter-sidebar">
+                    <h3 id="filter-sidebar-heading">
+                        filter by
+                    </h3>
+                    <ul class="filter ul-reset">
+                        <li class="filter-item">
+                            <section class="filter-item-inner">
+                                <h3 class="filter-item-inner-heading minus">
+                                    provenance
+                                </h3>
+                                <ul class="filter-attribute-list ul-reset">
+                                    <div class="filter-attribute-list-inner">
+                                        <li class="filter-attribute-item">
+                                            <div id="provenance" name="provenance"></div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="filter-item">
+                            <section class="filter-item-inner">
+                                <h3 class="filter-item-inner-heading minus">
+                                    ingredients
+                                </h3>
+                                <ul class="filter-attribute-list ul-reset">
+                                    <div class="filter-attribute-list-inner">
+                                        <li class="filter-attribute-item">
+                                            <div id="ingredient" name="ingredient"></div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="filter-item">
+                            <section class="filter-item-inner">
+                                <h3 class="filter-item-inner-heading minus">
+                                    category
+                                </h3>
+                                <ul class="filter-attribute-list ul-reset">
+                                    <div class="filter-attribute-list-inner">
+                                        <li class="filter-attribute-item">
+                                            <div id="category" name="category"></div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <div id="letter-container" class="col-md-8 col-sm-12">
+                <div id="letter_space" name="letter_space">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        function accordion(section, heading, list) {
+            $(section).each(function () {
+                var that = this,
+                    listHeight = $(this).find(list).height();
+
+                $(this).find(heading).click(function () {
+                    $(this).toggleClass('plus minus');
+                    $(that).find(list).slideToggle(250);
+                });
+            });
+        };
+
+        accordion('.filter-item', '.filter-item-inner-heading', '.filter-attribute-list');
+
+        $.ajaxSetup({
+            async: false
+        });
+        var data;
+        $.getJSON("/json/alphabet.json", function (json) {
+            json_data = json;
+        })
+
+    </script>
+</body>
+
+</html>

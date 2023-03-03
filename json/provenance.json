@@ -1,0 +1,16 @@
+{
+    "Rimini": [
+        "bomba_di_riso001",
+        "gnocchi_di_semolino_al_forno_001",
+        "maccheroni_con_besciamella_001",
+        "olive_verdi_grosse_001"
+    ],
+    "Ferrara": [
+        "bomba_di_riso002",
+        "pasta_di_semolino_in_brodo_001",
+        "polenta_alla_lombarda_001"
+    ],
+    "Bologna": [
+        "pasticcio_di_riso_001"
+    ]
+}

@@ -1,0 +1,117 @@
+{
+    "olive": [
+        "olive_verdi_grosse_001"
+    ],
+    "sodium hydroxide": [
+        "olive_verdi_grosse_001"
+    ],
+    "salt": [
+        "olive_verdi_grosse_001",
+        "polenta_alla_lombarda_001",
+        "gnocchi_di_semolino_al_forno_001",
+        "pasta_di_semolino_in_brodo_001",
+        "bomba_di_riso001",
+        "bomba_di_riso002",
+        "pasticcio_di_riso_001"
+    ],
+    "maccheroni": [
+        "maccheroni_con_besciamella_001"
+    ],
+    "butter": [
+        "maccheroni_con_besciamella_001",
+        "gnocchi_di_semolino_al_forno_001",
+        "pasta_di_semolino_in_brodo_001",
+        "pasticcio_di_riso_001"
+    ],
+    "flour": [
+        "maccheroni_con_besciamella_001",
+        "pasticcio_di_riso_001"
+    ],
+    "milk": [
+        "maccheroni_con_besciamella_001",
+        "gnocchi_di_semolino_al_forno_001",
+        "pasta_di_semolino_in_brodo_001",
+        "bomba_di_riso001",
+        "bomba_di_riso002",
+        "pasticcio_di_riso_001"
+    ],
+    "parmesan": [
+        "maccheroni_con_besciamella_001",
+        "polenta_alla_lombarda_001",
+        "gnocchi_di_semolino_al_forno_001",
+        "pasta_di_semolino_in_brodo_001",
+        "pasticcio_di_riso_001"
+    ],
+    "cabbage": [
+        "polenta_alla_lombarda_001"
+    ],
+    "celery": [
+        "polenta_alla_lombarda_001",
+        "bomba_di_riso001",
+        "bomba_di_riso002"
+    ],
+    "carrot": [
+        "polenta_alla_lombarda_001",
+        "bomba_di_riso001",
+        "bomba_di_riso002"
+    ],
+    "onion": [
+        "polenta_alla_lombarda_001"
+    ],
+    "pepper": [
+        "polenta_alla_lombarda_001"
+    ],
+    "pork": [
+        "polenta_alla_lombarda_001"
+    ],
+    "tomato": [
+        "polenta_alla_lombarda_001",
+        "bomba_di_riso001",
+        "bomba_di_riso002"
+    ],
+    "polenta": [
+        "polenta_alla_lombarda_001"
+    ],
+    "semolina": [
+        "gnocchi_di_semolino_al_forno_001",
+        "pasta_di_semolino_in_brodo_001"
+    ],
+    "egg": [
+        "gnocchi_di_semolino_al_forno_001",
+        "pasta_di_semolino_in_brodo_001",
+        "bomba_di_riso001",
+        "bomba_di_riso002",
+        "pasticcio_di_riso_001"
+    ],
+    "parsley": [
+        "pasta_di_semolino_in_brodo_001"
+    ],
+    "broth": [
+        "pasta_di_semolino_in_brodo_001"
+    ],
+    "rice": [
+        "bomba_di_riso001",
+        "bomba_di_riso002",
+        "pasticcio_di_riso_001"
+    ],
+    "meat": [
+        "bomba_di_riso001",
+        "bomba_di_riso002"
+    ],
+    "ragout": [
+        "pasticcio_di_riso_001"
+    ],
+    "water": [
+        "pasticcio_di_riso_001",
+        "olive_verdi_grosse_001"
+    ],
+    "gruyere": [
+        "pasticcio_di_riso_001"
+    ],
+    "nutmeg": [
+        "pasticcio_di_riso_001"
+    ],
+    "breadcrumbs": [
+        "pasticcio_di_riso_001"
+    ]
+}
