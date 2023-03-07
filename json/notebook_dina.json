@@ -1,6 +1,5 @@
 {
   "notebookTitle": "Le ricette di zia Dina",
-  "id": "1",
   "fromYear": "",
   "toYear": "",
   "author": "Dina",
@@ -21,6 +20,7 @@
         "Quaderno 1_Rimini_29ago2019_1.jpg"
       ],
       "recipeTitle": "Olive verdi grosse",
+      "id": "olive_verdi_grosse_001",
       "numberOfPersons": 6,
       "pagesNumber": [
         1
@@ -36,7 +36,7 @@
       "cookingTime": [],
       "ingredients": [
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "olive",
           "ingredientQualifier": "green",
           "variantIngredientName": "",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "sodium hydroxide",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -72,14 +72,14 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "water",
           "ingredientQualifier": "",
           "variantIngredientName": "",
           "dosage": [
             {
               "quantity": 1,
-              "unitOfMeasure": "lt"
+              "unitOfMeasure": "l"
             }
           ],
           "alternativeIngredient": [
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "salt",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -116,6 +116,7 @@
         "Quaderno 1_Rimini_29ago2019_1.jpg"
       ],
       "recipeTitle": "Maccheroni con besciamella",
+      "id": "maccheroni_con_besciamella_001",
       "numberOfPersons": 6,
       "pagesNumber": [
         2
@@ -131,8 +132,8 @@
       "cookingTime": [],
       "ingredients": [
         {
-          "category": "",
-          "ingredientName": "maccheroni",
+          "category": "pasta",
+          "ingredientName": "macaroni",
           "ingredientQualifier": "",
           "variantIngredientName": "",
           "dosage": [
@@ -150,7 +151,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dietary fat",
           "ingredientName": "butter",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -169,7 +170,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "cereal",
           "ingredientName": "flour",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -188,7 +189,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "milk",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -207,7 +208,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "parmesan",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -232,6 +233,7 @@
         "Quaderno 1_Rimini_29ago2019_1.jpg"
       ],
       "recipeTitle": "Polenta alla lombarda",
+      "id": "polenta_alla_lombarda_001",
       "numberOfPersons": 6,
       "pagesNumber": [
         2,
@@ -251,7 +253,7 @@
       ],
       "ingredients": [
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "cabbage",
           "ingredientQualifier": "savoy",
           "variantIngredientName": "",
@@ -270,7 +272,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "celery",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -289,7 +291,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "carrot",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -308,7 +310,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "onion",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -327,7 +329,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "spice",
           "ingredientName": "pepper",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -346,7 +348,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "meat",
           "ingredientName": "pork",
           "ingredientQualifier": "rib",
           "variantIngredientName": "",
@@ -365,7 +367,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "tomato",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -384,7 +386,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "salt",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -403,7 +405,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "cereal",
           "ingredientName": "polenta",
           "ingredientQualifier": "veronese",
           "variantIngredientName": "",
@@ -422,7 +424,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "parmesan",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -447,6 +449,7 @@
         "Quaderno 1_Rimini_29ago2019_1.jpg"
       ],
       "recipeTitle": "Gnocchi di semolino al forno",
+      "id": "gnocchi_di_semolino_al_forno_001",
       "numberOfPersons": 6,
       "pagesNumber": [
         3
@@ -463,14 +466,14 @@
       "cookingTime": [],
       "ingredients": [
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "milk",
           "ingredientQualifier": "",
           "variantIngredientName": "",
           "dosage": [
             {
               "quantity": 0.5,
-              "unitOfMeasure": "lt"
+              "unitOfMeasure": "l"
             }
           ],
           "alternativeIngredient": [
@@ -482,7 +485,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "cereal",
           "ingredientName": "semolina",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -501,7 +504,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "salt",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -520,7 +523,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "egg",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -539,7 +542,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "parmesan",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -558,7 +561,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dietary fat",
           "ingredientName": "butter",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -583,6 +586,7 @@
         "Quaderno 1_Rimini_29ago2019_1.jpg"
       ],
       "recipeTitle": "Pasta di semolino in brodo",
+      "id": "pasta_di_semolino_in_brodo_001",
       "numberOfPersons": 6,
       "pagesNumber": [
         3
@@ -599,14 +603,14 @@
       "cookingTime": [],
       "ingredients": [
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "milk",
           "ingredientQualifier": "",
           "variantIngredientName": "",
           "dosage": [
             {
               "quantity": 0.5,
-              "unitOfMeasure": "lt"
+              "unitOfMeasure": "l"
             }
           ],
           "alternativeIngredient": [
@@ -618,7 +622,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "cereal",
           "ingredientName": "semolina",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -637,7 +641,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "egg",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -656,7 +660,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "parmesan",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -675,7 +679,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dietary fat",
           "ingredientName": "butter",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -694,7 +698,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "salt",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -713,7 +717,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "herb",
           "ingredientName": "parsley",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -732,7 +736,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "broth",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -757,6 +761,7 @@
         "Quaderno 1_Rimini_29ago2019_1.jpg"
       ],
       "recipeTitle": "Bomba di riso",
+      "id": "bomba_di_riso001",
       "numberOfPersons": "",
       "pagesNumber": [
         3,
@@ -774,7 +779,7 @@
       "cookingTime": [],
       "ingredients": [
         {
-          "category": "",
+          "category": "cereal",
           "ingredientName": "rice",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -793,7 +798,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "milk",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -812,7 +817,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "tomato",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -831,7 +836,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "meat",
           "ingredientName": "meat",
           "ingredientQualifier": "minced",
           "variantIngredientName": "",
@@ -850,7 +855,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "salt",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -869,7 +874,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "celery",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -888,7 +893,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "vegetable",
           "ingredientName": "carrot",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -907,7 +912,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "egg",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -932,6 +937,7 @@
         "Quaderno 1_Rimini_29ago2019_1.jpg"
       ],
       "recipeTitle": "Pasticcio di riso",
+      "id": "pasticcio_di_riso_001",
       "numberOfPersons": 6,
       "pagesNumber": [
         4,
@@ -950,7 +956,7 @@
       "cookingTime": [],
       "ingredients": [
         {
-          "category": "",
+          "category": "cereal",
           "ingredientName": "flour",
           "ingredientQualifier": "00",
           "variantIngredientName": "",
@@ -969,7 +975,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dietary fat",
           "ingredientName": "butter",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -988,14 +994,14 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "milk",
           "ingredientQualifier": "",
           "variantIngredientName": "",
           "dosage": [
             {
               "quantity": 0.5,
-              "unitOfMeasure": "lt"
+              "unitOfMeasure": "l"
             }
           ],
           "alternativeIngredient": [
@@ -1007,7 +1013,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "water",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1026,7 +1032,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "cereal",
           "ingredientName": "rice",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1045,7 +1051,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "sauce",
           "ingredientName": "ragout",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1064,7 +1070,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "egg",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1083,7 +1089,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "parmesan",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1102,7 +1108,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "dairy",
           "ingredientName": "gruyere",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1121,7 +1127,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "other",
           "ingredientName": "salt",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1140,7 +1146,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "spice",
           "ingredientName": "nutmeg",
           "ingredientQualifier": "",
           "variantIngredientName": "",
@@ -1159,7 +1165,7 @@
           ]
         },
         {
-          "category": "",
+          "category": "baked products",
           "ingredientName": "breadcrumbs",
           "ingredientQualifier": "",
           "variantIngredientName": "",

@@ -1,0 +1,170 @@
+[
+    {
+        "name": "ingredients",
+        "children": [
+            {
+                "name": "vegetables",
+                "children": [
+                    {
+                        "name": "olive",
+                        "value": 1
+                    },
+                    {
+                        "name": "cabbage",
+                        "value": 1
+                    },
+                    {
+                        "name": "onion",
+                        "value": 1
+                    },
+                    {
+                        "name": "carrot",
+                        "value": 3
+                    },
+                    {
+                        "name": "celery",
+                        "value": 3
+                    },
+                    {
+                        "name": "tomato",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "name": "cereal",
+                "children": [
+                    {
+                        "name": "flour",
+                        "value": 2
+                    },
+                    {
+                        "name": "rice",
+                        "value": 3
+                    },
+                    {
+                        "name": "polenta",
+                        "value": 1
+                    },
+                    {
+                        "name": "semolina",
+                        "value": 2
+                    }
+                ]
+            },
+            {
+                "name": "other",
+                "children": [
+                    {
+                        "name": "sodium hydroxide",
+                        "value": 1
+                    },
+                    {
+                        "name": "water",
+                        "value": 2
+                    },
+                    {
+                        "name": "salt",
+                        "value": 7
+                    },
+                    {
+                        "name": "egg",
+                        "value": 5
+                    },
+                    {
+                        "name": "broth",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "name": "meat",
+                "children": [
+                    {
+                        "name": "pork",
+                        "value": 1
+                    },
+                    {
+                        "name": "meat",
+                        "value": 2
+                    }
+                ]
+            },
+            {
+                "name": "sauce",
+                "children": [
+                    {
+                        "name": "ragout",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "name": "baked products",
+                "children": [
+                    {
+                        "name": "breadcrumbs",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "name": "dietary fat",
+                "children": [
+                    {
+                        "name": "butter",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "name": "spices",
+                "children": [
+                    {
+                        "name": "pepper",
+                        "value": 1
+                    },
+                    {
+                        "name": "nutmeg",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "name": "pasta",
+                "children": [
+                    {
+                        "name": "macaroni",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "name": "dairy",
+                "children": [
+                    {
+                        "name": "milk",
+                        "value": 6
+                    },
+                    {
+                        "name": "parmesan",
+                        "value": 5
+                    },
+                    {
+                        "name": "gruyere",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "name": "herb",
+                "children": [
+                    {
+                        "name": "parsley",
+                        "value": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

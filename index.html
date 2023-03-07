@@ -14,6 +14,8 @@
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script/raguscroll.js"></script>
     <script src="script/charts.js"></script>
@@ -272,7 +274,10 @@
                                         </div>
                                         </p>
                                     </div>
-                                    <div class="col-md-7 col-sm-12 img-map"></div>
+                                    <div class="col-md-7 col-sm-12 img-map">
+                                        <div id="chartdiv_map"></div>
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -754,9 +759,6 @@
             // Reverse the drawing (when scrolling upwards)
             redline.style.strokeDashoffset = length - draw;
         }
-
-        console.log($(document).height())
-        console.log($(document).width())
 
 
     </script>

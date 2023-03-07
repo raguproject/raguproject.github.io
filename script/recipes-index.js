@@ -21,9 +21,14 @@ fetch("/json/alphabet.json")
                 a.id = link;
                 a.name = "recipe_a";
                 a.classList = "recipe_a";
+                /*a.dataset.toggle = "modal";
+                a.href = "#myModal";*/
+
                 ol.appendChild(a);
             }
             div.appendChild(ol);
+
+
         }
     })
 
@@ -190,6 +195,7 @@ fetch("/json/categories.json")
         }
 
         $filterCheckboxes.on('change', filterFunc);
+
 
     })
 

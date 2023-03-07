@@ -1,0 +1,146 @@
+[
+    {
+        "value": 1,
+        "category": "kg"
+    },
+    {
+        "value": 4,
+        "category": "g"
+    },
+    {
+        "value": 0,
+        "category": "hg"
+    },
+    {
+        "value": 0,
+        "category": "dg"
+    },
+    {
+        "value": 0,
+        "category": "dl"
+    },
+    {
+        "value": 4,
+        "category": "l"
+    },
+    {
+        "value": 0,
+        "category": "ml"
+    },
+    {
+        "value": 1,
+        "category": "q.b."
+    },
+    {
+        "value": 0,
+        "category": "cup"
+    },
+    {
+        "value": 1,
+        "category": "pinch"
+    },
+    {
+        "value": 3,
+        "category": "unit"
+    },
+    {
+        "value": 1,
+        "category": "knob"
+    },
+    {
+        "value": 3,
+        "category": "spoon"
+    },
+    {
+        "value": 1,
+        "category": "handful"
+    },
+    {
+        "value": 1,
+        "category": "sprinkle"
+    },
+    {
+        "value": 0,
+        "category": "as you like"
+    },
+    {
+        "value": 0,
+        "category": "a little"
+    },
+    {
+        "value": 0,
+        "category": "clove"
+    },
+    {
+        "value": 0,
+        "category": "slice"
+    },
+    {
+        "value": 0,
+        "category": "can"
+    },
+    {
+        "value": 0,
+        "category": "leaf"
+    },
+    {
+        "value": 0,
+        "category": "piece"
+    },
+    {
+        "value": 0,
+        "category": "glass"
+    },
+    {
+        "value": 0,
+        "category": "finger"
+    },
+    {
+        "value": 0,
+        "category": "twig"
+    },
+    {
+        "value": 0,
+        "category": "bunch"
+    },
+    {
+        "value": 0,
+        "category": "sachet"
+    },
+    {
+        "value": 0,
+        "category": "teaspoon"
+    },
+    {
+        "value": 0,
+        "category": "a few"
+    },
+    {
+        "value": 0,
+        "category": "shot glass"
+    },
+    {
+        "value": 0,
+        "category": "coffee cup"
+    },
+    {
+        "value": 0,
+        "category": "plentiful"
+    },
+    {
+        "value": 0,
+        "category": "a lot"
+    },
+    {
+        "value": 0,
+        "category": "drop"
+    },
+    {
+        "value": 0,
+        "category": "part"
+    },
+    {
+        "value": 0,
+        "category": "sprig"
+    }
+]
