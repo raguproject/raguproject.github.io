@@ -246,7 +246,7 @@ am5.ready(function () {
     series.ticks.template.adapters.add("forceHidden", forceHidden);
 
     function forceHidden(hidden, target) {
-        return target.dataItem.get("valuePercentTotal") < 5;
+        return target.dataItem.get("valuePercentTotal") == 0;
     }
 
     $.getJSON("/json/piechart.json", function (json) {
@@ -322,13 +322,20 @@ am5.ready(function () {
             yAxis: yAxis,
             categoryXField: "ingr1",
             categoryYField: "ingr2",
-            valueField: "value"
+            valueField: "value",
+
+
         })
     );
 
     series.columns.template.setAll({
-        forceHidden: true
+        forceHidden: true,
+
+
     });
+
+
+
 
     var circleTemplate = am5.Template.new({ radius: 5 });
 
@@ -338,7 +345,8 @@ am5.ready(function () {
     series.bullets.push(function () {
         var graphics = am5.Circle.new(
             root, {
-            stroke: series.set("stroke", am5.color("#c6596e")),
+            stroke: series.set("stroke", am5.color(0xffffff)),
+            tooltipText: "[bold]{ingr1}[/] & [bold]{ingr2}[/]: {value} recipes",
             fill: series.set("fill", am5.color("#c6596e"))
         }, circleTemplate
         );
@@ -349,150 +357,110 @@ am5.ready(function () {
 
     series.set("heatRules", [{
         target: circleTemplate,
-        min: 5,
-        max: 35,
+        min: 10,
+        max: 30,
         dataField: "value",
         key: "radius"
     }]);
 
 
-    var data = [{
+    $.getJSON("/json/matrix.json", function (json) {
+        matrix = json;
+        const ingr_cat = new Set();
+        for (var m in matrix) {
+            for (var x of matrix[m]) {
+                ingr_cat.add(x);
+            }
+        }
+        array_nospace = [];
+        for (var str of ingr_cat) {
+            var str_nospace = str.split(' ').join('_');
+            array_nospace.push(str_nospace);
+        }
+        var pairs_array = array_nospace.reduce((acc, v, i) =>
+            acc.concat(array_nospace.slice(i + 1).map(w => v + ' ' + w)),
+            []);
+        for (var el of pairs_array) {
+            array = [];
+            array.push(el);
+        }
+        const obj_array = new Array();
+        for (var pair of pairs_array) {
+            const obj = new Object();
+            var ingr = pair.split(" ");
+            obj.ingr1 = ingr[0].split('_').join(' ');
+            obj.ingr2 = ingr[1].split('_').join(' ');
+            obj.value = 0;
+            obj_array.push(obj);
+        }
+        var first_list = []
+        for (var obj of obj_array) {
+            var val = (Object.values(obj));
+            var eliminate = val.pop();
+            first_list.push(val);
+        }
+        arrays_couples = [];
+        var second_list = ((Object.values(matrix)));
+        for (var x of second_list) {
 
-        ingr1: "vegetables",
-        ingr2: "vegetables",
-        value: 10
-    }, {
-        ingr1: "vegetables",
-        ingr2: "meat",
-        value: 8
-    }, {
-        ingr1: "vegetables",
-        ingr2: "spice",
-        value: 3
-    }, {
-        ingr1: "vegetables",
-        ingr2: "fish",
-        value: 3
-    }, {
-        ingr1: "vegetables",
-        ingr2: "rice",
-        value: 7
-    }, {
-        ingr1: "legumes",
-        ingr2: "legumes",
-        value: 9
-    }, {
-        ingr1: "legumes",
-        ingr2: "vegetables",
-        value: 6
-    }, {
-        ingr1: "legumes",
-        ingr2: "meat",
-        value: 2
-    }, {
-        ingr1: "legumes",
-        ingr2: "spice",
-        value: 4
-    }, {
-        ingr1: "legumes",
-        ingr2: "fish",
-        value: 1
-    }, {
-        ingr1: "legumes",
-        ingr2: "rice",
-        value: 2
-    },
-    {
-        ingr1: "meat",
-        ingr2: "meat",
-        value: 10
-    },
-    {
-        ingr1: "meat",
-        ingr2: "spice",
-        value: 4
-    },
-    {
-        ingr1: "meat",
-        ingr2: "fish",
-        value: 3
-    },
-    {
-        ingr1: "meat",
-        ingr2: "rice",
-        value: 3
-    },
-    {
-        ingr1: "rice",
-        ingr2: "rice",
-        value: 10
-    },
-    {
-        ingr1: "spice",
-        ingr2: "spice",
-        value: 10
-    },
-    {
-        ingr1: "spice",
-        ingr2: "fish",
-        value: 8
-    },
-    {
-        ingr1: "spice",
-        ingr2: "rice",
-        value: 7
-    },
-    {
-        ingr1: "fish",
-        ingr2: "fish",
-        value: 10
-    },
-    {
-        ingr1: "fish",
-        ingr2: "rice",
-        value: 0
-    }];
+            for (var y of first_list) {
+                let checkSubset = (parentArray, subsetArray) => {
+                    return subsetArray.every((el) => {
+                        return parentArray.includes(el);
+                    })
+                }
+                var f = checkSubset(x, y);
+                arr = [y, f];
+                if (arr[1] == true) {
+                    arrays_couples.push(arr);
+                }
+            }
+        }
+        const final_set = new Set();
+        for (var key of obj_array) {
+            const dicts = new Object();
+            var l = ((Object.values(key)));
+            for (var x of arrays_couples) {
+                if ((x[0][0]) == (l[0]) && (x[0][1]) == (l[1])) {
+                    l[2] += 1;
+                    dicts.ingr1 = l[0];
+                    dicts.ingr2 = l[1];
+                    dicts.value = l[2];
+                    final_set.add(dicts);
+                }
+            }
+        }
+        const final_dict = Array.from(final_set);
+        var ingredients_array = new Set();
+        for (var x of final_dict) {
+            ingredients_array.add(x.ingr1);
+            ingredients_array.add(x.ingr2);
+        }
+        ingr_1_list = new Array();
+        ingr_2_list = new Array();
+        for (var i of ingredients_array) {
+            ingr_1_dict = new Object();
+            ingr_2_dict = new Object();
+            ingr_1_dict.ingr1 = i;
+            ingr_2_dict.ingr2 = i;
+            ingr_1_list.push(ingr_1_dict);
+            ingr_2_list.push(ingr_2_dict);
+        }
+        console.log(final_dict);
+        var data = final_dict;
+        series.data.setAll(data);
+        yAxis.data.setAll(ingr_1_list);
+        xAxis.data.setAll(ingr_2_list);
 
-    series.data.setAll(data);
+        // Make stuff animate on load
+        // https://www.amcharts.com/docs/v5/concepts/animations/#Initial_animation
+        chart.appear(1000, 100);
 
 
-    yAxis.data.setAll([
-        { ingr1: "legumes" },
-        { ingr1: "vegetables" },
-        { ingr1: "meat" },
-        { ingr1: "spice" },
-        { ingr1: "fish" },
-        { ingr1: "rice" }
-    ]);
 
-    xAxis.data.setAll([
-        { ingr2: "vegetables" },
-        { ingr2: "legumes" },
-        { ingr2: "meat" },
-        { ingr2: "spice" },
-        { ingr2: "fish" },
-        { ingr2: "rice" }
-    ]);
-
-    // Make stuff animate on load
-    // https://www.amcharts.com/docs/v5/concepts/animations/#Initial_animation
-    chart.appear(1000, 100);
-
-    setInterval(function () {
-        var i = 0;
-        series.data.each(function (d) {
-            var n = {
-                value: d.value + d.value * Math.random() * 0.5,
-                ingr1: d.ingr1,
-                ingr2: d.ingr2
-            };
-            series.data.setIndex(i, n);
-            i++;
-        });
-    }, 1000);
+    });
 
 });
-
 
 
 

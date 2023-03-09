@@ -1,0 +1,56 @@
+{
+    "olive_verdi_grosse_001": [
+        "vegetable",
+        "other"
+    ],
+    "bomba_di_riso001": [
+        "cereal",
+        "vegetable",
+        "dairy",
+        "meat",
+        "other"
+    ],
+    "bomba_di_riso002": [
+        "cereal",
+        "vegetable",
+        "dairy",
+        "meat",
+        "other"
+    ],
+    "pasticcio_di_riso_001": [
+        "cereal",
+        "dietary fat",
+        "dairy",
+        "other",
+        "sauce",
+        "spice",
+        "baked product"
+    ],
+    "maccheroni_con_besciamella_001": [
+        "pasta",
+        "dietary fat",
+        "cereal",
+        "dairy"
+    ],
+    "polenta_alla_lombarda_001": [
+        "vegetable",
+        "spice",
+        "meat",
+        "other",
+        "cereal",
+        "dairy"
+    ],
+    "gnocchi_di_semolino_al_forno_001": [
+        "dairy",
+        "cereal",
+        "other",
+        "dietary fat"
+    ],
+    "pasta_di_semolino_in_brodo_001": [
+        "dairy",
+        "cereal",
+        "other",
+        "dietary fat",
+        "herb"
+    ]
+}
