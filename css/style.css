@@ -130,6 +130,7 @@ body {
     margin-top: 10%;
     border: 1px solid #332421;
     z-index: 1001;
+    font-size: 12px;
 }
 
 
@@ -280,7 +281,7 @@ h3 a .browse {
 .par {
     font-family: "Garamond";
     color: #949494;
-    font-size: 100%;
+    font-size: 115%;
 }
 
 

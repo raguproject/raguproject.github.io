@@ -1,5 +1,3 @@
-
-
 fetch("/json/alphabet.json")
     .then(function (resp) {
         return resp.json();
@@ -18,6 +16,7 @@ fetch("/json/alphabet.json")
                 const ids = links[link];
                 const a = document.createElement('a');
                 a.appendChild(document.createTextNode(ids));
+
                 a.id = link;
                 a.name = "recipe_a";
                 a.classList = "recipe_a";
@@ -146,57 +145,37 @@ fetch("/json/categories.json")
             }
         }
 
-        var $filterCheckboxes = $('input[type="checkbox"]'); // tutti i filtri/checkbox disponibili
+        // ----------- FILTER -------------
+        const rec = document.getElementsByName("recipe_a");
+        for (var i of rec) {
+            i.dataset.allfilters = (i.dataset.place) + " " + (i.dataset.ingredients) + " " + (i.dataset.category);
+        }
+        var $filterCheckboxes = $('input[type="checkbox"]');
         var filterFunc = function () {
-
-            var selectedFilters = {}; // obj che contiene i filtri selezionati, key è ingr/cat/place
-            console.log(selectedFilters);
-
-            $filterCheckboxes.filter(':checked').each(function () { // filtro su ogni checkbox per vedere se è checked
-
+            var selectedFilters = {};
+            selectedFilters["allfilters"] = [];
+            $filterCheckboxes.filter(':checked').each(function () {
                 if (!selectedFilters.hasOwnProperty(this.name)) {
-                    selectedFilters[this.name] = []; // lista vuota se non c'è check (place: [], category: [], ingredient: []) 
                 }
-
-                selectedFilters[this.name].push(this.value);  // lista che si riempie del valore se c'è check (place: ["rimini", "savona"], category: [], ingredient: ["meat"])
+                selectedFilters["allfilters"].push(this.value);
             });
-
-
-            var $filteredResults = $('.recipe_a'); // variabile di tutte le ricette filtrabili 
-            console.log($filteredResults);
-
-            $.each(selectedFilters, function (name, filterValues) { // fa un loop nell'array dei valori dei filtri selezionati
-
-
-                $filteredResults = $filteredResults.filter(function () { // filtra ogni ricetta
-
+            var $filteredResults = $('.recipe_a');
+            $.each(selectedFilters, function (name, filterValues) {
+                console.log(filterValues);
+                $filteredResults = $filteredResults.filter(function () {
                     var matched = false,
-                        currentFilterValues = $(this).data(name).split(' ');
-                    console.log(currentFilterValues);
-
-                    $.each(currentFilterValues, function (_, currentFilterValue) { //loop su ogni ingredients value di data-ingredients in recipe_a
-
-                        // se l'ingredient c'è nell'array 
-                        // matched = true
-
+                        currentFilterValues = $(this).data("allfilters").split(' ');
+                    $.each(currentFilterValues, function (_, currentFilterValue) {
                         if ($.inArray(currentFilterValue, filterValues) != -1) {
                             matched = true;
-
                         }
                     });
-
-
-                    return matched;  // se matched = true l'elemento la recipe_a è returned
-
+                    return matched;
                 });
             });
-
             $('.recipe_a').hide().filter($filteredResults).show();
         }
-
         $filterCheckboxes.on('change', filterFunc);
-
-
     })
 
 
