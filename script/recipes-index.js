@@ -145,37 +145,84 @@ fetch("/json/categories.json")
             }
         }
 
-        // ----------- FILTER -------------
+
         const rec = document.getElementsByName("recipe_a");
         for (var i of rec) {
             i.dataset.allfilters = (i.dataset.place) + " " + (i.dataset.ingredients) + " " + (i.dataset.category);
         }
+
+
         var $filterCheckboxes = $('input[type="checkbox"]');
         var filterFunc = function () {
+
             var selectedFilters = {};
             selectedFilters["allfilters"] = [];
             $filterCheckboxes.filter(':checked').each(function () {
+
                 if (!selectedFilters.hasOwnProperty(this.name)) {
+                    //selectedFilters[this.name] = [];
                 }
+
+                //selectedFilters[this.name].push(this.value);
                 selectedFilters["allfilters"].push(this.value);
+
             });
+
+
             var $filteredResults = $('.recipe_a');
+            // variabile di tutte le ricette filtrabili 
             $.each(selectedFilters, function (name, filterValues) {
-                console.log(filterValues);
+
+                //console.log(selectedFilters);
+                // console.log(name);
+                //console.log(filterValues);
+
+                // fa un loop nell'array dei valori dei filtri selezionati
+
                 $filteredResults = $filteredResults.filter(function () {
+                    //console.log($filteredResults); // filtra ogni ricetta
+
                     var matched = false,
                         currentFilterValues = $(this).data("allfilters").split(' ');
+
                     $.each(currentFilterValues, function (_, currentFilterValue) {
+                        //console.log(currentFilterValues);
+
+                        //loop su ogni ingredients value di data-ingredients in recipe_a
+
+                        // se l'ingredient c'è nell'array 
+                        // matched = true
                         if ($.inArray(currentFilterValue, filterValues) != -1) {
+                            //console.log(currentFilterValue);
+                            console.log(filterValues);
+
+                            matched = true;
+
+                            //console.log(matched);
+                        }
+
+                        if (filterValues.length == 0) {
                             matched = true;
                         }
+
                     });
+
                     return matched;
+
+
+                    // se matched = true l'elemento la recipe_a è returned
+
                 });
+
             });
+
             $('.recipe_a').hide().filter($filteredResults).show();
         }
+
         $filterCheckboxes.on('change', filterFunc);
+
+
+
     })
 
 
