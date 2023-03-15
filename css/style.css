@@ -607,22 +607,38 @@ textarea {
 }
 
 
-input[type=checkbox] {
-    width: 15px;
-    height: 15px;
-    padding: 0;
-    margin: 0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    border: 1px solid #332421;
+    transform: translateY(-0.075em);
+    display: inline-flex;
+    place-content: center;
+}
 
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(0.8);
+}
+
+input[type="checkbox"]::before {
+    background-color: #332421;
 }
 
 label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
+    padding-left: 3%;
+    vertical-align: center;
 }
+
+
 
 .cf:before,
 .cf:after {
@@ -720,6 +736,8 @@ label {
 }
 
 
+
+
 .letter-container .letter_space,
 ol {
     font-family: "Playfair";
@@ -758,8 +776,177 @@ ol,
     cursor: pointer;
 }
 
+.modal-fullscreen .modal-body {
+    overflow-y: auto;
+    background-color: #f8f8f8;
+}
+
+.modal-header .btn-close {
+    box-shadow: none;
+
+}
+
+img,
+#recipe-img {
+    width: 70%;
+}
 
 
+
+#about-recipe,
+.h2 {
+    color: var(--red-text);
+    font-size: 38px;
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px;
+    font-weight: bolder;
+    padding-bottom: 5%;
+
+}
+
+.modal-fullscreen .modal-footer,
+.modal-fullscreen .modal-header {
+    border-radius: 0;
+    border-bottom: 1px solid #332421;
+    background-color: #e7daca77;
+
+}
+
+
+#recipe-title,
+.h3 {
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: normal;
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px;
+
+}
+
+
+#recipe-subtitle,
+#recipe-info,
+.h4 {
+    font-family: "Playfair";
+    font-size: 14px;
+    padding-bottom: 4%;
+    color: var(--base-text);
+    font-weight: lighter;
+    /*border-bottom: 1px solid var(--base-text);*/
+
+}
+
+#recipe-container #container-recipe {
+    box-shadow: 5px 10px 18px #888888;
+    padding: 2% 8% 8% 8%;
+    margin-top: 15%;
+    margin-right: 10%;
+    background-color: #e7daca77;
+    ;
+    border: 1px solid #332421;
+}
+
+#recipe-image {
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+
+#recipe-serves,
+#recipe-preparation,
+#recipe-cooking,
+.h5 {
+
+    font-family: "Playfair";
+    font-size: 14px;
+    color: var(--base-text);
+    font-weight: lighter;
+    text-align: center;
+    line-height: 1.4;
+
+
+
+}
+
+
+
+.data-bold {
+    font-weight: bold;
+}
+
+.data-italic {
+    font-style: italic;
+}
+
+#ingr-header,
+.h5 {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Playfair";
+    padding-top: 5%;
+}
+
+#cook-header,
+.h5 {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Playfair";
+    padding-top: 5%;
+}
+
+.info-recipe {
+    border-bottom: 1px solid var(--base-text);
+    border-top: 1px solid var(--base-text);
+    padding-top: 1%;
+    text-align: center;
+}
+
+#recipe-ingr {
+    padding: 2%;
+    text-align: center;
+}
+
+#ingr-list,
+ul {
+    padding: 2%;
+    font-family: "Playfair";
+
+}
+
+#recipe-cook {
+    padding: 2%;
+    text-align: center;
+}
+
+
+
+#cook-list,
+ul {
+    padding: 2%;
+    font-family: "Playfair";
+    font-size: 14px;
+
+
+}
+
+#recipe-ingr-photo {
+    width: 30%;
+}
+
+#recipe-cook-photo {
+    width: 25%;
+}
+
+.ingredients-recipe {
+    border-bottom: 1px solid var(--base-text);
+    padding-top: 4%;
+    justify-content: center !important;
+}
+
+.cooking-procedure-recipe {
+    border-bottom: 1px solid var(--base-text);
+    padding-top: 4%;
+}
 
 /* Keyframes */
 
