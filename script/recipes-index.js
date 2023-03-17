@@ -10,6 +10,7 @@ fetch("/json/alphabet.json")
             const div = document.getElementById('letter_space');
             const ol = document.createElement('ol');
             ol.classList = "index_letters";
+            ol.classList.add("col-6");
             ol.appendChild(document.createTextNode(i));
 
             for (const link in links) {
@@ -167,41 +168,61 @@ fetch("/json/categories.json")
         var $filterCheckboxes = $('input[type="checkbox"]');
         var filterFunc = function () {
             var selectedFilters = {};
-            selectedFilters["allfilters"] = [];
             $filterCheckboxes.filter(':checked').each(function () {
                 if (!selectedFilters.hasOwnProperty(this.name)) {
+                    selectedFilters[this.name] = [];
                 }
-                selectedFilters["allfilters"].push(this.value);
+                selectedFilters[this.name].push(this.value);
             });
+            console.log(selectedFilters);
+            // create a collection containing all of the filterable elements
             var $filteredResults = $('.recipe_a');
+            console.log($filteredResults);
+
+            // loop over the selected filter name -> (array) values pairs
             $.each(selectedFilters, function (name, filterValues) {
                 $filteredResults = $filteredResults.filter(function () {
                     var matched = false,
                         currentFilterValues = $(this).data("allfilters").split(' ');
+                    console.log(currentFilterValues);
+
+                    // loop over each category value in the current .flower's data-category
                     $.each(currentFilterValues, function (_, currentFilterValue) {
+
+                        // if the current category exists in the selected filters array
+                        // set matched to true, and stop looping. as we're ORing in each
+                        // set of filters, we only need to match once
+
                         if ($.inArray(currentFilterValue, filterValues) != -1) {
-                            console.log(filterValues);
                             matched = true;
-                        }
-                        if (filterValues.length == 0) {
-                            matched = true;
+                            // return false;
                         }
                     });
+
+                    // if matched is true the current .flower element is returned
                     return matched;
+
                 });
             });
+
             $('.recipe_a').hide().filter($filteredResults).show();
         }
+
         $filterCheckboxes.on('change', filterFunc);
 
+
+
         jQuery(function ($) {
+
             $("body").on("click", ".recipe_a", function (ev) {
                 ev.preventDefault();
                 var modalToOpen = $(this).attr("href");
-                $(modalToOpen).modal('show'); // also you can use "toggle" instead of "show"
+                $(modalToOpen).modal('show');
+
             });
             $(".btn-close").click(function () {
                 $("#myModal").modal('hide');
+
             });
         });
 
