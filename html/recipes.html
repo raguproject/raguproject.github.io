@@ -18,6 +18,108 @@
 
 <body>
 
+    <!-- Modal -->
+    <div class="modal top fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div id="recipe-image">
+                                <img id="recipe-img" src="/photos/sample_recipe.svg">
+                                <h4 id="recipe-info">This recipe was kindly donated by <span
+                                        class="data-italic">unknown</span>, found in <span class="data-bold">2019
+                                    </span>, in <span class="data-bold">Rimini</span>, (Emilia Romagna, Italia).
+                                </h4>
+                            </div>
+                        </div>
+                        <div id="recipe-container" class="col-md-6 col-sm-12">
+                            <div id="container-recipe">
+                                <h2 id="about-recipe">about the recipe</h2>
+                                <h3 id="recipe-title">marmellata di marroni | dessert</h3>
+                                <h4 id="recipe-subtitle">Dina, <span class="data-italic">Le ricette di zia Dina (ch.
+                                        Dolci)</span>, Rimini (Emilia
+                                    Romagna, Italia), year <span class="data-italic">unknown</span>, pag.45
+                                </h4>
+                                <div class="info-recipe">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <h5 id="recipe-serves">serves: <span class="data-bold">6 people
+
+                                                </span></h5>
+                                        </div>
+                                        <div class="col-sm">
+                                            <h5 id="recipe-preparation">preparation time: <span class="data-bold">60
+                                                    min</span></h5>
+                                        </div>
+                                        <div class="col-sm">
+                                            <h5 id="recipe-cooking">cooking time: <span class="data-bold">15
+                                                    min</span></h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ingredients-recipe">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12" id="recipe-ingr">
+
+                                            <img id="recipe-ingr-photo" src="/photos/ingredients-recipe.svg">
+                                            <h5 id="ingr-header">ingredients:</h5>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12" id="recipe-ingr-list">
+                                            <ul id="ingr-list">
+
+                                                <li><span class="data-bold">2kg</span> | chestnut (from Cuneo)
+                                                </li>
+                                                <li><span class="data-bold">1 glass</span> | water
+                                                </li>
+                                                <li><span class="data-bold">1/2 hg</span> | cocoa
+                                                </li>
+                                                <li><span class="data-bold">1 unit</span> | vanilla flavor (or orange
+                                                    flavor)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="cooking-procedure-recipe">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12" id="recipe-cook">
+
+                                            <img id="recipe-cook-photo" src="/photos/cooking-recipe.svg">
+                                            <h5 id="cook-header">cooking procedure:</h5>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12" id="recipe-cook-list">
+                                            <ul id="cook-list">
+
+                                                <li>boiling
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <header>
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg ">
@@ -45,8 +147,12 @@
         </div>
     </header>
 
+
+
+
     <div id="filter-page" class="container text-left">
         <div class="row">
+
             <div id="filter-section" class="col-md-4 col-sm-12">
                 <aside id="filter-sidebar">
                     <h3 id="filter-sidebar-heading">
@@ -100,12 +206,35 @@
             </div>
 
             <div id="letter-container" class="col-md-8 col-sm-12">
-                <div id="letter_space" name="letter_space">
+                <div id="letter_space" class="row" name="letter_space">
 
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
 
         </div>
+    </div>
     </div>
 
     <script>
@@ -131,6 +260,9 @@
         $.getJSON("/json/alphabet.json", function (json) {
             json_data = json;
         })
+
+
+
 
     </script>
 </body>

@@ -1,5 +1,3 @@
-
-
 fetch("/json/alphabet.json")
     .then(function (resp) {
         return resp.json();
@@ -12,6 +10,7 @@ fetch("/json/alphabet.json")
             const div = document.getElementById('letter_space');
             const ol = document.createElement('ol');
             ol.classList = "index_letters";
+            ol.classList.add("col-6");
             ol.appendChild(document.createTextNode(i));
 
             for (const link in links) {
@@ -21,11 +20,21 @@ fetch("/json/alphabet.json")
                 a.id = link;
                 a.name = "recipe_a";
                 a.classList = "recipe_a";
+                a.href = "#myModal";
+                a.dataset.toggle = "modal";
+                a.dataset.target = "modal";
+
+
+                /*a.dataset.toggle = "modal";
+                a.href = "#myModal";*/
+
                 ol.appendChild(a);
             }
             div.appendChild(ol);
         }
+
     })
+
 
 fetch("/json/provenance.json")
     .then(function (resp) {
@@ -35,9 +44,10 @@ fetch("/json/provenance.json")
         var cities = (Object.keys(provenance_json));
 
         for (var i = 0; i < cities.length; i++) {
-
+            var div = document.createElement('div');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
+            div.classList = "checkbox-div";
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "place";
@@ -45,10 +55,12 @@ fetch("/json/provenance.json")
             checkbox.id = cities[i].toLowerCase();
             var label = document.createElement('label')
             label.htmlFor = cities[i];
+            label.classList = "form-x";
             label.appendChild(document.createTextNode(cities[i]));
             var provenance = document.getElementById('provenance');
-            provenance.appendChild(checkbox);
-            provenance.appendChild(label);
+            provenance.appendChild(div);
+            div.appendChild(checkbox);
+            div.appendChild(label);
         }
 
         for (const city in provenance_json) {
@@ -73,8 +85,10 @@ fetch("/json/ingredients.json")
         var ingredients = (Object.keys(ingredients_json));
 
         for (var i = 0; i < ingredients.length; i++) {
+            var div = document.createElement('div');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
+            div.classList = "checkbox-div";
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "ingredients";
@@ -83,9 +97,11 @@ fetch("/json/ingredients.json")
             var label = document.createElement('label')
             label.htmlFor = ingredients[i];
             label.appendChild(document.createTextNode(ingredients[i]));
+            label.classList = "form-x";
             var ingredient = document.getElementById('ingredient');
-            ingredient.appendChild(checkbox);
-            ingredient.appendChild(label);
+            ingredient.appendChild(div);
+            div.appendChild(checkbox);
+            div.appendChild(label);
 
         }
 
@@ -111,8 +127,10 @@ fetch("/json/categories.json")
         var categories = (Object.keys(categories_json));
 
         for (var i = 0; i < categories.length; i++) {
+            var div = document.createElement('div');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
+            div.classList = "checkbox-div";
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "category";
@@ -120,10 +138,12 @@ fetch("/json/categories.json")
             checkbox.id = categories[i].toLowerCase();
             var label = document.createElement('label')
             label.htmlFor = categories[i];
+            label.classList = "form-x";
             label.appendChild(document.createTextNode(categories[i]));
             var category = document.getElementById('category');
-            category.appendChild(checkbox);
-            category.appendChild(label);
+            category.appendChild(div);
+            div.appendChild(checkbox);
+            div.appendChild(label);
 
 
         }
@@ -141,47 +161,46 @@ fetch("/json/categories.json")
             }
         }
 
-        var $filterCheckboxes = $('input[type="checkbox"]'); // tutti i filtri/checkbox disponibili
+        const rec = document.getElementsByName("recipe_a");
+        for (var i of rec) {
+            i.dataset.allfilters = (i.dataset.place) + " " + (i.dataset.ingredients) + " " + (i.dataset.category);
+        }
+        var $filterCheckboxes = $('input[type="checkbox"]');
         var filterFunc = function () {
-
-            var selectedFilters = {}; // obj che contiene i filtri selezionati, key è ingr/cat/place
-            console.log(selectedFilters);
-
-            $filterCheckboxes.filter(':checked').each(function () { // filtro su ogni checkbox per vedere se è checked
-
+            var selectedFilters = {};
+            $filterCheckboxes.filter(':checked').each(function () {
                 if (!selectedFilters.hasOwnProperty(this.name)) {
-                    selectedFilters[this.name] = []; // lista vuota se non c'è check (place: [], category: [], ingredient: []) 
+                    selectedFilters[this.name] = [];
                 }
-
-                selectedFilters[this.name].push(this.value);  // lista che si riempie del valore se c'è check (place: ["rimini", "savona"], category: [], ingredient: ["meat"])
+                selectedFilters[this.name].push(this.value);
             });
-
-
-            var $filteredResults = $('.recipe_a'); // variabile di tutte le ricette filtrabili 
+            console.log(selectedFilters);
+            // create a collection containing all of the filterable elements
+            var $filteredResults = $('.recipe_a');
             console.log($filteredResults);
 
-            $.each(selectedFilters, function (name, filterValues) { // fa un loop nell'array dei valori dei filtri selezionati
-
-
-                $filteredResults = $filteredResults.filter(function () { // filtra ogni ricetta
-
+            // loop over the selected filter name -> (array) values pairs
+            $.each(selectedFilters, function (name, filterValues) {
+                $filteredResults = $filteredResults.filter(function () {
                     var matched = false,
-                        currentFilterValues = $(this).data(name).split(' ');
+                        currentFilterValues = $(this).data("allfilters").split(' ');
                     console.log(currentFilterValues);
 
-                    $.each(currentFilterValues, function (_, currentFilterValue) { //loop su ogni ingredients value di data-ingredients in recipe_a
+                    // loop over each category value in the current .flower's data-category
+                    $.each(currentFilterValues, function (_, currentFilterValue) {
 
-                        // se l'ingredient c'è nell'array 
-                        // matched = true
+                        // if the current category exists in the selected filters array
+                        // set matched to true, and stop looping. as we're ORing in each
+                        // set of filters, we only need to match once
 
                         if ($.inArray(currentFilterValue, filterValues) != -1) {
                             matched = true;
-
+                            // return false;
                         }
                     });
 
-
-                    return matched;  // se matched = true l'elemento la recipe_a è returned
+                    // if matched is true the current .flower element is returned
+                    return matched;
 
                 });
             });
@@ -191,7 +210,27 @@ fetch("/json/categories.json")
 
         $filterCheckboxes.on('change', filterFunc);
 
-    })
+
+
+        jQuery(function ($) {
+
+            $("body").on("click", ".recipe_a", function (ev) {
+                ev.preventDefault();
+                var modalToOpen = $(this).attr("href");
+                $(modalToOpen).modal('show');
+
+            });
+            $(".btn-close").click(function () {
+                $("#myModal").modal('hide');
+
+            });
+        });
+
+    });
+
+
+
+
 
 
 

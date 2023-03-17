@@ -1,0 +1,1189 @@
+{
+  "notebookTitle": "Le ricette di zia Dina",
+  "fromYear": "",
+  "toYear": "",
+  "author": "Dina",
+  "provenance": [
+    {
+      "city": "Rimini",
+      "region": "Emilia Romagna",
+      "country": "Italia",
+      "dateOfFinding": "29-08-2019",
+      "placeOfFinding": "Rimini",
+      "donor": "",
+      "foundBy": ""
+    }
+  ],
+  "recipes": [
+    {
+      "img": [
+        "Quaderno 1_Rimini_29ago2019_1.jpg"
+      ],
+      "recipeTitle": "Olive verdi grosse",
+      "id": "olive_verdi_grosse_001",
+      "numberOfPersons": 6,
+      "pagesNumber": [
+        1
+      ],
+      "chapter": "",
+      "course": "apetizer",
+      "sideDish": "",
+      "cookingProcedure": [
+        "boiling"
+      ],
+      "temperature": [],
+      "recipeTime": [],
+      "cookingTime": [],
+      "ingredients": [
+        {
+          "category": "vegetable",
+          "ingredientName": "olive",
+          "ingredientQualifier": "green",
+          "variantIngredientName": "",
+          "dosage": {
+            "quantity": 1,
+            "unitOfMeasure": "kg"
+          },
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "sodium hydroxide",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 20,
+              "unitOfMeasure": "g"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "water",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 1,
+              "unitOfMeasure": "l"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "salt",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 75,
+              "unitOfMeasure": "g"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "img": [
+        "Quaderno 1_Rimini_29ago2019_1.jpg"
+      ],
+      "recipeTitle": "Maccheroni con besciamella",
+      "id": "maccheroni_con_besciamella_001",
+      "numberOfPersons": 6,
+      "pagesNumber": [
+        2
+      ],
+      "chapter": "Minestre",
+      "course": "first dish",
+      "sideDish": "",
+      "cookingProcedure": [
+        "boiling"
+      ],
+      "temperature": [],
+      "recipeTime": [],
+      "cookingTime": [],
+      "ingredients": [
+        {
+          "category": "pasta",
+          "ingredientName": "macaroni",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dietary fat",
+          "ingredientName": "butter",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "cereal",
+          "ingredientName": "flour",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "milk",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "parmesan",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "img": [
+        "Quaderno 1_Rimini_29ago2019_1.jpg"
+      ],
+      "recipeTitle": "Polenta alla lombarda",
+      "id": "polenta_alla_lombarda_001",
+      "numberOfPersons": 6,
+      "pagesNumber": [
+        2,
+        3
+      ],
+      "chapter": "Minestre",
+      "course": "first dish",
+      "sideDish": "",
+      "cookingProcedure": [
+        "boiling",
+        "stewing"
+      ],
+      "temperature": [],
+      "recipeTime": [],
+      "cookingTime": [
+        180
+      ],
+      "ingredients": [
+        {
+          "category": "vegetable",
+          "ingredientName": "cabbage",
+          "ingredientQualifier": "savoy",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "vegetable",
+          "ingredientName": "celery",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "vegetable",
+          "ingredientName": "carrot",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "vegetable",
+          "ingredientName": "onion",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "spice",
+          "ingredientName": "pepper",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "meat",
+          "ingredientName": "pork",
+          "ingredientQualifier": "rib",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "saucisse",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "vegetable",
+          "ingredientName": "tomato",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "salt",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 1,
+              "unitOfMeasure": "pinch"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "cereal",
+          "ingredientName": "polenta",
+          "ingredientQualifier": "veronese",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "parmesan",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "img": [
+        "Quaderno 1_Rimini_29ago2019_1.jpg"
+      ],
+      "recipeTitle": "Gnocchi di semolino al forno",
+      "id": "gnocchi_di_semolino_al_forno_001",
+      "numberOfPersons": 6,
+      "pagesNumber": [
+        3
+      ],
+      "chapter": "Minestre",
+      "course": "first dish",
+      "sideDish": "",
+      "cookingProcedure": [
+        "boiling",
+        "in the oven"
+      ],
+      "temperature": [],
+      "recipeTime": [],
+      "cookingTime": [],
+      "ingredients": [
+        {
+          "category": "dairy",
+          "ingredientName": "milk",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 0.5,
+              "unitOfMeasure": "l"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "cereal",
+          "ingredientName": "semolina",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "salt",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "egg",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 3,
+              "unitOfMeasure": "unit"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "parmesan",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dietary fat",
+          "ingredientName": "butter",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 100,
+              "unitOfMeasure": "g"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "img": [
+        "Quaderno 1_Rimini_29ago2019_1.jpg"
+      ],
+      "recipeTitle": "Pasta di semolino in brodo",
+      "id": "pasta_di_semolino_in_brodo_001",
+      "numberOfPersons": 6,
+      "pagesNumber": [
+        3
+      ],
+      "chapter": "Minestre",
+      "course": "first dish",
+      "sideDish": "",
+      "cookingProcedure": [
+        "frying",
+        "boiling"
+      ],
+      "temperature": [],
+      "recipeTime": [],
+      "cookingTime": [],
+      "ingredients": [
+        {
+          "category": "dairy",
+          "ingredientName": "milk",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 0.5,
+              "unitOfMeasure": "l"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "cereal",
+          "ingredientName": "semolina",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "egg",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "parmesan",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dietary fat",
+          "ingredientName": "butter",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "1",
+              "unitOfMeasure": "knob"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "salt",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "herb",
+          "ingredientName": "parsley",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "broth",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "img": [
+        "Quaderno 1_Rimini_29ago2019_1.jpg"
+      ],
+      "recipeTitle": "Bomba di riso",
+      "id": "bomba_di_riso001",
+      "numberOfPersons": "",
+      "pagesNumber": [
+        3,
+        4
+      ],
+      "chapter": "Minestre",
+      "course": "first dish",
+      "sideDish": "",
+      "cookingProcedure": [
+        "stewing",
+        "in the oven"
+      ],
+      "temperature": [],
+      "recipeTime": [],
+      "cookingTime": [],
+      "ingredients": [
+        {
+          "category": "cereal",
+          "ingredientName": "rice",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "milk",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "vegetable",
+          "ingredientName": "tomato",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "meat",
+          "ingredientName": "meat",
+          "ingredientQualifier": "minced",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "salt",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "vegetable",
+          "ingredientName": "celery",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "vegetable",
+          "ingredientName": "carrot",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "egg",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 2,
+              "unitOfMeasure": "unit"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "img": [
+        "Quaderno 1_Rimini_29ago2019_1.jpg"
+      ],
+      "recipeTitle": "Pasticcio di riso",
+      "id": "pasticcio_di_riso_001",
+      "numberOfPersons": 6,
+      "pagesNumber": [
+        4,
+        5
+      ],
+      "chapter": "Minestre",
+      "course": "first dish",
+      "sideDish": "",
+      "cookingProcedure": [
+        "boiling",
+        "no cooking",
+        "in the oven"
+      ],
+      "temperature": [],
+      "recipeTime": [],
+      "cookingTime": [],
+      "ingredients": [
+        {
+          "category": "cereal",
+          "ingredientName": "flour",
+          "ingredientQualifier": "00",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 2,
+              "unitOfMeasure": "spoon"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dietary fat",
+          "ingredientName": "butter",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "g",
+              "unitOfMeasure": "110"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "milk",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 0.5,
+              "unitOfMeasure": "l"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "water",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "cereal",
+          "ingredientName": "rice",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 11,
+              "unitOfMeasure": "handful"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "sauce",
+          "ingredientName": "ragout",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "egg",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "3",
+              "unitOfMeasure": "unit"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "parmesan",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 4,
+              "unitOfMeasure": "spoon"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "dairy",
+          "ingredientName": "gruyere",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": 1,
+              "unitOfMeasure": "spoon"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "ingredientName": "salt",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": "q.b."
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "spice",
+          "ingredientName": "nutmeg",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "1",
+              "unitOfMeasure": "sprinkle"
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        },
+        {
+          "category": "baked products",
+          "ingredientName": "breadcrumbs",
+          "ingredientQualifier": "",
+          "variantIngredientName": "",
+          "dosage": [
+            {
+              "quantity": "",
+              "unitOfMeasure": ""
+            }
+          ],
+          "alternativeIngredient": [
+            {
+              "alternativeIngredientName": "",
+              "alternativeIngredientVariantName": "",
+              "alternativeIngredientQualifier": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
