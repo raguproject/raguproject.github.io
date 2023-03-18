@@ -3,7 +3,6 @@
         "olive_verdi_grosse_001"
     ],
     "first": [
-        "bomba_di_riso002",
         "pasticcio_di_riso_001",
         "maccheroni_con_besciamella_001",
         "polenta_alla_lombarda_001",
@@ -12,11 +11,11 @@
         "bomba_di_riso001"
     ],
     "second": [],
-    "side-dish": [],
+    "side dish": [],
     "dessert": [],
     "dressing": [],
     "beverage": [],
-    "single-course": [],
+    "single course": [],
     "preserves": [],
     "sauce": []
 }

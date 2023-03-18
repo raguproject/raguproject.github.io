@@ -7,29 +7,29 @@ fetch("/json/alphabet.json")
 
         for (const i in alphabet_json) {
             const links = alphabet_json[i];
+
+            //console.log(Object.values(links).sort());
             const div = document.getElementById('letter_space');
             const ol = document.createElement('ol');
             ol.classList = "index_letters";
             ol.classList.add("col-6");
             ol.appendChild(document.createTextNode(i));
+            var val_ord = Object.values(links).sort();
+            var keys_ord = Object.keys(links).sort();
 
-            for (const link in links) {
-                const ids = links[link];
+            for (const link in val_ord) {
+                const ids = val_ord[link];
                 const a = document.createElement('a');
                 a.appendChild(document.createTextNode(ids));
-                a.id = link;
+                a.id = keys_ord[link];
                 a.name = "recipe_a";
                 a.classList = "recipe_a";
                 a.href = "#myModal";
                 a.dataset.toggle = "modal";
                 a.dataset.target = "modal";
-
-
-                /*a.dataset.toggle = "modal";
-                a.href = "#myModal";*/
-
                 ol.appendChild(a);
             }
+
             div.appendChild(ol);
         }
 
@@ -41,9 +41,10 @@ fetch("/json/provenance.json")
         return resp.json();
     })
     .then(function (provenance_json) {
-        var cities = (Object.keys(provenance_json));
+        var cities = (Object.keys(provenance_json).sort());
 
         for (var i = 0; i < cities.length; i++) {
+            var prov_nospace = cities[i].split(' ').join('_');
             var div = document.createElement('div');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
@@ -51,10 +52,10 @@ fetch("/json/provenance.json")
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "place";
-            checkbox.value = cities[i].toLowerCase();
-            checkbox.id = cities[i].toLowerCase();
+            checkbox.value = prov_nospace.toLowerCase();
+            checkbox.id = prov_nospace.toLowerCase();
             var label = document.createElement('label')
-            label.htmlFor = cities[i];
+            label.htmlFor = prov_nospace.toLowerCase();
             label.classList = "form-x";
             label.appendChild(document.createTextNode(cities[i]));
             var provenance = document.getElementById('provenance');
@@ -70,7 +71,8 @@ fetch("/json/provenance.json")
                 for (node of recipes_nodes) {
                     const node_id = node.id;
                     if (node_id == x) {
-                        node.dataset.place = city.toLowerCase();
+                        node.dataset.place = city.toLowerCase().split(' ').join('_');
+                        console.log(node.dataset.place);
                     }
                 }
             }
@@ -82,9 +84,9 @@ fetch("/json/ingredients.json")
         return resp.json();
     })
     .then(function (ingredients_json) {
-        var ingredients = (Object.keys(ingredients_json));
-
+        var ingredients = (Object.keys(ingredients_json).sort());
         for (var i = 0; i < ingredients.length; i++) {
+            var ingr_nospace = ingredients[i].split(' ').join('_');
             var div = document.createElement('div');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
@@ -92,10 +94,10 @@ fetch("/json/ingredients.json")
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "ingredients";
-            checkbox.value = ingredients[i].toLowerCase();
-            checkbox.id = ingredients[i].toLowerCase();
+            checkbox.value = ingr_nospace.toLowerCase();
+            checkbox.id = ingr_nospace.toLowerCase();
             var label = document.createElement('label')
-            label.htmlFor = ingredients[i];
+            label.htmlFor = ingr_nospace.toLowerCase();
             label.appendChild(document.createTextNode(ingredients[i]));
             label.classList = "form-x";
             var ingredient = document.getElementById('ingredient');
@@ -111,7 +113,7 @@ fetch("/json/ingredients.json")
             var list_ingredients = [];
             for (const key in ingredients_json) {
                 if (ingredients_json[key].includes(node_id)) {
-                    list_ingredients.push(key);
+                    list_ingredients.push(key.split(' ').join('_'));
                     node.dataset.ingredients = list_ingredients.join(" ");
                 }
             }
@@ -124,9 +126,10 @@ fetch("/json/categories.json")
         return resp.json();
     })
     .then(function (categories_json) {
-        var categories = (Object.keys(categories_json));
+        var categories = (Object.keys(categories_json).sort());
 
         for (var i = 0; i < categories.length; i++) {
+            var cat_nospace = categories[i].split(' ').join('_');
             var div = document.createElement('div');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
@@ -134,10 +137,10 @@ fetch("/json/categories.json")
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "category";
-            checkbox.value = categories[i].toLowerCase();
-            checkbox.id = categories[i].toLowerCase();
+            checkbox.value = cat_nospace.toLowerCase();
+            checkbox.id = cat_nospace.toLowerCase();
             var label = document.createElement('label')
-            label.htmlFor = categories[i];
+            label.htmlFor = cat_nospace.toLowerCase();
             label.classList = "form-x";
             label.appendChild(document.createTextNode(categories[i]));
             var category = document.getElementById('category');
@@ -155,7 +158,7 @@ fetch("/json/categories.json")
                 for (node of recipes_nodes) {
                     const node_id = node.id;
                     if (node_id == x) {
-                        node.dataset.category = category;
+                        node.dataset.category = category.split(' ').join('_');
                     }
                 }
             }
@@ -174,17 +177,14 @@ fetch("/json/categories.json")
                 }
                 selectedFilters[this.name].push(this.value);
             });
-            console.log(selectedFilters);
             // create a collection containing all of the filterable elements
             var $filteredResults = $('.recipe_a');
-            console.log($filteredResults);
 
             // loop over the selected filter name -> (array) values pairs
             $.each(selectedFilters, function (name, filterValues) {
                 $filteredResults = $filteredResults.filter(function () {
                     var matched = false,
                         currentFilterValues = $(this).data("allfilters").split(' ');
-                    console.log(currentFilterValues);
 
                     // loop over each category value in the current .flower's data-category
                     $.each(currentFilterValues, function (_, currentFilterValue) {
@@ -195,7 +195,7 @@ fetch("/json/categories.json")
 
                         if ($.inArray(currentFilterValue, filterValues) != -1) {
                             matched = true;
-                            // return false;
+                            return false;
                         }
                     });
 
