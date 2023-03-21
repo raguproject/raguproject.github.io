@@ -72,7 +72,6 @@ fetch("/json/provenance.json")
                     const node_id = node.id;
                     if (node_id == x) {
                         node.dataset.place = city.toLowerCase().split(' ').join('_');
-                        console.log(node.dataset.place);
                     }
                 }
             }
@@ -224,9 +223,33 @@ fetch("/json/categories.json")
                 $("#myModal").modal('hide');
 
             });
+
+
         });
 
+        fetch("/json/notebook_dina.json")
+            .then(function (resp) {
+                return resp.json();
+            })
+            .then(function (modal_recipes) {
+                var notebook_recipes = modal_recipes.recipes;
+                var recipes_values = (Object.values(notebook_recipes));
+                for (var i in recipes_values) {
+                    var recipes_ids = (recipes_values[i].id);
+
+                }
+                const modal_id = document.getElementById("myModal");
+
+
+
+            });
+
     });
+
+
+
+
+
 
 
 

@@ -35,6 +35,33 @@ body {
     overflow-x: hidden;
 }
 
+a#expl_brow {
+    font-family: "Playfair";
+    text-decoration: none;
+    font-size: 70px;
+    color: var(--base-text);
+    font-weight: bolder;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+a#expl_brow:hover {
+    color: var(--red-text);
+
+}
+
+li#expl {
+
+    text-align: right;
+}
+
+li#expl.explore_class {
+    padding-bottom: 20%;
+
+}
+
+
 /* Cookbooks and recipes images/buttons on the right */
 
 .img-cokbooks-recipes .cookbooks {
@@ -101,14 +128,20 @@ body {
     width: 100%;
     height: 500px;
     font-size: 9px;
+    background-color: #f8f8f8;
     border: 1px solid #332421;
 
 
 }
 
+.reveal .chart_pos {
+    padding-top: 10%;
+}
+
 #chartdiv_ingredients {
     width: 100%;
     height: 500px;
+    margin-top: 10%;
     font-size: 12px;
 
 
@@ -117,20 +150,25 @@ body {
 #chartdiv_pie {
     width: 80%;
     height: 300px;
+
     font-size: 12px;
     padding: 10%;
 
 
 }
 
+
+
 #chartdiv_map {
     width: 100%;
+    background-color: #f8f8f8;
     height: 500px;
     overflow: hidden;
-    margin-top: 10%;
+    margin-top: 20%;
     border: 1px solid #332421;
     z-index: 1001;
     font-size: 12px;
+
 }
 
 
@@ -150,11 +188,7 @@ canvas {
     padding-top: 48%;
     width: 100%;
     height: 100%;
-    z-index: -1 !important;
     opacity: 60%;
-
-
-
 
 }
 
@@ -164,6 +198,7 @@ canvas {
     height: auto;
     top: 0;
     left: 0;
+    z-index: 1001;
 }
 
 /* Horizontal Navbar */
@@ -191,8 +226,10 @@ canvas {
     position: fixed;
     padding-top: 5em;
     background-color: var(--colorbg);
-    z-index: 10;
+    z-index: 2000;
 }
+
+
 
 
 /* H1, H2, H3, red highlight on titles*/
@@ -244,22 +281,15 @@ h3 .red-highlight {
     color: var(--red-text);
 }
 
-.h3,
-h3 a {
-    font-family: "Playfair";
-    text-decoration: none;
-    font-size: 70px;
-    color: var(--base-text);
-    padding-top: 25em;
-    font-weight: bolder;
-    line-height: 1;
+ul,
+#list_expl {
+
+    list-style-type: none;
+    padding-left: 30%;
 
 }
 
-.h3,
-h3 a .browse {
-    padding-top: 15em;
-}
+
 
 
 /* Sections */
@@ -290,9 +320,7 @@ h3 a .browse {
     padding-bottom: 25% !important;
 }
 
-.text-red-thread {
-    font-family: "Playfair";
-}
+
 
 #word1,
 #word2,
@@ -301,6 +329,7 @@ h3 a .browse {
     font-size: 30px;
     font-weight: lighter;
 }
+
 
 
 /* Counters */
@@ -509,8 +538,8 @@ h3 a .browse {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
-    top: 0;
+    z-index: 10000;
+    top: 15%;
     left: 0;
     background-color: none;
     overflow-x: hidden;
@@ -550,6 +579,121 @@ h3 a .browse {
 
 }
 
+/*footer*/
+
+
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: var(--base-text);
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+    /* min-height: 100vh;*/
+}
+
+
+
+.footer {
+    background-color: #cc0b3527;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    .single_footer {
+        margin-bottom: 30px;
+    }
+}
+
+.single_footer h4 {
+    color: #332421;
+    font-family: "Playfair";
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.single_footer h4#title-footer {
+
+    text-transform: none;
+    font-weight: bold;
+}
+
+.single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #332421;
+    margin-top: 20px;
+}
+
+
+
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.single_footer ul #doi {
+    margin: 0;
+    padding: 0;
+    line-height: 36px;
+
+}
+
+
+.single_footer ul li a {
+    color: #332421;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.single_footer ul li a:hover {
+    color: #f8f8f8;
+}
+
+
+
 
 
 
@@ -569,6 +713,11 @@ h3 a .browse {
     margin-bottom: 0;
     font-size: 1.7em;
     border-bottom: 2px solid var(--red-text);
+}
+
+section.filter-item-inner {
+    padding: 0;
+    /* min-height: 100vh;*/
 }
 
 #filter-sidebar {
@@ -948,6 +1097,10 @@ ul {
     padding-top: 4%;
 }
 
+#forgotten-box-img {
+    display: none;
+}
+
 /* Keyframes */
 
 
@@ -959,4 +1112,242 @@ ul {
     100% {
         opacity: 1;
     }
+}
+
+@media(min-width:320px) and (max-width:767px) {
+
+    .img-cokbooks-recipes {
+        display: none;
+    }
+
+    .navbar-toggler {
+        border: none;
+        width: 5em;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 2em;
+        border: none;
+        box-shadow: none !important;
+    }
+
+
+    .h1,
+    h1 {
+        font-family: "Playfair";
+        font-size: 100px;
+        color: var(--base-text);
+        padding-top: 30vh;
+        font-weight: bolder;
+        font-size: 70px;
+        text-align: right;
+        padding-bottom: 20vh;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    #img-sidebar img {
+        width: 10%;
+        bottom: 3%;
+        left: 5%;
+        position: fixed;
+        animation: fadeInLeft 1.5s ease-in-out;
+        z-index: 1001;
+    }
+
+    #word1,
+    #word2,
+    #word3 {
+        margin: 3%;
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: left;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 15px;
+    }
+
+    .h2,
+    h2 {
+        font-family: "Playfair";
+        font-size: 18px;
+        color: var(--base-text);
+        font-weight: lighter;
+        line-height: 1.6;
+        padding-bottom: 10%;
+    }
+
+    #forgotten-box-img {
+        display: block;
+        width: 50%;
+    }
+
+    header,
+    section {
+        overflow-x: hidden;
+        padding: 4%;
+    }
+
+    #forgotten-box-img {
+        display: block;
+        width: 50%;
+        margin: 10% 0 0 25%;
+    }
+
+    #chartdiv_map {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 10%;
+        border: 1px solid #332421;
+        z-index: 1001;
+        font-size: 12px;
+    }
+
+    #chartdiv_ingredients {
+        width: 100%;
+        height: 300px;
+        font-size: 12px;
+    }
+
+    #chartdiv_pie {
+        width: 100%;
+        height: 160px;
+        font-size: 12px;
+        padding: 10%;
+    }
+
+    #navbarNav .icon-bar:nth-of-type(1) {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 10% 10%;
+        -ms-transform-origin: 10% 10%;
+        transform-origin: 10% 10%;
+    }
+
+    #chartdiv {
+        width: 100%;
+        height: 300px;
+        font-size: 9px;
+        border: 1px solid #332421;
+    }
+
+    #filter-sidebar {
+        float: left;
+        width: 60%;
+        box-shadow: 5px 10px 18px #888888;
+        margin-top: 30%;
+        left: 2%;
+        padding: 4%;
+        position: static;
+        margin: 18%;
+    }
+
+    .letter-container .letter_space,
+    ol,
+    .index_letters {
+        border-bottom: 1px solid;
+        font-size: 40px;
+    }
+
+    #letter-container a {
+        font-size: 16px;
+        font-weight: lighter;
+        display: block;
+        padding-left: 5px;
+        margin-top: 5px;
+        color: var(--base-text);
+        font-family: "Garamond";
+        text-decoration: none;
+    }
+
+    #letter_space {
+        padding: 5%;
+    }
+
+    #filter-sidebar-heading {
+        padding: 2%;
+        color: var(--red-text);
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 1.5em;
+        border-bottom: 2px solid var(--red-text);
+    }
+
+    .text {
+        padding-top: 50px;
+    }
+
+    #img-dishes {
+        position: relative;
+        padding-top: 10%;
+        z-index: 1001;
+        margin: 10% 2% 2% 10%;
+    }
+
+    a#expl_brow {
+        font-family: "Playfair";
+        text-decoration: none;
+        font-size: 40px;
+        color: var(--base-text);
+        font-weight: bolder;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    li#expl.explore_class {
+        padding-bottom: 8%;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        position: fixed;
+        padding-top: 5em;
+        background-color: var(--colorbg);
+        z-index: 2000;
+        left: 0;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-family: "Playfair";
+        font-size: 14px;
+        color: var(--base-text);
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    #navbarNav .nav-link {
+        padding: none;
+        line-height: 0.5;
+    }
+
+    #sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-family: "Playfair";
+        font-size: 30px;
+        color: var(--red-text);
+        display: block;
+        transition: 0.3s;
+    }
+
+    #icon_nav {}
+
 }
