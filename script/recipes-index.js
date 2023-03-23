@@ -211,22 +211,68 @@ fetch("/json/categories.json")
 
 
 
+
+
         jQuery(function ($) {
 
             $("body").on("click", ".recipe_a", function (ev) {
                 ev.preventDefault();
                 var modalToOpen = $(this).attr("href");
                 $(modalToOpen).modal('show');
+                let id_rec = this.attributes[`id`].value;
+                $.getJSON(`/json/notebook_dina.json`, function (modal_recipes) {
+                    var notebook_recipes = modal_recipes.recipes;
 
-            });
-            $(".btn-close").click(function () {
-                $("#myModal").modal('hide');
+                    let month = notebook_recipes.filter(function (data) { return data.id === id_rec; });
+                    var notebook_provenance = modal_recipes.provenance;
+                    var from_year = modal_recipes.fromYear;
+                    var to_year = modal_recipes.toYear;
+                    var author = modal_recipes.author;
+                    var notebook_title = modal_recipes.notebookTitle;
+                    var donor = (notebook_provenance[0].donor);
+                    var dateOfFinding = (notebook_provenance[0].dateOfFinding);
+                    var placeOfFinding = (notebook_provenance[0].placeOfFinding);
+                    var regionOfFinding = (notebook_provenance[0].region);
+                    var countryOfFinding = (notebook_provenance[0].country);
+                    var city = (notebook_provenance[0].city);
+                    $(`#recipe-info`).html("This recipe was kindly donated by" + " " + donor + "," + " found the " + " " + dateOfFinding + " " + "in" + " " + placeOfFinding + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
+                    if (donor == "") {
+                        $(`#recipe-info`).html("This recipe was kindly donated by unknown" + "," + " found the " + " " + dateOfFinding + " " + "in" + " " + placeOfFinding + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
+                    }
+                    var recipes_values = (Object.values(month));
+                    var title_rec = (recipes_values[0].recipeTitle);
+                    var title_chapt = (recipes_values[0].chapter);
+                    var serves = (recipes_values[0].numberOfPersons);
+                    $(`#recipe-serves`).html("serves:" + " " + serves + " people");
+                    if (serves == "") {
+                        $(`#recipe-serves`).html("serves: not specified");
+                    }
+                    var course = (recipes_values[0].course);
+                    $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
+                    $(`#recipe-subtitle`).html(author + "," + " " + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "(" + from_year + " " + to_year + ").");
+
+
+                    $(".close").click(function () {
+                        $("#myModal").modal('hide');
+
+                    });
+
+
+
+
+
+
+                });
 
             });
 
 
         });
 
+        /*
+         
+        
+        
         fetch("/json/notebook_dina.json")
             .then(function (resp) {
                 return resp.json();
@@ -236,13 +282,13 @@ fetch("/json/categories.json")
                 var recipes_values = (Object.values(notebook_recipes));
                 for (var i in recipes_values) {
                     var recipes_ids = (recipes_values[i].id);
-
+ 
                 }
                 const modal_id = document.getElementById("myModal");
-
-
-
-            });
+ 
+ 
+ 
+            });*/
 
     });
 
