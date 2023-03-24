@@ -940,7 +940,17 @@ img,
     width: 70%;
 }
 
+#serves-bold {
+    font-weight: bold;
+}
 
+#preparation-bold {
+    font-weight: bold;
+}
+
+#cooking-bold {
+    font-weight: bold;
+}
 
 #about-recipe,
 .h2 {
@@ -1059,7 +1069,7 @@ img,
 ul {
     padding: 2%;
     font-family: "Playfair";
-
+    list-style-type: disc;
 }
 
 #recipe-cook {

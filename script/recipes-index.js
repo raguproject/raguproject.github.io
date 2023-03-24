@@ -243,11 +243,74 @@ fetch("/json/categories.json")
                     var title_rec = (recipes_values[0].recipeTitle);
                     var title_chapt = (recipes_values[0].chapter);
                     var serves = (recipes_values[0].numberOfPersons);
-                    $(`#recipe-serves`).html("serves:" + " " + serves + " people");
+                    $(`#serves-bold`).html(serves + " people");
                     if (serves == "") {
-                        $(`#recipe-serves`).html("serves: not specified");
+                        $(`#serves-bold`).html("not specified");
+                    }
+                    var preparation = (recipes_values[0].recipeTime);
+                    var preparation_list = [];
+                    for (var i of preparation) {
+                        preparation_list.push(i + " " + "min")
+
+                    }
+                    var preparation_join = preparation_list.join(", ");
+                    $(`#preparation-bold`).html(preparation_join);
+                    if (preparation_join == "") {
+                        $(`#preparation-bold`).html("not specified");
+                    }
+                    var cooking = (recipes_values[0].cookingTime);
+                    var cooking_list = [];
+                    for (var x of cooking) {
+                        cooking_list.push(x + " " + "min")
+
+                    }
+                    var cooking_join = cooking_list.join(", ");
+                    $(`#cooking-bold`).html(cooking_join);
+                    if (cooking_join == "") {
+                        $(`#cooking-bold`).html("not specified");
                     }
                     var course = (recipes_values[0].course);
+                    var ingredients_dict = (recipes_values[0].ingredients);
+
+                    var list_procedure = (recipes_values[0].cookingProcedure);
+                    if (list_procedure != []) {
+                        for (var procedure of list_procedure) {
+
+                            var cook_procedure = document.createElement('li');
+                            const ul_procedure = document.getElementById('cook-list');
+                            cook_procedure.appendChild(document.createTextNode(procedure));
+                            ul_procedure.appendChild(cook_procedure);
+
+                        }
+                    }
+
+                    for (var ingr of ingredients_dict) {
+                        var list_ingr = document.createElement('li');
+                        const ul_ingredients = document.getElementById('ingr-list');
+                        var alt_ingr = (ingr.alternativeIngredient);
+                        var alt_ingr_name = (alt_ingr[0].alternativeIngredientName);
+                        var ingr_name = ingr.ingredientName;
+                        var ingr_qual = ingr.ingredientQualifier;
+                        var dosage = ingr.dosage[0].quantity + ingr.dosage[0].unitOfMeasure + " | ";
+                        if (ingr.dosage[0].quantity == "") {
+                            dosage = ""
+                        }
+                        var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ") or " + alt_ingr_name;
+                        if (alt_ingr_name == "" && ingr_qual != "") {
+                            var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ")";
+                        }
+                        else if (alt_ingr_name != "" && ingr_qual == "") {
+                            var ingr_complete = dosage + ingr_name + " or " + alt_ingr_name;
+                        }
+                        else if (alt_ingr_name == "" && ingr_qual == "") {
+                            var ingr_complete = dosage + ingr_name;
+                        }
+                        list_ingr.appendChild(document.createTextNode(ingr_complete));
+                        ul_ingredients.appendChild(list_ingr);
+                    }
+
+
+                    //console.log(ingr_join)
                     $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
                     $(`#recipe-subtitle`).html(author + "," + " " + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "(" + from_year + " " + to_year + ").");
 
