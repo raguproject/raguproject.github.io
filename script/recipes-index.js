@@ -226,26 +226,54 @@ fetch("/json/categories.json")
                     let month = notebook_recipes.filter(function (data) { return data.id === id_rec; });
                     var notebook_provenance = modal_recipes.provenance;
                     var from_year = modal_recipes.fromYear;
-                    var to_year = modal_recipes.toYear;
-                    var author = modal_recipes.author;
-                    var notebook_title = modal_recipes.notebookTitle;
-                    var donor = (notebook_provenance[0].donor);
-                    var dateOfFinding = (notebook_provenance[0].dateOfFinding);
-                    var placeOfFinding = (notebook_provenance[0].placeOfFinding);
-                    var regionOfFinding = (notebook_provenance[0].region);
-                    var countryOfFinding = (notebook_provenance[0].country);
-                    var city = (notebook_provenance[0].city);
-                    $(`#recipe-info`).html("This recipe was kindly donated by" + " " + donor + "," + " found the " + " " + dateOfFinding + " " + "in" + " " + placeOfFinding + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
-                    if (donor == "") {
-                        $(`#recipe-info`).html("This recipe was kindly donated by unknown" + "," + " found the " + " " + dateOfFinding + " " + "in" + " " + placeOfFinding + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
+                    if (from_year == "") {
+                        from_year = "n/s";
                     }
+                    var to_year = modal_recipes.toYear;
+                    if (to_year == "") {
+                        to_year = "n/s";
+                    }
+                    var author = modal_recipes.author;
+                    if (author == "") {
+                        author = "unknown";
+                    }
+                    var notebook_title = modal_recipes.notebookTitle;
+                    if (notebook_title == "") {
+                        notebook_title = "n/s";
+                    }
+                    var donor = (notebook_provenance[0].donor);
+                    if (donor == "") {
+                        donor = "unknown";
+                    }
+                    var dateOfFinding = (notebook_provenance[0].dateOfFinding);
+                    if (dateOfFinding == "") {
+                        dateOfFinding = "n/s";
+                    }
+                    var placeOfFinding = (notebook_provenance[0].placeOfFinding);
+                    if (placeOfFinding == "") {
+                        placeOfFinding = "n/s";
+                    }
+                    var regionOfFinding = (notebook_provenance[0].region);
+                    if (regionOfFinding == "") {
+                        regionOfFinding = "n/s";
+                    }
+                    var countryOfFinding = (notebook_provenance[0].country);
+                    if (countryOfFinding == "") {
+                        countryOfFinding = "n/s";
+                    }
+                    var city = (notebook_provenance[0].city);
+                    if (city == "") {
+                        city = "n/s";
+                    }
+
+                    $(`#recipe-info`).html("This recipe was kindly donated by" + " <i>" + donor + "</i>," + " found the " + " <b>" + dateOfFinding + "</b> " + "in" + " <b>" + placeOfFinding + "</b> " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
                     var recipes_values = (Object.values(month));
                     var title_rec = (recipes_values[0].recipeTitle);
                     var title_chapt = (recipes_values[0].chapter);
                     var serves = (recipes_values[0].numberOfPersons);
                     $(`#serves-bold`).html(serves + " people");
                     if (serves == "") {
-                        $(`#serves-bold`).html("not specified");
+                        $(`#serves-bold`).html("n/s");
                     }
                     var preparation = (recipes_values[0].recipeTime);
                     var preparation_list = [];
@@ -256,7 +284,7 @@ fetch("/json/categories.json")
                     var preparation_join = preparation_list.join(", ");
                     $(`#preparation-bold`).html(preparation_join);
                     if (preparation_join == "") {
-                        $(`#preparation-bold`).html("not specified");
+                        $(`#preparation-bold`).html("n/s");
                     }
                     var cooking = (recipes_values[0].cookingTime);
                     var cooking_list = [];
@@ -267,7 +295,7 @@ fetch("/json/categories.json")
                     var cooking_join = cooking_list.join(", ");
                     $(`#cooking-bold`).html(cooking_join);
                     if (cooking_join == "") {
-                        $(`#cooking-bold`).html("not specified");
+                        $(`#cooking-bold`).html("n/s");
                     }
                     var course = (recipes_values[0].course);
                     var ingredients_dict = (recipes_values[0].ingredients);
@@ -291,7 +319,7 @@ fetch("/json/categories.json")
                         var alt_ingr_name = (alt_ingr[0].alternativeIngredientName);
                         var ingr_name = ingr.ingredientName;
                         var ingr_qual = ingr.ingredientQualifier;
-                        var dosage = ingr.dosage[0].quantity + ingr.dosage[0].unitOfMeasure + " | ";
+                        var dosage = ingr.dosage[0].quantity + " " + ingr.dosage[0].unitOfMeasure + " | ";
                         if (ingr.dosage[0].quantity == "") {
                             dosage = ""
                         }
@@ -309,50 +337,20 @@ fetch("/json/categories.json")
                         ul_ingredients.appendChild(list_ingr);
                     }
 
-
-                    //console.log(ingr_join)
                     $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
-                    $(`#recipe-subtitle`).html(author + "," + " " + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "(" + from_year + " " + to_year + ").");
+                    $(`#recipe-subtitle`).html(author + "," + " " + "<i>" + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "(" + from_year + " - " + to_year + ")." + "</i>");
 
 
-                    $(".close").click(function () {
+                    $(".btn-close").click(function () {
                         $("#myModal").modal('hide');
+                        $('#ingr-list').html('');
+                        $('#cook-list').html('');
+
 
                     });
-
-
-
-
-
-
                 });
-
             });
-
-
         });
-
-        /*
-         
-        
-        
-        fetch("/json/notebook_dina.json")
-            .then(function (resp) {
-                return resp.json();
-            })
-            .then(function (modal_recipes) {
-                var notebook_recipes = modal_recipes.recipes;
-                var recipes_values = (Object.values(notebook_recipes));
-                for (var i in recipes_values) {
-                    var recipes_ids = (recipes_values[i].id);
- 
-                }
-                const modal_id = document.getElementById("myModal");
- 
- 
- 
-            });*/
-
     });
 
 

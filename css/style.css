@@ -226,7 +226,7 @@ canvas {
     position: fixed;
     padding-top: 5em;
     background-color: var(--colorbg);
-    z-index: 2000;
+    z-index: 1002;
 }
 
 
@@ -1077,7 +1077,13 @@ ul {
     text-align: center;
 }
 
+#modal_header_z {
+    z-index: 10000 !important;
+}
 
+b {
+    font-weight: bold;
+}
 
 #cook-list,
 ul {
@@ -1330,7 +1336,7 @@ ul {
         position: fixed;
         padding-top: 5em;
         background-color: var(--colorbg);
-        z-index: 2000;
+        z-index: 1002;
         left: 0;
 
     }
@@ -1358,6 +1364,96 @@ ul {
         transition: 0.3s;
     }
 
-    #icon_nav {}
+    #recipe-image {
+        margin-top: 8%;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        margin: auto;
+    }
+
+    #recipe-container #container-recipe {
+        box-shadow: 5px 10px 18px #888888;
+        padding: 2% 8% 8% 8%;
+        margin-top: 15%;
+        margin: auto;
+        background-color: #e7daca77;
+        border: 1px solid #332421;
+    }
+
+    #recipe-subtitle,
+    #recipe-info,
+    .h4 {
+        font-family: "Playfair";
+        font-size: 10px;
+        padding-bottom: 4%;
+        color: var(--base-text);
+        font-weight: lighter;
+        /* border-bottom: 1px solid var(--base-text); */
+    }
+
+    #about-recipe,
+    .h2 {
+        color: var(--red-text);
+        font-size: 28px;
+        padding: 0px 0px 0px;
+        margin: 0px 0px 0px;
+        font-weight: bolder;
+        padding-bottom: 5%;
+    }
+
+    #recipe-title,
+    .h3 {
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: normal;
+        padding: 0px 0px 0px;
+        margin: 0px 0px 0px;
+    }
+
+    #recipe-serves,
+    #recipe-preparation,
+    #recipe-cooking,
+    .h5 {
+        font-family: "Playfair";
+        font-size: 12px;
+        color: var(--base-text);
+        font-weight: lighter;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #ingr-header,
+    .h5 {
+        font-weight: bold;
+        font-size: 14px;
+        font-family: "Playfair";
+        padding-top: 2%;
+    }
+
+    #recipe-ingr-photo {
+        width: 20%;
+    }
+
+    #recipe-ingr-list {
+        padding-left: 40%;
+    }
+
+    #recipe-cook-list {
+        padding-left: 40%;
+    }
+
+
+    #recipe-cook-photo {
+        width: 16%;
+    }
+
+    #cook-header,
+    .h5 {
+        font-weight: bold;
+        font-size: 14px;
+        font-family: "Playfair";
+        padding-top: 2%;
+    }
 
 }
