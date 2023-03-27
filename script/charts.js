@@ -379,7 +379,6 @@ am5.ready(function () {
         imageSeries.dataFields.value = "value";
 
 
-
         var imageTemplate = imageSeries.mapImages.template;
         imageTemplate.nonScaling = true;
         imageTemplate.propertyFields.latitude = "latitude";
@@ -390,6 +389,8 @@ am5.ready(function () {
         circle.fillOpacity = 0.7;
         circle.fill = am4core.color("#cc0b36");
         circle.tooltipText = "{title}: [bold]{value}[/] recipes";
+
+
 
         imageSeries.heatRules.push({
             target: circle,

@@ -205,6 +205,10 @@ fetch("/json/categories.json")
             });
 
             $('.recipe_a').hide().filter($filteredResults).show();
+            $(".btn-light").click(function () {
+                $('input[type=checkbox]').prop('checked', false);
+                $('.recipe_a').show();
+            })
         }
 
         $filterCheckboxes.on('change', filterFunc);
@@ -335,6 +339,7 @@ fetch("/json/categories.json")
                         }
                         list_ingr.appendChild(document.createTextNode(ingr_complete));
                         ul_ingredients.appendChild(list_ingr);
+
                     }
 
                     $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
