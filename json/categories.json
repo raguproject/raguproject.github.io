@@ -10,7 +10,9 @@
         "pasta_di_semolino_in_brodo_001",
         "bomba_di_riso001"
     ],
-    "second": [],
+    "second": [
+        "bomba_di_riso002"
+    ],
     "side dish": [],
     "dessert": [],
     "dressing": [],

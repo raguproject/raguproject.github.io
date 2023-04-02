@@ -121,7 +121,7 @@
                                 <a class="nav-link" href="/html/recipes.html">recipes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">cookbooks</a>
+                                <a class="nav-link" href="/html/cookbooks.html">cookbooks</a>
                             </li>
                         </ul>
                     </div>
@@ -135,71 +135,81 @@
 
     <div id="filter-page" class="container text-left">
         <div class="row">
-
             <div id="filter-section" class="col-md-4 col-sm-12 col-xs-12">
-                <aside id="filter-sidebar">
-                    <h3 id="filter-sidebar-heading">
-                        filter by
-                    </h3>
-                    <ul class="filter ul-reset">
-                        <li class="filter-item">
-                            <section class="filter-item-inner">
-                                <h3 class="filter-item-inner-heading minus">
-                                    provenance
-                                </h3>
-                                <ul class="filter-attribute-list ul-reset">
-                                    <div class="filter-attribute-list-inner">
-                                        <li class="filter-attribute-item">
-                                            <div id="provenance" name="provenance"></div>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </section>
-                        </li>
-                        <li class="filter-item">
-                            <section class="filter-item-inner">
-                                <h3 class="filter-item-inner-heading minus">
-                                    ingredients
-                                </h3>
-                                <ul class="filter-attribute-list ul-reset">
-                                    <div class="filter-attribute-list-inner">
-                                        <li class="filter-attribute-item">
-                                            <div id="ingredient" name="ingredient"></div>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </section>
-                        </li>
-                        <li class="filter-item">
-                            <section class="filter-item-inner">
-                                <h3 class="filter-item-inner-heading minus">
-                                    type of dish
-                                </h3>
-                                <ul class="filter-attribute-list ul-reset">
-                                    <div class="filter-attribute-list-inner">
-                                        <li class="filter-attribute-item">
-                                            <div id="category" name="category"></div>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </section>
-                        </li>
-                    </ul>
+                <aside class="filter-sidebar" id="filter-sidebar">
+                    <div id="filter-container" class="filter-container">
+                        <div id="filter-content" class="filter-content">
+                            <h3 id="filter-sidebar-heading">
+                                filter by
+                            </h3>
+                            <div id="compact-list"></div>
+                            <ul id="compact-ul"></ul>
+                            <div id="breadcrumbs-div" style="display:none">
+                                <h5 id="b-place">from: <span id="b-place-span"></span></h5>
+                                <h5 id="b-ingr">with: <span id="b-ingr-span"></span></h5>
+                                <h5 id="b-cat">dish: <span id="b-cat-span"></span></h5>
+                            </div>
+                            <ul class="filter ul-reset">
+                                <li class="filter-item">
+                                    <section class="filter-item-inner">
+                                        <h3 class="filter-item-inner-heading minus">
+                                            provenance
+                                        </h3>
+                                        <ul class="filter-attribute-list ul-reset">
+                                            <div class="filter-attribute-list-inner">
+                                                <li class="filter-attribute-item">
+                                                    <div class="checkboxdiv" id="provenance" name="provenance"></div>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </section>
+                                </li>
+                                <li class="filter-item">
+                                    <section class="filter-item-inner">
+                                        <h3 class="filter-item-inner-heading minus">
+                                            ingredients
+                                        </h3>
+                                        <ul class="filter-attribute-list ul-reset">
+                                            <div class="filter-attribute-list-inner">
+                                                <li class="filter-attribute-item">
+                                                    <div class="checkboxdiv" id="ingredient" name="ingredient"></div>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </section>
+                                </li>
+                                <li class="filter-item">
+                                    <section class="filter-item-inner">
+                                        <h3 class="filter-item-inner-heading minus">
+                                            type of dish
+                                        </h3>
+                                        <ul class="filter-attribute-list ul-reset">
+                                            <div class="filter-attribute-list-inner">
+                                                <li class="filter-attribute-item">
+                                                    <div class="checkboxdiv" id="category" name="category"></div>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </section>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <button id="btn_filter" type="button" class="btn btn-light">reset filters</button>
+                    <button id="btn-compactlist" type="button" class=" btn-compactlist btn btn-light">view compact
+                        list</button>
+
 
                 </aside>
             </div>
 
             <div id="letter-container" class="col-md-8 col-sm-12 col-xs-12">
-                <div id="letter_space" class="row" name="letter_space">
-
-
-                </div>
-
+                <div id="letter_space" class="row" name="letter_space"></div>
 
             </div>
         </div>
     </div>
+
 
 
     <script>

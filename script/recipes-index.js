@@ -45,10 +45,10 @@ fetch("/json/provenance.json")
 
         for (var i = 0; i < cities.length; i++) {
             var prov_nospace = cities[i].split(' ').join('_');
-            var div = document.createElement('div');
+            var li = document.createElement('li');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
-            div.classList = "checkbox-div";
+            li.classList = "checkbox-li";
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "place";
@@ -59,9 +59,9 @@ fetch("/json/provenance.json")
             label.classList = "form-x";
             label.appendChild(document.createTextNode(cities[i]));
             var provenance = document.getElementById('provenance');
-            provenance.appendChild(div);
-            div.appendChild(checkbox);
-            div.appendChild(label);
+            provenance.appendChild(li);
+            li.appendChild(checkbox);
+            li.appendChild(label);
         }
 
         for (const city in provenance_json) {
@@ -86,10 +86,10 @@ fetch("/json/ingredients.json")
         var ingredients = (Object.keys(ingredients_json).sort());
         for (var i = 0; i < ingredients.length; i++) {
             var ingr_nospace = ingredients[i].split(' ').join('_');
-            var div = document.createElement('div');
+            var li = document.createElement('li');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
-            div.classList = "checkbox-div";
+            li.classList = "checkbox-li";
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "ingredients";
@@ -100,9 +100,9 @@ fetch("/json/ingredients.json")
             label.appendChild(document.createTextNode(ingredients[i]));
             label.classList = "form-x";
             var ingredient = document.getElementById('ingredient');
-            ingredient.appendChild(div);
-            div.appendChild(checkbox);
-            div.appendChild(label);
+            ingredient.appendChild(li);
+            li.appendChild(checkbox);
+            li.appendChild(label);
 
         }
 
@@ -129,10 +129,10 @@ fetch("/json/categories.json")
 
         for (var i = 0; i < categories.length; i++) {
             var cat_nospace = categories[i].split(' ').join('_');
-            var div = document.createElement('div');
+            var li = document.createElement('li');
             var checkbox = document.createElement('input');
             var label = document.createElement('label');
-            div.classList = "checkbox-div";
+            li.classList = "checkbox-li";
             checkbox.type = "checkbox";
             checkbox.classList = "recipe";
             checkbox.name = "category";
@@ -143,9 +143,9 @@ fetch("/json/categories.json")
             label.classList = "form-x";
             label.appendChild(document.createTextNode(categories[i]));
             var category = document.getElementById('category');
-            category.appendChild(div);
-            div.appendChild(checkbox);
-            div.appendChild(label);
+            category.appendChild(li);
+            li.appendChild(checkbox);
+            li.appendChild(label);
 
 
         }
@@ -168,6 +168,7 @@ fetch("/json/categories.json")
             i.dataset.allfilters = (i.dataset.place) + " " + (i.dataset.ingredients) + " " + (i.dataset.category);
         }
         var $filterCheckboxes = $('input[type="checkbox"]');
+
         var filterFunc = function () {
             var selectedFilters = {};
             $filterCheckboxes.filter(':checked').each(function () {
@@ -176,9 +177,9 @@ fetch("/json/categories.json")
                 }
                 selectedFilters[this.name].push(this.value);
             });
+
             // create a collection containing all of the filterable elements
             var $filteredResults = $('.recipe_a');
-
             // loop over the selected filter name -> (array) values pairs
             $.each(selectedFilters, function (name, filterValues) {
                 $filteredResults = $filteredResults.filter(function () {
@@ -187,6 +188,7 @@ fetch("/json/categories.json")
 
                     // loop over each category value in the current .flower's data-category
                     $.each(currentFilterValues, function (_, currentFilterValue) {
+
 
                         // if the current category exists in the selected filters array
                         // set matched to true, and stop looping. as we're ORing in each
@@ -197,24 +199,105 @@ fetch("/json/categories.json")
                             return false;
                         }
                     });
-
-                    // if matched is true the current .flower element is returned
                     return matched;
 
                 });
             });
 
             $('.recipe_a').hide().filter($filteredResults).show();
-            $(".btn-light").click(function () {
+            var x = $('.recipe_a').hide().filter($filteredResults).show();
+
+            $("#btn-compactlist").click(function () {
+                $("#compact-ul").html("");
+                var $this = $(this);
+
+                if ($this.hasClass('btn-viewfilters')) {
+                    for (var y of x) {
+                        const clone = y.cloneNode(true);
+                        var list_rec = $("<li></li>").append(clone);
+                        $(list_rec).attr('id', 'list-recipes-filter');
+                        $("#compact-ul").append(list_rec);
+                    }
+                }
+
+                else if ($this.hasClass('btn-compactlist')) {
+                    $("#compact-ul").html("");
+                }
+            })
+
+
+            var plc = selectedFilters.place;
+            var ingred = selectedFilters.ingredients;
+            var cat = selectedFilters.category;
+
+            $("#btn-compactlist").click(function () {
+                var $this = $(this);
+
+                if ($this.hasClass('btn-viewfilters')) {
+                    if (plc != undefined) {
+                        $(`#b-place-span`).html(plc.join(" or "));
+                    }
+                    else {
+                        $(`#b-place-span`).html("no place specified");
+                    }
+                    if (ingred != undefined) {
+                        $(`#b-ingr-span`).html(ingred.join(" or "));
+                    }
+                    else {
+                        $(`#b-ingr-span`).html("no ingredient specified");
+                    }
+                    if (cat != undefined) {
+                        $(`#b-cat-span`).html(cat.join(" or "));
+                    }
+                    else {
+                        $(`#b-cat-span`).html("no category specified");
+                    }
+                    $("#breadcrumbs-div").css("display", "block");
+                }
+
+                else if ($this.hasClass('btn-compactlist')) {
+                    $("#breadcrumbs-div").css("display", "none");
+
+                }
+            })
+
+
+            /*
+                        $("#btn-compactlist").click(function () {
+                            var $this = $(this);
+            
+                            if ($this.hasClass('btn-viewfilters')) {
+                                $("#breadcrumbs").html("");
+                                var ingredients_breadcrumb = selectedFilters.ingredients;
+            
+                                if (ingredients_breadcrumb != []) {
+                                    set_ing_bread = new Set()
+                                    for (var ing of ingredients_breadcrumb) {
+                                        set_ing_bread.add(ing);
+                                    }
+                                    var breadcrumb_with = $("<p></p>").append("with: ");
+                                    for (var b of set_ing_bread) {
+                                        breadcrumb_with.append(b + " ");
+                                    }
+                                    $("#breadcrumbs").append(breadcrumb_with);
+                                    $(breadcrumb_with).attr('id', 'bread_with');
+                                }
+                            }
+            
+                            else if ($this.hasClass('btn-compactlist')) {
+                                $("#breadcrumbs").html("");
+            
+                            }
+                        })*/
+
+
+            $("#btn_filter").click(function () {
                 $('input[type=checkbox]').prop('checked', false);
                 $('.recipe_a').show();
             })
         }
 
         $filterCheckboxes.on('change', filterFunc);
-
-
-
 
 
         jQuery(function ($) {
@@ -226,7 +309,6 @@ fetch("/json/categories.json")
                 let id_rec = this.attributes[`id`].value;
                 $.getJSON(`/json/notebook_dina.json`, function (modal_recipes) {
                     var notebook_recipes = modal_recipes.recipes;
-
                     let month = notebook_recipes.filter(function (data) { return data.id === id_rec; });
                     var notebook_provenance = modal_recipes.provenance;
                     var from_year = modal_recipes.fromYear;
@@ -312,7 +394,6 @@ fetch("/json/categories.json")
                             const ul_procedure = document.getElementById('cook-list');
                             cook_procedure.appendChild(document.createTextNode(procedure));
                             ul_procedure.appendChild(cook_procedure);
-
                         }
                     }
 
@@ -339,23 +420,63 @@ fetch("/json/categories.json")
                         }
                         list_ingr.appendChild(document.createTextNode(ingr_complete));
                         ul_ingredients.appendChild(list_ingr);
-
                     }
 
                     $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
                     $(`#recipe-subtitle`).html(author + "," + " " + "<i>" + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "(" + from_year + " - " + to_year + ")." + "</i>");
 
-
                     $(".btn-close").click(function () {
                         $("#myModal").modal('hide');
                         $('#ingr-list').html('');
                         $('#cook-list').html('');
-
-
                     });
                 });
             });
         });
+
+        $('.btn-compactlist').click(function () {
+            var $this = $(this);
+            $this.toggleClass('btn-compactlist');
+            if ($this.hasClass('btn-compactlist')) {
+                $this.text('view compact list');
+                $this.removeClass("btn-viewfilters");
+
+            } else {
+                $this.text('view filters');
+                $this.addClass("btn-viewfilters");
+            }
+
+        });
+
+
+        var el;
+        $("#btn-compactlist").click(function () {
+            $('#filter-sidebar-heading').html("filter by");
+            $("#filter-sidebar").css("background-color", "#f8f8f8");
+            $("#compact-list").html("");
+            if (el) {
+                $(".ul-reset").prepend(el);
+                el = null;
+
+
+            } else {
+                el = $(".filter-item").detach();
+                /*var h3_txt = $("<h3></h3>").text("your filtered recipes");
+                $("#compact-list").append(h3_txt);
+                $(h3_txt).attr('id', 'h3-compactlist');*/
+                $('#filter-sidebar-heading').html("filtered recipes");
+                $("#filter-sidebar").css("background-color", "#e9dfe1");
+            }
+
+
+        });
+
+
+
+
+
+
+
     });
 
 
