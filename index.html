@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ragu - Reti e Archivi del Gusto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="script/bootstrap.min.js"></script>
@@ -16,6 +17,10 @@
     <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script/raguscroll.js"></script>
     <script src="script/charts.js"></script>
@@ -36,8 +41,9 @@
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav ">
+                        <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">project</a>
                             </li>
@@ -45,7 +51,7 @@
                                 <a class="nav-link" href="html/recipes.html">recipes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">cookbooks</a>
+                                <a class="nav-link" href="html/cookbooks.html">cookbooks</a>
                             </li>
                         </ul>
                     </div>
@@ -67,21 +73,21 @@
     <!-- whole text/sections + svg redline -->
     <div class="wrapper">
         <!-- whole text/sections without svg -->
-        <div class="whole-text">
+        <div id="whole-text" class="whole-text">
             <!-- "home" page  -->
-            <div class="container text-left home-title">
+            <div id="home-title" class="container text-left home-title">
                 <img id="macchia_discover" src="photos/macchia_discover.svg">
                 <div class="row">
                     <img id="macchia_titolo" src="photos/macchia_titolo.svg">
-                    <div class="col-md-9 col-sm-12 ">
-                        <h1 class="homepage fade-in">Discover <br><span class="red-highlight"> the digital
+                    <div class="col-xl-9 col-md-12 col-sm-12 ">
+                        <h1 id="fadein" class="homepage fade-in">Discover <br><span class="red-highlight"> the digital
                                 archive</span></br>of
                             lost
                             recipes</h1>
                         <img id="macchia" src="photos/macchia.svg">
                     </div>
-                    <div class="col-md-3 col-sm-12 img-cokbooks-recipes fade-in">
-                        <a href="#"><img class="cookbooks" src="photos/cookbooks-photo.svg"></a>
+                    <div class="col-xl-3 col-md-12 col-sm-12 img-cokbooks-recipes fade-in">
+                        <a href="html/cookbooks.html"><img class="cookbooks" src="photos/cookbooks-photo.svg"></a>
                         <a href="html/recipes.html"><img class="recipes" src="photos/recipes-photo.svg"></a>
 
                     </div>
@@ -94,7 +100,7 @@
                 <!-- all the sections -->
                 <div id="sections">
                     <span id="img-sidebar" style="cursor:pointer; " onclick="openNav()"><img
-                            src="photos/sidebar-icon.svg"></span>
+                            src="photos/sidebar-icon.svg"> </span>
                     <!-- content that changes opacity -->
                     <div id="sections-opacity">
 
@@ -149,7 +155,7 @@
                         <section class="section" id="forgotten-box">
                             <div class="container text-left">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-12">
+                                    <div class="col-xl-6 col-md-12 col-sm-12">
                                         <h2 class="reveal">from a <span class="red-highlight">forgotten box</span>
                                             <br>in a cellar, the
                                             idea of
@@ -160,15 +166,29 @@
                                         </h2>
                                         <div class="par text-forgotten-box">
                                             <p class="reveal">One day, emptying a cellar unexpectedly from a
-                                                powder-covered box came out several handwritten notebooks.</p>
-                                            <p class="reveal">One was present neatly, all the household expenses. On the
-                                                other were medical prescriptions and folded boxes of medicines.</p>
-                                            <p class="reveal">In a third, in perfect handwriting, was an orderly set of
-                                                cooking recipes.</p>
+                                                powder-covered box came out several <span class="data-bold">handwritten
+                                                    notebooks.</span> One was present neatly, all the household
+                                                expenses. On the
+                                                other were medical prescriptions and folded boxes of medicines. In a
+                                                third, in perfect handwriting, was an orderly set of <span
+                                                    class="data-bold">cooking recipes...</span></p>
+
+                                            <p class="reveal">It was not known to whom that notebook belongs. But that
+                                                discovery, without a name, generated thinking and interrogation.</p>
+                                            <p class="reveal"><span class="data-italic">Were there any studies
+                                                    highlighting that knowledge
+                                                    concerning food without names or necessary signatures? Was anyone
+                                                    who
+                                                    had cared to collect those anonymous
+                                                    resources from semi-literate authors so precious?</span> </p>
+                                            <p class="reveal"><span class="data-bold">No one had considered
+                                                    it. And so that project started to take form.</span></p>
                                         </div>
 
                                     </div>
-                                    <div class="col-md-6 col-sm-12 img-forgotten-box"></div>
+                                    <div id="img-forgotten-box" class="col-xl-6 col-md-12 col-sm-12 img-forgotten-box">
+                                        <img id="forgotten-box-img" src="photos/forgotten-box.svg">
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -177,7 +197,7 @@
                         <section class="section" id="map">
                             <div class="container text-left">
                                 <div class="row">
-                                    <div class="col-md-5 col-sm-12">
+                                    <div class="col-xl-5 col-md-12 col-sm-12">
                                         <h2 class="reveal">from a single<span class="red-highlight"> cookbook</span>
                                             <br>to the<span class="red-highlight">
                                                 donation</span> <br>of more than 80 <span
@@ -185,30 +205,31 @@
                                                 notebooks.</span>
                                         </h2>
                                         <div class="reveal par text-map">
-                                            <p class="reveal">It was not known to whom that notebook belongs. But that
-                                                discovery, without a name, generated thinking and interrogation.</p>
-                                            <p class="reveal">Were there any studies highlighting that knowledge
-                                                concerning food without names or necessary signatures? Was anyone who
-                                                had cared to collect those anonymous
-                                                resources from semi-literate authors so precious? </p>
-                                            <p class="reveal">No one had considered
-                                                it. And so that project started to take form.</p>
-                                            <p class="reveal">In the last few years, RAGU has travelled the world,
+                                            <p class="reveal">In the last few years, RAGU
+                                                has
+                                                <span class="data-bold">travelled the world</span>,
                                                 propagating the importance of not losing the knowledge our family
                                                 members have tried to pass on to us through these handwritten notebooks.
                                             </p>
-                                            <p class="reveal"> In any place where the project reached, people brought
-                                                handwritten notebooks: the precious legacies received from grandmothers,
+                                            <p class="reveal">In any place where the
+                                                project reached, <span class="data-bold">people brought
+                                                    handwritten notebooks:</span> the precious legacies received from
+                                                grandmothers,
                                                 mothers, aunts, sisters, and wives.</p>
 
                                             <p class="reveal">Findings were instantly photographed
                                                 and then returned, not without remarking on their preciosity.</p>
+                                            <p id="chart-par" class="reveal chart-par"><span class="data-bold">Travel
+                                                    through the
+                                                    places of
+                                                    the recipes by exploring the map</span> <i
+                                                    class="fa-solid fa-magnifying-glass-arrow-right"></i></p>
 
                                         </div>
                                         </p>
                                     </div>
-                                    <div class="col-md-7 col-sm-12 img-map">
-                                        <div id="chartdiv_map"></div>
+                                    <div id="img-map" class="col-xl-7 col-md-12 col-sm-12 img-map">
+                                        <div class=" chart_pos" id="chartdiv_map"></div>
                                     </div>
 
                                 </div>
@@ -218,36 +239,45 @@
                         <section class="section" id="ingredients1">
                             <div class="container text-left">
                                 <div class="row">
-
-                                    <div class="col-md-7 col-sm-12 barchart-title">
+                                    <div class="col-xl-5 col-md-12 col-sm-12 barchart-title">
                                         <h2 class="reveal">recipes that use <span class="red-highlight">different
                                                 ingredients
                                             </span>
                                             <br> of which it is possible to <span class="red-highlight">
                                                 infer the history</span>
                                         </h2>
-                                        <div id="chartdiv_ingredients"></div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-12 text-barchart">
-                                        <div class="par text par-ingredients-1">
-                                            <p class="reveal">In the orderly recitation of formulas, an unbelievable
-                                                number of ingredient names, people's names, tricks, tips, and rituals.
+                                        <div class="par par-ingredients-1">
+                                            <p class="reveal">In the orderly recitation of formulas, <span
+                                                    class="data-bold">an unbelievable
+                                                    number of ingredient names</span>, people's names, tricks, tips,
+                                                and rituals.
                                             </p>
                                             <p class="reveal">The words of ingredients are sometimes written in the
                                                 local language and not according to the nomenclature of the current
-                                                language, sometimes suggestions on where to buy them.</p>
-                                            <p class="reveal">Each element is an extra paintbrush stroke to the
-                                                composing painting of culinary history that these manuscripts hand down
+                                                language, sometimes suggestions on where to buy them. <span
+                                                    class="data-bold">Each element is an
+                                                    extra paintbrush stroke to the
+                                                    composing painting of culinary history</span> that these manuscripts
+                                                hand down
                                                 to us.</p>
                                             <p class="reveal">The ingredients speak the quotidian language. Thus, the
                                                 name of some fish or mussels is written according to a jargon
                                                 nomenclature or, even the term, is directly used in the dialect of the
-                                                region where the notebook was written.</p>
-
-                                            <p class="reveal">The names of ingredients refer to our music that
-                                                corresponds to the lands in which they were written. Each name, each
-                                                term, has a sound all its own.</p>
+                                                region where the notebook was written.</p> The names of ingredients
+                                            refer to our music that
+                                            corresponds to the lands in which they were written. <span
+                                                class="data-bold">Each name, each
+                                                term, has a sound all its own.</span></p>
+                                            <p id="chart-par" class="reveal chart-par"><span class="data-bold">Discover
+                                                    the ingredients
+                                                    by browsing the network graph. Click on the bubbles to expand each
+                                                    category.</span> <i
+                                                    class="fa-solid fa-magnifying-glass-arrow-right"></i></p>
                                         </div>
+                                    </div>
+                                    <div class="col-xl-7 col-md-12 col-sm-12 text-barchart">
+                                        <div class=" chart_pos" id="chartdiv_ingredients"></div>
+
 
                                     </div>
                                 </div>
@@ -258,20 +288,7 @@
                         <section class="section" id="ingredients2">
                             <div class="container text-left">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-12 text-donut">
-                                        <div class="reveal par text par-ingredients-2">
-                                            <p class="reveal">If it is true that cooking is chemistry, for our
-                                                grandmothers, this was alchemy!</p>
-                                            <p class="reveal">The rhythm of the pages is sustained by an infinite number
-                                                of recipes and alternatives. But the most incredible - and enjoyable for
-                                                those from other culinary traditions - is the almost total absence of
-                                                any indication of weights and measures.
-                                            </p>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 donut-title">
+                                    <div class="col-xl-6 col-md-12 col-sm-12 text-donut">
                                         <h2 class="reveal">ingredients that are often measured <span
                                                 class="red-highlight italic">by
                                                 eye
@@ -281,6 +298,24 @@
                                                 the experience</span> <br>of <span class="red-highlight">generations of
                                                 women</span>
                                         </h2>
+                                        <div class="reveal par  par-ingredients-2">
+                                            <p class="reveal">If it is true that cooking is chemistry, for our
+                                                grandmothers, it was alchemy!</p>
+                                            <p class="reveal">The rhythm of the pages is sustained by an infinite number
+                                                of recipes and alternatives. But the most incredible - and enjoyable for
+                                                those from other culinary traditions - is <span class="data-bold">the
+                                                    almost total absence of
+                                                    any indication of weights and measures.</span>
+                                            </p>
+                                            <p id="chart-par" class="reveal chart-par"><span class="data-bold">Hover on
+                                                    the measuring cup to find out the most common terms for quantifying
+                                                    the ingredients. </span> <i
+                                                    class="fa-solid fa-magnifying-glass-arrow-right"></i></p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-6 col-md-12 col-sm-12 donut-title">
                                         <div id="chartdiv_pie"></div>
                                         <img id="macchia_pagina" src="photos/macchia_pagina.svg">
                                     </div>
@@ -292,7 +327,7 @@
                         <section class="section" id="ingredients3">
                             <div class="container text-left">
                                 <div class="row">
-                                    <div class="col-md-8 col-sm-12 matrix-title">
+                                    <div class="col-xl-5 col-md-12 col-sm-12 matrix-title">
                                         <h2 class="reveal">these ingredients <span class="red-highlight">once
                                                 combined,</span> <br>give
                                             rise to
@@ -300,21 +335,26 @@
                                             dishes
                                             of <span class="red-highlight">
                                                 our tradition.</span></h2>
-                                        <div id="chartdiv"></div>
-                                        <img id="macchia_tre" src="photos/macchia_tre.svg">
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 text-matrix">
-                                        <div class="par text par-ingredients-3">
-                                            <p class="reveal">Dozens, hundreds, thousands of dishes. Pastas, meats,
+                                        <div class="par  par-ingredients-3">
+                                            <p class="reveal"><span class="data-bold">Dozens, hundreds, thousands of
+                                                    dishes.</span> Pastas, meats,
                                                 fish, desserts (how many desserts!) to instruct cooking: from schools
                                                 within high school home economics classes to notebooks written in
                                                 beautiful handwriting to be given to young spouses.</p>
                                             <p class="reveal"> The dishes of tradition, the inventions, the innovations
-                                                of tradition: literally thousands of variations to arrive at the supreme
+                                                of tradition: <span class="data-bold">literally thousands of
+                                                    variations</span> to arrive at the supreme
                                                 quotidian ceremony that human beings do for one another: to care through
                                                 nourishment.</p>
+                                            <p id="chart-par" class="reveal chart-par"><span class="data-bold">Hover
+                                                    over the bubbles to see which combinations of ingredient categories
+                                                    are most commonly combined in the recipes.</span> <i
+                                                    class="fa-solid fa-magnifying-glass-arrow-right"></i></p>
                                         </div>
-
+                                        <img id="macchia_tre" src="photos/macchia_tre.svg">
+                                    </div>
+                                    <div class="col-xl-7 col-md-12 col-sm-12 text-matrix">
+                                        <div class=" chart_pos" id="chartdiv"></div>
                                     </div>
                                 </div>
                             </div>
@@ -325,25 +365,7 @@
                             <div class="container text-left">
                                 <div class="row">
                                     <img id="macchia_dishes" src="photos/macchia_dishes.svg">
-                                    <div class="col-md-6 col-sm-12 text-dishes">
-                                        <div class="par text par-ingredients-4">
-                                            <p class="reveal">
-                                            <p class="reveal">Dozens, hundreds, thousands of dishes. </p>
-                                            <p class="reveal"> The dishes of tradition, the inventions, the innovations
-                                                of tradition: literally thousands of variations to arrive at the supreme
-                                                quotidian ceremony that human beings do for one another: to care through
-                                                nourishment.</p>
-                                            </p>
-                                            <p class="reveal">Pastas, meats,
-                                                fish, desserts (how many desserts!) to instruct cooking: from schools
-                                                within high school home economics classes to notebooks written in
-                                                beautiful handwriting to be given to young spouses.</p>
-
-
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 dishes-title">
+                                    <div class="col-xl-6 col-md-12 col-sm-12 text-dishes">
                                         <h2 class="reveal">dishes of <span class="red-highlight italic">different
                                                 types,</span>
                                             <br>from the simple ones, <span class="red-highlight"> not to waste money,
@@ -352,19 +374,32 @@
                                             the
                                             more refined ones, <span class="red-highlight">to cerebrate.</span>
                                         </h2>
+                                        <div class="par par-ingredients-4">
+                                            <p class="reveal"><span class="data-bold">Dozens, hundreds, thousands of
+                                                    dishes.</span> Pastas, meats,
+                                                fish, desserts (how many desserts!) to instruct cooking: from schools
+                                                within high school home economics classes to notebooks written in
+                                                beautiful handwriting to be given to young spouses.</p>
+                                            <p class="reveal"> The dishes of tradition, the inventions, the innovations
+                                                of tradition: <span class="data-bold">literally thousands of
+                                                    variations</span> to arrive at the supreme
+                                                quotidian ceremony that human beings do for one another: to care through
+                                                nourishment.</p>
+                                            <p id="chart-par" class="reveal chart-par"><span class="data-bold">Hover
+                                                    over the bubbles to see which combinations of ingredient categories
+                                                    are most commonly combined in the recipes.</span> <i
+                                                    class="fa-solid fa-magnifying-glass-arrow-right"></i></p>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-6 col-md-12 col-sm-12 dishes-title">
+
                                         <div id="img-dishes">
 
-                                            <a href="#"><img id="first-drawing" src="photos/first-drawing.svg"></a>
-                                            <a href="#"><img id="second-drawing" src="photos/second-drawing.svg"></a>
-                                            <a href="#"><img id="side-drawing" src="photos/side-drawing.svg"></a>
-                                            <a href="#"><img id="dessert-drawing" src="photos/dessert-drawing.svg"></a>
-                                            <a id="apetizer" href="#"><img id="apetizers-drawing"
-                                                    src="photos/apetizers-drawing.svg"></a>
-                                            <a href="#"><img id="dressing-drawing"
-                                                    src="photos/dressing-drawing.svg"></a>
-                                            <a href="#"><img id="beverage-drawing"
-                                                    src="photos/beverage-drawing.svg"></a>
-                                            <a href="#"><img id="sauce-drawing" src="photos/sauce-drawing.svg"></a>
+                                            <img id="dishes_img" src="photos/dishes_img.svg">
+
 
                                         </div>
                                         <img id="macchia_woman" src="photos/macchia_woman.svg">
@@ -378,7 +413,7 @@
                         <section id="gender" class="section">
                             <div class="container text-left">
                                 <div class="row">
-                                    <div class="col-md-7 col-sm-12 women-title">
+                                    <div class="col-xl-6 col-md-12 col-sm-12 women-title">
                                         <h2 class="reveal">recipes often<span class="red-highlight"> written by
                                                 women</span> <br>for
                                             women,
@@ -388,21 +423,24 @@
                                                 marries.
                                             </span>
                                         </h2>
-                                        <div class="img-women">
-
+                                        <div class="par par-women">
+                                            <p class="reveal"><span class="data-bold">The notebooks are almost all by
+                                                    female hands. </span>Of all those
+                                                collected, just a few are written by men.</p>
+                                            <p class="reveal">This tells us about many things: <span
+                                                    class="data-bold">the government of
+                                                    household affairs</span>, as attested by Renaissance sources, <span
+                                                    class="data-bold">is in the hands
+                                                    of the women of the house.</span></p>
 
                                         </div>
 
                                     </div>
-                                    <div class="col-md-5 col-sm-12 text-women">
-                                        <div class="par par-women">
-                                            <p class="reveal">The notebooks are almost all by female hands. Of all those
-                                                collected, only two are by men.</p>
-                                            <p class="reveal">This tells us about many things: the government of
-                                                household affairs, as attested by Renaissance sources, is in the hands
-                                                of the women of the house.</p>
+                                    <div class="col-xl-6 col-md-12 col-sm-12 text-women">
+                                        <div class="img-women">
 
                                         </div>
+
 
                                     </div>
                                 </div>
@@ -413,7 +451,7 @@
                         <section id="explore" class="red-thread">
                             <div class="container text-left">
                                 <div class="row">
-                                    <div class="col-md-8 col-sm-12">
+                                    <div id="explore_text" class="col-xl-7 col-md-12 col-sm-12">
                                         <h2 class="reveal">cookbooks handed down <span class="red-highlight"> from one
                                                 generation to
                                                 another</span>
@@ -423,19 +461,34 @@
                                                 thread of tradition.</span>
                                         </h2>
                                         <div class="par text-red-thread">
-                                            <p class="reveal">Precisely because they are sources of women, illiterate
-                                                and unnamed (except in their family circles or communities), these
-                                                notebooks are in danger of being forgotten or not preserved.</p>
+                                            <p class="reveal">Precisely because they are sources of <span
+                                                    class="data-bold">women, illiterate
+                                                    and unnamed</span> (except in their family circles or communities),
+                                                these
+                                                notebooks are in <span class="data-bold">danger of being forgotten or
+                                                    not preserved.</span></p>
                                             <p class="reveal">That is, until the creation of this digital archive, which
-                                                I designed to continue the red thread of wisdom that comes from the
+                                                was designed to continue <span class="data-bold">the red thread of
+                                                    wisdom</span> that comes from the
                                                 knowledge developed in our families.</p>
 
                                         </div>
-                                        </p>
                                     </div>
-                                    <div class="col-md-4 col-sm-12 text-explore text-right">
-                                        <h3><a href=“#” class="explore">explore the recipes</a></h3>
-                                        <h3><a href=“#” class="browse">browse the cookbooks</a></h3>
+                                    <div class="col-xl-5 col-md-12 col-sm-12 text-explore text-right">
+                                        <div class="explore-browse">
+                                            <ul id="list_expl">
+                                                <li id="expl" class="explore_class">
+                                                    <a id="expl_brow" class="expl" href="index.html">explore
+                                                        the recipes</a>
+                                                </li>
+
+                                                <li id="expl">
+                                                    <a id="expl_brow" class="brow" href="index.html"
+                                                        class="browse">browse the
+                                                        cookbooks</a>
+                                                </li>
+                                            </ul>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -445,13 +498,80 @@
                     </div>
                 </div>
             </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 col-xs-12">
+                            <div class="single_footer">
+                                <h4 id="title-footer">Ragu - Reti e Archivi del Gusto</h4>
+                                <ul>
 
+                                    <li>
+                                        <p id="doi">DOI: <a href="#">10.6092/unibo/xxxxx/yyyy</a></p>
+                                    </li>
+                                    <li><a href="#"><i class="fa-brands fa-github"></i> Source Code</a></li>
+                                    <li>
+                                        <p id="doi">Data license <a href="#">CC-BY 4.0</a>
+                                    </li>
+                                    <img src="photos/ragu_logo.svg" style="width:80px; padding-top:10%;">
+                                </ul>
+                            </div>
+                        </div>
+                        <!--- END COL -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div id="no-logo-footer" class="single_footer single_footer_address">
+                                <h4 id="title-footer">Menu</h4>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About the project</a></li>
+                                    <li><a href="#">Explore the recipes</a></li>
+                                    <li><a href="#">Browse the cookbooks</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!--- END COL -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div id="no-logo-footer" class="single_footer single_footer_address">
+                                <h4 id="title-footer">Contacts</h4>
+                                <ul>
+                                    <li>
+                                        <p id="doi">Scientific director and supervision:
+                                            <span class="data-bold"> Mila Fiumini</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p id="doi">Web development:
+                                            <span class="data-bold"> Giulia Manganelli</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p id="doi">Web development:
+                                            <span class="data-bold"> Giulia Manganelli</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p id="doi">Web development:
+                                            <span class="data-bold"> Giulia Manganelli</span>
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!--- END COL -->
+                    </div>
+
+                </div>
+                <!--- END CONTAINER -->
+            </div>
 
         </div>
         <div id="red-line" class="line-container">
             <svg viewBox="0 0 1352.58 7970.44" preserveAspectRatio="xMidYMAx meet">
                 <path class="cls-1" fill="none" stroke="#cc0b36" stroke-width="1" id="redline"
-                    d="M820.28,155.81s61.65-14.12,99.32,16.72a63.29,63.29,0,0,1,20.83,66.36q-.81,2.79-1.93,5.61c-8,20-28,32-35,30s-2-18,6-15,12.59,36,17.91,44.62c15.09,24.38,38.09-3.62,51.09,17.38,25.46,41.13,42,45,40,36s-36,14-13,31c45.73,33.8,184.41,40.05,145.62,241.73a7.64,7.64,0,0,1-6.12,6.1c-17.33,3.11-60.64,17.35-20.23,80.51a5.76,5.76,0,0,0,4.84,2.66h0a5.73,5.73,0,0,0,4.78-8.91c-11.76-17.52-30.74-56.16,16.52-72.54a5.24,5.24,0,0,1,1.35-.28c3.09-.18,15.06.21,27.08,15.52a4.63,4.63,0,0,1,.31.46c1.7,2.81,16.4,29.35-11,62.3a5.52,5.52,0,0,0-.93,5.5c5.6,14.79,29.23,80.05,27.21,124.45a5.74,5.74,0,0,1-5.73,5.5h-88.11a5.73,5.73,0,0,1-5.7-6.39c2.39-20.69,11.11-86.47,28.47-119.57a5.73,5.73,0,0,1,5.08-3h2.76a5.74,5.74,0,0,1,5.49,7.42c-6.56,21.3-24.17,83.18-18.15,115.23,0,0,5.56,27.56,8.5,38.35,6,22,19,91-11,141-21.08,35.13-77.76,96.63-177.42,113.83a315.43,315.43,0,0,1-100.35.74c-36.4-5.44-113-12.59-142.23,17.43-39,40,23,82,26,69s-67,79,52,119c67.14,22.57,166.14,40.67,175.07,152.84,3.28,41.23-25.38,207.34,90.93,244.16,134.62,42.61,145,156.86,157,252.93.16,1.34-1.41,2.36-2.71,3-23.19,12.08-109.62,57.38-124.17,69.09a5.48,5.48,0,0,0-2,4.13c-.37,15.88-2.59,115.29.05,118.41s106-69.32,122.62-81a5.77,5.77,0,0,0,2.43-4.32l6.61-103a5.73,5.73,0,0,0-2.48-5.1l-51.57-35.29a5.74,5.74,0,0,0-5.73-.43l-118.39,56.9a5.73,5.73,0,0,0-1.41,9.39l20.51,18.9c4.73,4.36-.2,12-6.12,9.5L979.27,2031a5.74,5.74,0,0,1,2.13-11l22.8-.44a5.71,5.71,0,0,0,2.46-.62l105.27-53a5.74,5.74,0,0,0-2.46-10.86l-22.63-.48a5.75,5.75,0,0,0-2.55.53L955.92,2014.9a5.73,5.73,0,0,0-3.31,5.38c.58,19,3.34,103.13,6.89,110.22,3.87,7.74,115,61,123.52,66.81,0,0,131.23,78.48,158.48,101.19,42,35,45,66,48,83s6.78,90.87-27,123c-41,39-141,31-184,49s-18,64-12,62,3-15-18-9-5.72,56.25,58,125c38,41,117,236-148,255s-520-107-523,14,66,71,42,69-48,84,33,112,75,130,75,130c9,106,116,132,212,134s419,36,272,300c-69.87,125.48-109,103-109,75s130-76,149-21-68,128-168,164-277,64-281,117,67.73,74.17,82.86,52.08S711.5,4086.5,632.5,4163.5c-15.54,15.15-27.57,37.08-35.51,62.88-83,269.71,298.73,427.7,430.82,178.33,1.25-2.36,2.48-4.77,3.69-7.21,81.61-165.1,261-41,298,28,90,167.83-94,302-198,374s-148,153-126,227,104,0,56,14c-21.47,6.26-110,78.61-221,138-43,23-112.88,29.1-155,12-.83-.33-1.66-.68-2.5-1-53.5-23-4.91-49.83,22.5-42,28,8,27.72,78.9,29,148,1,54,12,203,246,116,0,0,124-29,56,124s79,183.75,68.48,151.38-76.48,14.62-120.48-13.38c-44.78-28.49-98-73-196,83s-210.73,231.95-266,201c-25-14-19-79,31-26,48.38,51.28,25,183.52-29,287.74,0,0-53,74.26-157,78.26s-127-101-100-107,49,92,3,131,128,99,137,77-112,10-112,10c-45,45-83.57,134.09-72,221,11,82.86,101.81,137.36,176.39,175.13a249.71,249.71,0,0,0,66.61,22.87s81.17,22,74.59,0-208.51,110-105.55,298c2.13,3.89,140,177,169,187,0,0,13,8,19-11,0,0-102-128-174-170l178,194,11-7s-10-17-18-16-9,16,9,28c0,0,3,19,16,20,0,0,19,4,22,9s-14-29-30-29,6-10,6-10,16.2,4.93,24.36,34.89c2.61,9.56-2.28,23.27-3.36,33.11-1.74,15.8,4.17,44.83,32,69,38,33,48-1,34-5s-15,48,31,50,29.88-84.64,113.94-87.82c0,0,59.06-1.18,107.06-25.18,0,0,150-63,118,121s-212,280-149,359,92-87,26-54-136,121-131,226c0,0,4.68,60.85-13.16,75.42"
+                    d="M820.28,155.81s61.65-14.12,99.32,16.72a63.29,63.29,0,0,1,20.83,66.36q-.81,2.79-1.93,5.61c-8,20-28,32-35,30s-2-18,6-15,12.59,36,17.91,44.62c15.09,24.38,38.09-3.62,51.09,17.38,25.46,41.13,42,45,40,36s-36,14-13,31c45.73,33.8,184.41,40.05,145.62,241.73a7.64,7.64,0,0,1-6.12,6.1c-17.33,3.11-60.64,17.35-20.23,80.51a5.76,5.76,0,0,0,4.84,2.66h0a5.73,5.73,0,0,0,4.78-8.91c-11.76-17.52-30.74-56.16,16.53-72.54a5.08,5.08,0,0,1,1.34-.28c3.08-.18,15.06.21,27.08,15.52a4.63,4.63,0,0,1,.31.46c1.7,2.81,16.4,29.36-11,62.3a5.52,5.52,0,0,0-.93,5.5c5.6,14.78,29.23,80.05,27.21,124.45a5.74,5.74,0,0,1-5.73,5.5h-88.11a5.73,5.73,0,0,1-5.7-6.39c2.39-20.69,11.11-86.47,28.47-119.57a5.73,5.73,0,0,1,5.08-3h2.76a5.74,5.74,0,0,1,5.49,7.42c-6.56,21.3-24.17,83.18-18.15,115.23,0,0,5.56,27.56,8.5,38.35,6,22,19,91-11,141-21.08,35.13-77.76,96.63-177.42,113.83a315.43,315.43,0,0,1-100.35.74c-36.4-5.44-113-12.59-142.23,17.43-39,40,23,82,26,69s-67,79,52,119c67.14,22.57,166.14,40.67,175.07,152.84,3.28,41.23-25.38,207.34,90.93,244.16,134.62,42.61,145,156.86,157,252.93.16,1.34-1.41,2.36-2.71,3-23.19,12.08-109.64,57.4-124.17,69.09a5.43,5.43,0,0,0-2,4.12c-.37,15.86-2.59,115.3.05,118.42s106-69.32,122.62-81a5.77,5.77,0,0,0,2.43-4.32l6.61-103a5.73,5.73,0,0,0-2.48-5.1l-51.57-35.29a5.74,5.74,0,0,0-5.73-.43l-118.39,56.9a5.73,5.73,0,0,0-1.41,9.39l20.51,18.9c4.73,4.36-.2,12-6.12,9.5L979.27,2031a5.74,5.74,0,0,1,2.13-11l22.8-.44a5.71,5.71,0,0,0,2.46-.62l105.27-53a5.74,5.74,0,0,0-2.46-10.86l-22.63-.48a5.75,5.75,0,0,0-2.55.53L955.92,2014.9a5.73,5.73,0,0,0-3.31,5.38c.58,19,3.34,103.13,6.89,110.22,3.87,7.74,115,61,123.52,66.81,0,0,131.23,78.48,158.48,101.19,42,35,45,66,48,83s6.78,90.87-27,123c-41,39-141,31-184,49s-18,64-12,62,3-15-18-9-20.17,73.25,58,125c142,94-46.45,462.65-50,356-2-60,105.61,111.49,50,219-15,29-20.14,33.64-33,54-12,19-24,56,27,72,8.68,2.72,17.26,5.9,25.87,8.76,45.45,15.1,17.52,64.35-16.46,78.22-78.41,32-71.41-7-61.41-15,26-20.77,168-23,21,241-69.87,125.48-109,103-109,75s130-76,149-21-68,128-168,164-277,64-281,117,67.73,74.17,82.86,52.08S711.5,4086.5,632.5,4163.5c-15.54,15.15-27.57,37.08-35.51,62.88-83,269.71,298.73,427.7,430.82,178.33,1.25-2.36,2.48-4.77,3.69-7.21,81.61-165.1,261-41,298,28,90,167.83-94,302-198,374s-148,153-126,227,104,0,56,14c-21.47,6.26-110,78.61-221,138-43,23-112.88,29.1-155,12-.83-.33-1.66-.68-2.5-1-53.5-23-4.91-49.83,22.5-42,28,8,27.72,78.9,29,148,1,54,12,203,246,116,0,0,124-29,56,124s79,183.75,68.48,151.38-76.48,14.62-120.48-13.38c-44.78-28.49-98-73-196,83s-210.73,231.95-266,201c-25-14-19-79,31-26,48.38,51.28,25,183.52-29,287.74,0,0-53,74.26-157,78.26s-127-101-100-107,49,92,3,131,128,99,137,77-112,10-112,10c-45,45-83.57,134.09-72,221,11,82.86,101.81,137.36,176.39,175.13a249.71,249.71,0,0,0,66.61,22.87s81.17,22,74.59,0-208.51,110-105.55,298c2.13,3.89,140,177,169,187,0,0,13,8,19-11,0,0-102-128-174-170l178,194,11-7s-10-17-18-16-9,16,9,28c0,0,3,19,16,20,0,0,19,4,22,9s-14-29-30-29,6-10,6-10,16.2,4.93,24.36,34.89c2.61,9.56-2.28,23.27-3.36,33.11-1.74,15.8,4.17,44.83,32,69,38,33,48-1,34-5s-15,48,31,50,29.88-84.64,113.94-87.82c0,0,59.06-1.18,107.06-25.18,0,0,150-63,118,121s-212,280-149,359,92-87,26-54-136,121-131,226c0,0,4.68,60.85-13.16,75.42"
                     transform="translate(-221.05 -152.21)" />
             </svg>
         </div>

@@ -42,8 +42,11 @@ function openNav() {
     document.getElementById("sidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.getElementById("sections-opacity").style.opacity = "0.1";
+    document.getElementById("home-title").style.opacity = "0.03";
     document.getElementById("red-line").style.opacity = "0.03";
     document.getElementById("img-sidebar").style.display = "none";
+
+
 }
 
 function closeNav() {
@@ -53,6 +56,7 @@ function closeNav() {
     document.getElementById("sections-opacity").style.opacity = "100%";
     document.getElementById("red-line").style.opacity = "100%";
     document.getElementById("img-sidebar").style.display = "block";
+    document.getElementById("home-title").style.opacity = "100%";
 }
 
 

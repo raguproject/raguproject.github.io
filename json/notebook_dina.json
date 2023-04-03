@@ -32,7 +32,9 @@
         "boiling"
       ],
       "temperature": [],
-      "recipeTime": [],
+      "recipeTime": [
+        60
+      ],
       "cookingTime": [],
       "ingredients": [
         {
@@ -40,13 +42,15 @@
           "ingredientName": "olive",
           "ingredientQualifier": "green",
           "variantIngredientName": "",
-          "dosage": {
-            "quantity": 1,
-            "unitOfMeasure": "kg"
-          },
+          "dosage": [
+            {
+              "quantity": 1,
+              "unitOfMeasure": "kg"
+            }
+          ],
           "alternativeIngredient": [
             {
-              "alternativeIngredientName": "",
+              "alternativeIngredientName": "pistacchi",
               "alternativeIngredientVariantName": "",
               "alternativeIngredientQualifier": ""
             }
@@ -103,7 +107,7 @@
           ],
           "alternativeIngredient": [
             {
-              "alternativeIngredientName": "",
+              "alternativeIngredientName": "pepper",
               "alternativeIngredientVariantName": "",
               "alternativeIngredientQualifier": ""
             }

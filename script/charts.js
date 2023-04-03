@@ -47,116 +47,6 @@ $(window).scroll(function () {
 
 
 
-
-// ----------- MAP -------------
-
-am5.ready(function () {
-    var root = am5.Root.new("chartdiv_map");
-
-    var myTheme = am5.Theme.new(root);
-    myTheme.rule("ColorSet").set("colors", [
-        am5.color("#cc0b36"),
-        am5.color("#c6596e"),
-        am5.color("#e0715f"),
-        am5.color("#823c30"),
-        am5.color("#aa6a7e"),
-        am5.color("#c99975"),
-        am5.color("#e885a1"),
-        am5.color("#332421")
-    ]);
-    root.setThemes([
-        am5themes_Animated.new(root),
-        myTheme
-    ]);
-
-    var chart = root.container.children.push(
-        am5map.MapChart.new(root, {
-            panX: "rotateX",
-            panY: "translateY",
-            projection: am5map.geoMercator()
-        })
-    );
-
-    var backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
-    backgroundSeries.mapPolygons.template.setAll({
-        fill: am5.color("#cc0b36"),
-        fillOpacity: 0,
-        strokeOpacity: 0
-    });
-
-    backgroundSeries.data.push({
-        geometry: am5map.getGeoRectangle(90, 180, -90, -180)
-    });
-
-    var polygonSeries = chart.series.push(
-        am5map.MapPolygonSeries.new(root, {
-            geoJSON: am5geodata_worldLow,
-
-        })
-    );
-
-    polygonSeries.mapPolygons.template.setAll({
-        fill: am5.color("#cc0b36"),
-        fillOpacity: 0.10,
-        strokeWidth: 0.5,
-        stroke: root.interfaceColors.get("background")
-    });
-
-    var colorset = am5.ColorSet.new(root, {});
-    var circleTemplate = am5.Template.new({});
-    var pointSeries = chart.series.push(am5map.MapPointSeries.new(root, {
-        calculateAggregates: true,
-        valueField: "value"
-    }));
-
-    pointSeries.bullets.push(function () {
-        var container = am5.Container.new(root, {});
-
-        var circle = container.children.push(
-            am5.Circle.new(root, {
-                radius: 5,
-                tooltipY: 0,
-                fill: colorset.next(),
-                strokeOpacity: 0,
-                tooltipText: "{title} {value}" + "recipes"
-            })
-        );
-
-        return am5.Bullet.new(root, {
-            sprite: container
-        });
-    });
-
-    pointSeries.set("heatRules", [{
-        target: circleTemplate,
-        min: 3,
-        max: 30,
-        key: "radius",
-        dataField: "value"
-    }]);
-
-    $.getJSON("/json/map.json", function (json) {
-        cities = json;
-
-        for (var i = 0; i < cities.length; i++) {
-            var city = cities[i];
-            addCity(city.longitude, city.latitude, city.title, city.value);
-        }
-
-        function addCity(longitude, latitude, title, value) {
-            pointSeries.data.push({
-                geometry: { type: "Point", coordinates: [longitude, latitude] },
-                title: title + ":" + " " + value
-            });
-        }
-
-    })
-    chart.appear(1000, 100);
-});
-
-
-
-
 // ----------- NETWORK -------------
 
 am5.ready(function () {
@@ -193,7 +83,7 @@ am5.ready(function () {
             categoryField: "name",
             childDataField: "children",
             minRadius: 15,
-            maxRadius: am5.percent(12),
+            maxRadius: 35,
             centerStrength: 0.5,
             manyBodyStrength: -15,
 
@@ -260,9 +150,6 @@ am5.ready(function () {
 
     chart.appear(1000, 100);
 });
-
-
-
 
 // ----------- MATRIX -------------
 
@@ -337,8 +224,6 @@ am5.ready(function () {
 
 
     });
-
-
 
 
     var circleTemplate = am5.Template.new({ radius: 5 });
@@ -464,7 +349,81 @@ am5.ready(function () {
 
     });
 
+    // ----------- MAP - AMCHARTS4 -------------
+
+    var chart = am4core.create("chartdiv_map", am4maps.MapChart);
+    $.getJSON("/json/map.json", function (json) {
+        var mapData = json
+        chart.geodata = am4geodata_worldLow;
+
+        // Set projection
+        chart.projection = new am4maps.projections.Miller();
+
+        // Create map polygon series
+        var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+        polygonSeries.exclude = ["AQ"];
+        polygonSeries.useGeodata = true;
+        polygonSeries.nonScalingStroke = true;
+        polygonSeries.strokeWidth = 0.3;
+        polygonSeries.calculateVisualCenter = true;
+
+
+        const polygonTemplate = polygonSeries.mapPolygons.template;
+        polygonTemplate.tooltipText = "{title}";
+        polygonSeries.calculateVisualCenter = true;
+        polygonTemplate.fill = am4core.color("#cc0b36");
+        polygonTemplate.fillOpacity = 0.1;
+
+        var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+        imageSeries.data = mapData;
+        imageSeries.dataFields.value = "value";
+
+
+        var imageTemplate = imageSeries.mapImages.template;
+        imageTemplate.nonScaling = true;
+        imageTemplate.propertyFields.latitude = "latitude";
+        imageTemplate.propertyFields.longitude = "longitude";
+
+
+        let circle = imageTemplate.createChild(am4core.Circle);
+        circle.fillOpacity = 0.7;
+        circle.fill = am4core.color("#cc0b36");
+        circle.tooltipText = "{title}: [bold]{value}[/] recipes";
+
+
+
+        imageSeries.heatRules.push({
+            target: circle,
+            property: "radius",
+            min: 4,
+            max: 15,
+            dataField: "value",
+        });
+
+        imageTemplate.adapter.add("latitude", function (latitude, target) {
+            let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
+            if (polygon) {
+                return polygon.visualLatitude;
+            }
+            return latitude;
+        });
+
+        imageTemplate.adapter.add("longitude", function (longitude, target) {
+            let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
+            if (polygon) {
+                return polygon.visualLongitude;
+            }
+            return longitude;
+        });
+
+        return amChart;
+
+    });
+    chart.appear(1000, 100);
+
 });
+
+
 
 
 
