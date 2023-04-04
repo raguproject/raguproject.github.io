@@ -861,12 +861,31 @@ label {
 }
 
 
+
 #b-place,
 #b-ingr,
 #b-cat {
     font-size: 12px;
     font-family: "Garamond";
     font-weight: bold;
+}
+
+.icon-list {
+    font-size: 12px;
+    margin-left: 2%;
+}
+
+
+
+#b-info {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Garamond";
+    margin-top: 10%;
+    border-top: 1px solid #33242145;
+    border-bottom: 1px solid #33242145;
+
+
 }
 
 #b-ingr-span,
