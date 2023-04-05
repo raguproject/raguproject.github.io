@@ -1,4 +1,4 @@
-fetch("/json/alphabet.json")
+fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/alphabet.json")
     .then(function (resp) {
         return resp.json();
     })
@@ -35,7 +35,7 @@ fetch("/json/alphabet.json")
     })
 
 
-fetch("/json/provenance.json")
+fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/provenance.json")
     .then(function (resp) {
         return resp.json();
     })
@@ -77,7 +77,7 @@ fetch("/json/provenance.json")
         }
     })
 
-fetch("/json/ingredients.json")
+fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/ingredients.json")
     .then(function (resp) {
         return resp.json();
     })
@@ -119,7 +119,7 @@ fetch("/json/ingredients.json")
     })
 
 
-fetch("/json/categories.json")
+fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categories.json")
     .then(function (resp) {
         return resp.json();
     })
@@ -358,7 +358,7 @@ fetch("/json/categories.json")
                 var modalToOpen = $(this).attr("href");
                 $(modalToOpen).modal('show');
                 let id_rec = this.attributes[`id`].value;
-                $.getJSON(`/json/notebook_dina.json`, function (modal_recipes) {
+                $.getJSON(`https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/notebook_dina.json`, function (modal_recipes) {
                     var notebook_recipes = modal_recipes.recipes;
                     let month = notebook_recipes.filter(function (data) { return data.id === id_rec; });
                     var notebook_provenance = modal_recipes.provenance;

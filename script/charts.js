@@ -1,6 +1,6 @@
 // ----------- COUNTER -------------
 
-fetch("/json/counter.json")
+fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/counter.json")
     .then(function (resp) {
         return resp.json();
     })
@@ -92,7 +92,7 @@ am5.ready(function () {
 
 
 
-    $.getJSON("/json/network.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/network.json", function (json) {
         network = json;
         series.data.setAll(network);
         series.set("selectedDataItem", series.dataItems[0]);
@@ -143,7 +143,7 @@ am5.ready(function () {
         return target.dataItem.get("valuePercentTotal") == 0;
     }
 
-    $.getJSON("/json/piechart.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/piechart.json", function (json) {
         piechart = json;
         series.data.setAll(piechart);
     });
@@ -253,7 +253,7 @@ am5.ready(function () {
     }]);
 
 
-    $.getJSON("/json/matrix.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/matrix.json", function (json) {
         matrix = json;
         const ingr_cat = new Set();
         for (var m in matrix) {
@@ -352,7 +352,7 @@ am5.ready(function () {
     // ----------- MAP - AMCHARTS4 -------------
 
     var chart = am4core.create("chartdiv_map", am4maps.MapChart);
-    $.getJSON("/json/map.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/map.json", function (json) {
         var mapData = json
         chart.geodata = am4geodata_worldLow;
 
