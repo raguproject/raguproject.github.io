@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Playfair";
-    src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Garamond";
-    src: url(/fonts/EBGaramond-VariableFont_wght.ttf);
+    src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
 }
 
 
