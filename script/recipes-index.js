@@ -1,13 +1,13 @@
+
+// ----------- RECIPES INDEX -------------
+
 fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/alphabet.json")
     .then(function (resp) {
         return resp.json();
     })
-
     .then(function (alphabet_json) {
-
         for (const i in alphabet_json) {
             const links = alphabet_json[i];
-
             const div = document.getElementById('letter_space');
             const ol = document.createElement('ol');
             ol.classList = "index_letters";
@@ -15,7 +15,6 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/alphabe
             ol.appendChild(document.createTextNode(i));
             var val_ord = Object.values(links).sort();
             var keys_ord = Object.keys(links).sort();
-
             for (const link in val_ord) {
                 const ids = val_ord[link];
                 const a = document.createElement('a');
@@ -28,12 +27,13 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/alphabe
                 a.dataset.target = "modal";
                 ol.appendChild(a);
             }
-
             div.appendChild(ol);
         }
-
     })
 
+// ----------- CHECKBOXES (PROV, INGRED, CATEG) -------------
+
+// ----------- PROVENANCE -------------
 
 fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/provenance.json")
     .then(function (resp) {
@@ -41,7 +41,6 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/provena
     })
     .then(function (provenance_json) {
         var cities = (Object.keys(provenance_json).sort());
-
         for (var i = 0; i < cities.length; i++) {
             var prov_nospace = cities[i].split(' ').join('_');
             var li = document.createElement('li');
@@ -77,6 +76,8 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/provena
         }
     })
 
+// ----------- INGREDIENTS -------------
+
 fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/ingredients.json")
     .then(function (resp) {
         return resp.json();
@@ -102,9 +103,7 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/ingredi
             ingredient.appendChild(li);
             li.appendChild(checkbox);
             li.appendChild(label);
-
         }
-
         const recipes_nodes = document.getElementsByName("recipe_a");
         for (var node of recipes_nodes) {
             var node_id = (node.id);
@@ -118,6 +117,7 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/ingredi
         }
     })
 
+// ----------- CATEGORIES -------------
 
 fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categories.json")
     .then(function (resp) {
@@ -125,7 +125,6 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
     })
     .then(function (categories_json) {
         var categories = (Object.keys(categories_json).sort());
-
         for (var i = 0; i < categories.length; i++) {
             var cat_nospace = categories[i].split(' ').join('_');
             var li = document.createElement('li');
@@ -145,10 +144,7 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
             category.appendChild(li);
             li.appendChild(checkbox);
             li.appendChild(label);
-
-
         }
-
         for (const category in categories_json) {
             const recipe_category = categories_json[category];
             for (const x of recipe_category) {
@@ -162,12 +158,14 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
             }
         }
 
+        // ----------- FILTER -------------
+
+
         const rec = document.getElementsByName("recipe_a");
         for (var i of rec) {
             i.dataset.allfilters = (i.dataset.place) + " " + (i.dataset.ingredients) + " " + (i.dataset.category);
         }
         var $filterCheckboxes = $('input[type="checkbox"]');
-
         var filterFunc = function () {
             var selectedFilters = {};
             $filterCheckboxes.filter(':checked').each(function () {
@@ -176,14 +174,12 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
                 }
                 selectedFilters[this.name].push(this.value);
             });
-
             var $filteredResults = $('.recipe_a');
             $.each(selectedFilters, function (name, filterValues) {
                 $filteredResults = $filteredResults.filter(function () {
                     var matched = false,
                         currentFilterValues = $(this).data("allfilters").split(' ');
                     $.each(currentFilterValues, function (_, currentFilterValue) {
-
                         if ($.inArray(currentFilterValue, filterValues) != -1) {
                             matched = true;
                             return false;
@@ -194,16 +190,17 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
             });
 
             $('.recipe_a').hide().filter($filteredResults).show();
+
+            // ----------- POPULATE COMPACT LIST -------------
+
             var x = $('.recipe_a').hide().filter($filteredResults).show();
             var arr_filt = [];
-
             $("input[type=checkbox]:checked").each(function () {
                 arr_filt.push($(this).val());
             });
 
             $("#btn-compactlist").click(function () {
                 $("#compact-ul").html("");
-
                 var $this = $(this);
                 if ($this.hasClass('btn-viewfilters')) {
                     for (var y of x) {
@@ -225,30 +222,24 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
                         var icon = $("<i></i>");
                         $(icon_list).attr('href', '#');
                         $(icon_list).attr('data-toggle', 'tooltip');
-
                         if (intersection_plc == 0 && intersection_cat == 0 && intersection_ing != 0) {
                             $(icon_list).attr('title', "The recipe contains [" + intersection_ing.join(" and ") + "].");
                         }
-
                         else if (intersection_plc != 0 && intersection_cat == 0 && intersection_ing == 0) {
                             $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "].");
                         }
-
                         else if (intersection_plc == 0 && intersection_cat != 0 && intersection_ing == 0) {
                             $(icon_list).attr('title', "The recipe is a [" + intersection_cat + "].");
                         }
-
                         else if (intersection_plc != 0 && intersection_cat != 0 && intersection_ing == 0) {
                             $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "]" + " and it is a [" + intersection_cat + "].");
                         }
-
                         else if (intersection_plc != 0 && intersection_cat == 0 && intersection_ing != 0) {
                             $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "]" + " and contains [" + intersection_ing.join(" and ") + "].");
                         }
                         else if (intersection_plc == 0 && intersection_cat != 0 && intersection_ing != 0) {
                             $(icon_list).attr('title', "The recipe contains [" + intersection_ing.join(" and ") + "]" + " and it is a [" + intersection_cat + "].");
                         }
-
                         else {
                             $(icon_list).attr('title', "This recipe is from [" + intersection_plc + "]" + " , contains [" + intersection_ing.join(" and ") + "]" + " and it is a [" + intersection_cat + "].");
                         }
@@ -259,31 +250,24 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
                         $("#compact-ul").append(list_rec);
                     }
                 }
-
                 else if ($this.hasClass('btn-compactlist')) {
                     $("#compact-ul").html("");
-
                 }
             })
 
-
-
+            // ----------- TOOLTIP -------------
 
             $(document).ready(function () {
                 $('[data-toggle="tooltip"]').tooltip();
             });
-
             var plc = selectedFilters.place;
             var ingred = selectedFilters.ingredients;
             var cat = selectedFilters.category;
             $("#btn-compactlist").click(function () {
                 var $this = $(this);
-
                 if ($this.hasClass('btn-viewfilters')) {
-
                     if (plc != undefined) {
                         $(`#b-place-span`).html(plc.join(" or "));
-
                     }
                     else {
                         $(`#b-place-span`).html("no place specified");
@@ -302,46 +286,10 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
                     }
                     $("#breadcrumbs-div").css("display", "block");
                 }
-
                 else if ($this.hasClass('btn-compactlist')) {
                     $("#breadcrumbs-div").css("display", "none");
-
                 }
             })
-
-
-
-
-
-            /*
-                        $("#btn-compactlist").click(function () {
-                            var $this = $(this);
-            
-                            if ($this.hasClass('btn-viewfilters')) {
-                                $("#breadcrumbs").html("");
-                                var ingredients_breadcrumb = selectedFilters.ingredients;
-            
-                                if (ingredients_breadcrumb != []) {
-                                    set_ing_bread = new Set()
-                                    for (var ing of ingredients_breadcrumb) {
-                                        set_ing_bread.add(ing);
-                                    }
-                                    var breadcrumb_with = $("<p></p>").append("with: ");
-                                    for (var b of set_ing_bread) {
-                                        breadcrumb_with.append(b + " ");
-                                    }
-                                    $("#breadcrumbs").append(breadcrumb_with);
-                                    $(breadcrumb_with).attr('id', 'bread_with');
-                                }
-                            }
-            
-                            else if ($this.hasClass('btn-compactlist')) {
-                                $("#breadcrumbs").html("");
-            
-                            }
-                        })*/
-
-
             $("#btn_filter").click(function () {
                 $('input[type=checkbox]').prop('checked', false);
                 $('.recipe_a').show();
@@ -350,9 +298,9 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
 
         $filterCheckboxes.on('change', filterFunc);
 
+        // ----------- MODAL -------------
 
         jQuery(function ($) {
-
             $("body").on("click", ".recipe_a", function (ev) {
                 ev.preventDefault();
                 var modalToOpen = $(this).attr("href");
@@ -402,7 +350,6 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
                     if (city == "") {
                         city = "n/s";
                     }
-
                     $(`#recipe-info`).html("This recipe was kindly donated by" + " <i>" + donor + "</i>," + " found the " + " <b>" + dateOfFinding + "</b> " + "in" + " <b>" + placeOfFinding + "</b> " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
                     var recipes_values = (Object.values(month));
                     var title_rec = (recipes_values[0].recipeTitle);
@@ -472,10 +419,8 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
                         list_ingr.appendChild(document.createTextNode(ingr_complete));
                         ul_ingredients.appendChild(list_ingr);
                     }
-
                     $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
                     $(`#recipe-subtitle`).html(author + "," + " " + "<i>" + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "(" + from_year + " - " + to_year + ")." + "</i>");
-
                     $(".btn-close").click(function () {
                         $("#myModal").modal('hide');
                         $('#ingr-list').html('');
@@ -485,21 +430,19 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
             });
         });
 
+        // ----------- COMPACT LIST/FILTER TOGGLE -------------
+
         $('.btn-compactlist').click(function () {
             var $this = $(this);
             $this.toggleClass('btn-compactlist');
             if ($this.hasClass('btn-compactlist')) {
                 $this.text('view compact list');
                 $this.removeClass("btn-viewfilters");
-
             } else {
                 $this.text('view filters');
                 $this.addClass("btn-viewfilters");
             }
-
         });
-
-
         var el;
         $("#btn-compactlist").click(function () {
             $('#filter-sidebar-heading').html("filter by");
@@ -508,23 +451,12 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
             if (el) {
                 $(".ul-reset").prepend(el);
                 el = null;
-
-
             } else {
                 el = $(".filter-item").detach();
                 $('#filter-sidebar-heading').html("filtered recipes");
                 $("#filter-sidebar").css("background-color", "#e9dfe1");
             }
-
-
         });
-
-
-
-
-
-
-
     });
 
 
