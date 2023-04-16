@@ -5,7 +5,7 @@ $.ajaxSetup({
 
 //---------- GET ALPHABET JSON ---------
 var alphabet_json;
-$.getJSON("/json/alphabet.json", function (json) {
+$.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/alphabet.json", function (json) {
     alphabet_json = json;
 });
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 //---------- GET PLACES JSON ---------
 var provenance_json;
-$.getJSON("/json/provenance.json", function (json) {
+$.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/provenance.json", function (json) {
     provenance_json = json;
 });
 
@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 //---------- GET INGREDIENTS JSON ---------
 var ingredients_json;
-$.getJSON("/json/ingredients.json", function (json) {
+$.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/ingredients.json", function (json) {
     ingredients_json = json;
 });
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 //---------- GET CATEGORIES JSON ---------
 var categories_json;
-$.getJSON("/json/categories.json", function (json) {
+$.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categories.json", function (json) {
     categories_json = json;
 });
 
