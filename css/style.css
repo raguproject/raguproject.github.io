@@ -371,6 +371,39 @@ h1#fadein.comingsoon.fade-in {
 }
 
 @media(min-width:320px) and (max-width:767px) {
+
+    input[type="checkbox"] {
+        border: 0.75px solid #332421 !important;
+        transform: translateY(-0.075em);
+        border-radius: none !important;
+        display: inline-flex;
+        place-content: center;
+    }
+
+
+    input[type="checkbox"]::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+
+    }
+
+    input[type="checkbox"]:checked::before {
+        transform: scale(1) !important;
+    }
+
+    input[type="checkbox"]::before {
+        background-color: #332421;
+    }
+
+    label {
+        padding-left: 3%;
+        vertical-align: center;
+    }
+
+
     .c-no {
         height: 100%;
     }
@@ -1276,6 +1309,11 @@ ul {
 
 @media(min-width:320px) and (max-width:767px) {
 
+
+
+
+
+
     .img-cokbooks-recipes {
         display: none;
     }
@@ -1403,14 +1441,21 @@ ul {
     }
 
     #filter-sidebar {
-        float: left;
-        width: 60%;
+        /* float: left; */
+        width: 80%;
         box-shadow: 5px 10px 18px #888888;
         margin-top: 30%;
         left: 2%;
         position: static;
-        padding: 4%;
-        margin: 18%;
+        padding: 4% 6% 4% 6%;
+        margin: 25% 11% 2%;
+    }
+
+    #list-recipes-filter {
+        list-style: disc;
+        margin: 2%;
+        font-size: 16px;
+        font-family: "Garamond";
     }
 
     .letter-container .letter_space,

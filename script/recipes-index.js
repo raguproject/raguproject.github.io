@@ -173,7 +173,7 @@ $(document).ready(function () {
     }
 });
 
-//---------- FILTER FUNCTION ---------
+//---------- FILTER FUNCTION + POPULATE COMPACT LIST ---------
 $(document).ready(function () {
     var $filterCheckboxes = $('input[type="checkbox"]');
     var filterFunc = function () {
