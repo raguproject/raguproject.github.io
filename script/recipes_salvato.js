@@ -1,8 +1,5 @@
 
 // ----------- RECIPES INDEX -------------
-$.ajaxSetup({
-    async: false
-});
 
 fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/alphabet.json")
     .then(function (resp) {
