@@ -190,6 +190,7 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
             });
 
             $('.recipe_a').hide().filter($filteredResults).show();
+            $filterCheckboxes.on('change', filterFunc);
 
 
             // ----------- POPULATE COMPACT LIST -------------
@@ -285,7 +286,6 @@ fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/categor
             })
         }
 
-        $filterCheckboxes.on('change', filterFunc);
 
 
 
