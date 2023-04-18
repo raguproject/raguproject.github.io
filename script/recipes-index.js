@@ -291,6 +291,8 @@ $(document).ready(function () {
         $("#btn_filter").click(function () {
             $('input[type=checkbox]').prop('checked', false);
             $('.recipe_a').show();
+            //$("#compact-ul").html("");
+
         });
 
     }
