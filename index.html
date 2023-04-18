@@ -99,7 +99,7 @@
             <div id="main">
                 <!-- all the sections -->
                 <div id="sections">
-                    <span id="img-sidebar" style="cursor:pointer; " onclick="openNav()"><img
+                    <span id="img-sidebar" style="cursor:pointer; " onclick="openNav()"><img id="sideb-icon"
                             src="photos/sidebar-icon.svg"> </span>
                     <!-- content that changes opacity -->
                     <div id="sections-opacity">
@@ -494,78 +494,100 @@
                                 </div>
                             </div>
                         </section>
+                        <div id="footer" class="footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                                        <div class="single_footer">
+                                            <h4 id="title-footer">Ragu - Reti e Archivi del Gusto</h4>
+                                            <ul>
 
+                                                <li>
+                                                    <p id="doi">DOI: <a href="#">X</a></p>
+                                                </li>
+                                                <li><a href="#"><i class="fa-brands fa-github"></i> Source Code</a></li>
+                                                <li>
+                                                    <p id="doi">Data license <a href="#">CC-BY 4.0</a>
+                                                </li>
+                                                <img src="photos/ragu_logo.svg" style="width:80px; padding-top:10%;">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--- END COL -->
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div id="no-logo-footer" class="single_footer single_footer_address">
+                                            <h4 id="title-footer">Menu</h4>
+                                            <ul>
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="../html/about.html">About the project</a></li>
+                                                <li><a href="../html/recipes.html">Explore the recipes</a></li>
+                                                <li><a href="../html/cookbooks.html">Browse the cookbooks</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--- END COL -->
+
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div id="no-logo-footer" class="single_footer single_footer_address">
+                                            <h4 id="title-footer">Contacts</h4>
+                                            <ul>
+                                                <li>
+                                                    <p id="doi">Scientific Director:
+                                                        <span class="data-bold"><a
+                                                                href="https://milafumini2.wordpress.com/">Mila
+                                                                Fumini</a></span></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p id="doi">Project Coordinator:
+                                                        <span class="data-bold"><a
+                                                                href="https://marilenadaquino.github.io/#">Marilena
+                                                                Daquino</a></span></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p id="doi">Scientific Supervision:
+                                                        <span class="data-bold"><a
+                                                                href="https://centri.unibo.it/dharc/en">/DH.arc</a></span></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p id="doi">Data Organization:<span class="data-bold"> <a
+                                                                href="https://www.linkedin.com/in/roberta-balduzzi-1ba1a717/">Roberta
+                                                                Balduzzi</a></span>
+                                                    </p>
+
+                                                </li>
+                                                <li>
+                                                    <p id="doi">Data Manipulation:<span class="data-bold"> <a
+                                                                href="https://www.linkedin.com/in/giulia-manganelli-88626b172/">Giulia
+                                                                Renda</a></span>
+                                                    </p>
+
+                                                </li>
+                                                <li>
+                                                    <p id="doi">Web Development and Copywriting:
+                                                        <span class="data-bold"> <a
+                                                                href="https://www.linkedin.com/in/giuliarenda/">Giulia
+                                                                Manganelli</a></span>
+                                                    </p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <!--- END COL -->
+                                </div>
+
+                            </div>
+                            <!--- END CONTAINER -->
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-4 col-xs-12">
-                            <div class="single_footer">
-                                <h4 id="title-footer">Ragu - Reti e Archivi del Gusto</h4>
-                                <ul>
 
-                                    <li>
-                                        <p id="doi">DOI: <a href="#">10.6092/unibo/xxxxx/yyyy</a></p>
-                                    </li>
-                                    <li><a href="#"><i class="fa-brands fa-github"></i> Source Code</a></li>
-                                    <li>
-                                        <p id="doi">Data license <a href="#">CC-BY 4.0</a>
-                                    </li>
-                                    <img src="photos/ragu_logo.svg" style="width:80px; padding-top:10%;">
-                                </ul>
-                            </div>
-                        </div>
-                        <!--- END COL -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div id="no-logo-footer" class="single_footer single_footer_address">
-                                <h4 id="title-footer">Menu</h4>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About the project</a></li>
-                                    <li><a href="#">Explore the recipes</a></li>
-                                    <li><a href="#">Browse the cookbooks</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <!--- END COL -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div id="no-logo-footer" class="single_footer single_footer_address">
-                                <h4 id="title-footer">Contacts</h4>
-                                <ul>
-                                    <li>
-                                        <p id="doi">Scientific director and supervision:
-                                            <span class="data-bold"> Mila Fumini</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p id="doi">Web development:
-                                            <span class="data-bold"> Giulia Manganelli</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p id="doi">Web development:
-                                            <span class="data-bold"> Giulia Manganelli</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p id="doi">Web development:
-                                            <span class="data-bold"> Giulia Manganelli</span>
-                                        </p>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!--- END COL -->
-                    </div>
-
-                </div>
-                <!--- END CONTAINER -->
-            </div>
 
         </div>
         <div id="red-line" class="line-container">
@@ -595,6 +617,8 @@
             // Reverse the drawing (when scrolling upwards)
             redline.style.strokeDashoffset = length - draw;
         }
+
+
 
 
     </script>

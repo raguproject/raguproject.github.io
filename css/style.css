@@ -289,6 +289,13 @@ h3 .red-highlight {
     color: var(--red-text);
 }
 
+.h6,
+h6 .red-highlight {
+
+    color: var(--red-text);
+
+}
+
 ul,
 #list_expl {
 
@@ -604,7 +611,7 @@ h1#fadein.comingsoon.fade-in {
 }
 
 #img-sidebar img {
-    width: 5%;
+    width: 3%;
     bottom: 3%;
     left: 1%;
     position: fixed;
@@ -666,6 +673,8 @@ section {
     background-color: #cc0b3527;
     padding-top: 80px;
     padding-bottom: 80px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    z-index: 100003;
 }
 
 
@@ -1294,6 +1303,59 @@ ul {
     display: none;
 }
 
+.section_about1 {
+    padding-top: 8%;
+}
+
+#section_about2 {
+    padding: 0 !important;
+}
+
+#section_about3 {
+    padding: 0 !important;
+    margin-bottom: 5%;
+}
+
+#h6_about {
+    font-family: "Playfair";
+    font-size: 70px;
+    color: var(--base-text);
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+#h7_about {
+    font-family: "Playfair";
+    font-size: 30px;
+    color: var(--base-text);
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+#h7_par {
+    font-family: "Playfair";
+    font-size: 16px;
+    color: var(--base-text);
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+#about_p {
+    margin-top: 2%;
+}
+
+.card {
+    width: 28rem;
+    margin: auto;
+    margin-top: 10%;
+    font-family: "Garamond";
+    background-color: #f8f8f8;
+    color: #332421;
+}
+
 /* Keyframes */
 
 
@@ -1309,10 +1371,10 @@ ul {
 
 @media(min-width:320px) and (max-width:767px) {
 
-
-
-
-
+    .col-6 {
+        flex: 0 0 auto;
+        width: 100% !important;
+    }
 
     .img-cokbooks-recipes {
         display: none;
@@ -1356,7 +1418,6 @@ ul {
         left: 5%;
         position: fixed;
         animation: fadeInLeft 1.5s ease-in-out;
-        z-index: 1001;
     }
 
     #word1,
@@ -1410,6 +1471,8 @@ ul {
         z-index: 1001;
         font-size: 12px;
     }
+
+
 
     #chartdiv_ingredients {
         width: 100%;
@@ -1672,6 +1735,29 @@ ul {
         width: 80%;
         text-align: center;
         margin-left: 8%;
+    }
+
+    #h6_about {
+        font-family: "Playfair";
+        font-size: 40px;
+        color: var(--base-text);
+        font-weight: bolder;
+        text-align: left;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+
+    #h7_about {
+        font-family: "Playfair";
+        font-size: 20px;
+        color: var(--base-text);
+        font-weight: bolder;
+        text-align: left;
+        padding-bottom: 5%;
+    }
+
+    .card {
+        width: 14rem !important;
     }
 
 

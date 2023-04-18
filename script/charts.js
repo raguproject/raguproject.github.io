@@ -335,7 +335,6 @@ am5.ready(function () {
             ingr_1_list.push(ingr_1_dict);
             ingr_2_list.push(ingr_2_dict);
         }
-        console.log(final_dict);
         var data = final_dict;
         series.data.setAll(data);
         yAxis.data.setAll(ingr_1_list);
