@@ -15,9 +15,12 @@ $(document).ready(function () {
         const links = alphabet_json[i];
         const div = document.getElementById('letter_space');
         const ol = document.createElement('ol');
+        const h1 = document.createElement('h1');
+        h1.id = "letters_title";
         ol.classList = "index_letters";
         ol.classList.add("col-6");
-        ol.appendChild(document.createTextNode(i));
+        ol.appendChild(h1);
+        h1.appendChild(document.createTextNode(i));
         var val_ord = Object.values(links).sort();
         var keys_ord = Object.keys(links).sort();
         for (const link in val_ord) {
@@ -30,6 +33,7 @@ $(document).ready(function () {
             a.href = "#myModal";
             a.dataset.toggle = "modal";
             a.dataset.target = "modal";
+
             ol.appendChild(a);
         }
         div.appendChild(ol);
@@ -288,6 +292,8 @@ $(document).ready(function () {
             }
         });
 
+        //----------RESET FILTERS BUTTON---------
+
         $("#btn_filter").click(function () {
             $('input[type=checkbox]').prop('checked', false);
             $('.recipe_a').show();
@@ -306,10 +312,10 @@ $(document).ready(function () {
         var $this = $(this);
         $this.toggleClass('btn-compactlist');
         if ($this.hasClass('btn-compactlist')) {
-            $this.text('view compact list');
+            $this.text('RESULTS LIST');
             $this.removeClass("btn-viewfilters");
         } else {
-            $this.text('view filters');
+            $this.text('FILTERS');
             $this.addClass("btn-viewfilters");
         }
     })
