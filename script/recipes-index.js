@@ -239,6 +239,10 @@ $(document).ready(function () {
                     $(`#b-cat-span`).html("no category specified");
                 }
                 $("#breadcrumbs-div").css("display", "block");
+
+
+
+
                 for (var y of x) {
                     var filt = (y.dataset.allfilters);
                     var filt_cat = (y.dataset.category);
@@ -285,6 +289,10 @@ $(document).ready(function () {
                     $(list_rec).append(icon_list);
                     $("#compact-ul").append(list_rec);
                 }
+
+
+
+
             }
             else if ($this.hasClass('btn-compactlist')) {
                 $("#compact-ul").html("");
@@ -293,15 +301,14 @@ $(document).ready(function () {
         });
 
         //----------RESET FILTERS BUTTON---------
-
         $("#btn_filter").click(function () {
             $('input[type=checkbox]').prop('checked', false);
             $('.recipe_a').show();
-            //$("#compact-ul").html("");
-
         });
 
     }
+
+
     $filterCheckboxes.on('change', filterFunc);
 });
 
@@ -315,7 +322,7 @@ $(document).ready(function () {
             $this.text('RESULTS LIST');
             $this.removeClass("btn-viewfilters");
         } else {
-            $this.text('FILTERS');
+            $this.text('GO BACK TO FILTERS');
             $this.addClass("btn-viewfilters");
         }
     })
@@ -326,6 +333,7 @@ $(document).ready(function () {
 var el;
 $(document).ready(function () {
     $("#btn-compactlist").click(function () {
+        $("#btn_filter").show();
         $('#filter-sidebar-heading').html("filter by");
         $("#filter-sidebar").css("background-color", "#f8f8f8");
         $("#compact-list").html("");
@@ -334,6 +342,7 @@ $(document).ready(function () {
             el = null;
         } else {
             el = $(".filter-item").detach();
+            $("#btn_filter").hide();
             $('#filter-sidebar-heading').html("filtered recipes");
             $("#filter-sidebar").css("background-color", "#e9dfe1");
         }
@@ -439,26 +448,66 @@ $(document).ready(function () {
             for (var ingr of ingredients_dict) {
                 var list_ingr = document.createElement('li');
                 const ul_ingredients = document.getElementById('ingr-list');
+                var span = document.createElement('span');
+                span.id = "var-italic";
+                var span_bold = document.createElement('span');
+                span_bold.id = "var-bold";
+                var var_list = document.createElement('li');
+                const var_ul = document.getElementById('var_list');
                 var alt_ingr = (ingr.alternativeIngredient);
                 var alt_ingr_name = (alt_ingr[0].alternativeIngredientName);
+                var alt_ingr_qual = (alt_ingr[0].alternativeIngredientQualifier);
                 var ingr_name = ingr.ingredientName;
+                var variant_name = ingr.variantIngredientName;
                 var ingr_qual = ingr.ingredientQualifier;
                 var dosage = ingr.dosage[0].quantity + " " + ingr.dosage[0].unitOfMeasure + " | ";
                 if (ingr.dosage[0].quantity == "") {
                     dosage = ""
                 }
                 var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ") or " + alt_ingr_name;
-                if (alt_ingr_name == "" && ingr_qual != "") {
+
+                if (alt_ingr_name == "" && ingr_qual != "" && variant_name != "") {
+                    var ingr_complete = dosage + ingr_name + " * (" + ingr_qual + ")";
+                }
+                else if (alt_ingr_name == "" && ingr_qual != "" && variant_name == "") {
                     var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ")";
                 }
-                else if (alt_ingr_name != "" && ingr_qual == "") {
+                else if (alt_ingr_name != "" && alt_ingr_qual != "" && ingr_qual == "" && variant_name != "") {
+                    var ingr_complete = dosage + ingr_name + " * or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
+                }
+                else if (alt_ingr_name != "" && alt_ingr_qual != "" && ingr_qual != "" && variant_name == "") {
+                    var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ")" + " or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
+                }
+                else if (alt_ingr_name != "" && alt_ingr_qual == "" && ingr_qual == "" && variant_name != "") {
+                    var ingr_complete = dosage + ingr_name + " * or " + alt_ingr_name;
+                }
+
+                else if (alt_ingr_name != "" && ingr_qual == "" && alt_ingr_qual == "" && variant_name == "") {
                     var ingr_complete = dosage + ingr_name + " or " + alt_ingr_name;
                 }
-                else if (alt_ingr_name == "" && ingr_qual == "") {
+                else if (alt_ingr_name != "" && ingr_qual == "" && alt_ingr_qual != "" && variant_name == "") {
+                    var ingr_complete = dosage + ingr_name + " or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
+                }
+                else if (alt_ingr_name == "" && ingr_qual == "" && variant_name != "") {
+                    var ingr_complete = dosage + ingr_name + " *";
+                }
+                else if (alt_ingr_name == "" && ingr_qual == "" && variant_name == "") {
                     var ingr_complete = dosage + ingr_name;
                 }
+
                 list_ingr.appendChild(document.createTextNode(ingr_complete));
                 ul_ingredients.appendChild(list_ingr);
+                if (variant_name != "") {
+                    span_bold.innerHTML = ingr_name;
+                    span.innerHTML = variant_name;
+                    var_list.appendChild(document.createTextNode("* "))
+                    var_list.appendChild(span_bold);
+                    var_list.appendChild(document.createTextNode(" is also known as [ "));
+                    var_list.appendChild(span);
+                    var_list.appendChild(document.createTextNode(" ]"));
+                    var_ul.appendChild(var_list);
+                }
+
             }
             $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
             $(`#recipe-subtitle`).html(author + "," + " " + "<i>" + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "(" + from_year + " - " + to_year + ")." + "</i>");
@@ -467,6 +516,7 @@ $(document).ready(function () {
                 $("#myModal").modal('hide');
                 $('#ingr-list').html('');
                 $('#cook-list').html('');
+                $('#var_list').html('');
             });
         });
     });

@@ -840,6 +840,14 @@ div #provenance {
 
 }
 
+#compact-ul {
+    overflow-y: scroll;
+}
+
+#compact {
+    overflow-y: scroll;
+}
+
 .btn-light:hover {
     background-color: #cc0b36;
 }
@@ -1142,11 +1150,10 @@ img,
 .h2 {
     color: var(--red-text);
     font-size: 38px;
-    padding: 0px 0px 0px;
-    margin: 0px 0px 0px;
+    margin: 0px 0px 5%;
+    padding: 0px;
+    border-bottom: 2px solid var(--red-text);
     font-weight: bolder;
-    padding-bottom: 5%;
-
 }
 
 .modal-fullscreen .modal-footer,
@@ -1183,8 +1190,8 @@ img,
 
 #recipe-container #container-recipe {
     box-shadow: 5px 10px 18px #888888;
-    padding: 2% 8% 8% 8%;
-    margin-top: 15%;
+    padding: 2% 8% 5% 8%;
+    margin-top: 8%;
     margin-right: 10%;
     background-color: #e7daca77;
     ;
@@ -1202,7 +1209,7 @@ img,
 .h5 {
 
     font-family: "Playfair";
-    font-size: 14px;
+    font-size: 12px;
     color: var(--base-text);
     font-weight: lighter;
     text-align: center;
@@ -1212,7 +1219,21 @@ img,
 
 }
 
+#var-italic {
+    font-style: italic;
 
+}
+
+#var-bold {
+    font-weight: bold;
+
+}
+
+#var_list {
+    padding-top: 3%;
+    list-style: decimal;
+    color: #cc0b36
+}
 
 .data-bold {
     font-weight: bold;
@@ -1224,7 +1245,6 @@ img,
 
 #ingr-header,
 .h5 {
-    font-weight: bold;
     font-size: 14px;
     font-family: "Playfair";
     padding-top: 5%;
@@ -1232,7 +1252,6 @@ img,
 
 #cook-header,
 .h5 {
-    font-weight: bold;
     font-size: 14px;
     font-family: "Playfair";
     padding-top: 5%;
@@ -1241,13 +1260,26 @@ img,
 .info-recipe {
     border-bottom: 1px solid var(--base-text);
     border-top: 1px solid var(--base-text);
-    padding-top: 1%;
+    padding: 2% 0 1% 0;
     text-align: center;
 }
 
 #recipe-ingr {
-    padding: 2%;
     text-align: center;
+}
+
+#rec-ingr {
+    padding: 2% 0 1% 0;
+    border: 0.50px solid #332421;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: rgb(233, 223, 225);
+}
+
+#rec-cook {
+    padding: 5% 0 1% 0;
+    border: 0.50px solid #332421;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: rgb(233, 223, 225);
 }
 
 #ingr-list,
@@ -1256,22 +1288,29 @@ ul {
     list-style-type: disc;
 }
 
+#recipe-serves {
+    padding-top: 5%;
+}
+
 ul#ingr-list {
     column-count: 2;
     list-style-type: circle;
+    padding: 0 10% 0 10%;
+
 
 
 }
 
 ul#cook-list {
-    column-count: 2;
+    column-count: 1;
     list-style-type: circle;
+    padding: 0 10% 0 10%;
 
 
 }
 
 #recipe-cook {
-    padding: 2%;
+    padding-bottom: 2%;
     text-align: center;
 }
 
@@ -1288,17 +1327,17 @@ b {
 #cook-list,
 ul {
     font-family: "Playfair";
-    font-size: 14px;
+    font-size: 12px;
 
 
 }
 
 #recipe-ingr-photo {
-    width: 30%;
+    width: 35%;
 }
 
 #recipe-cook-photo {
-    width: 25%;
+    width: 35%;
 }
 
 .ingredients-recipe {
@@ -1638,7 +1677,7 @@ ul {
     #recipe-container #container-recipe {
         box-shadow: 5px 10px 18px #888888;
         padding: 2% 8% 8% 8%;
-        margin-top: 15%;
+        margin-top: 10%;
         margin: auto;
         background-color: #e7daca77;
         border: 1px solid #332421;
@@ -1729,7 +1768,7 @@ ul {
     }
 
     ul#cook-list {
-        column-count: 2;
+        column-count: 1;
         font-size: 12px;
     }
 

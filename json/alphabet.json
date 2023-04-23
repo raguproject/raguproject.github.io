@@ -4,20 +4,27 @@
         "bomba_di_riso001": "Bomba di riso (Dina)",
         "bomba_di_riso002": "Bomba di riso (Mina)"
     },
-    "c": {},
+    "c": {
+        "cappelletti_001": "Cappelletti"
+    },
     "d": {},
     "e": {},
     "f": {},
     "g": {
-        "gnocchi_di_semolino_al_forno_001": "Gnocchi di semolino al forno (Dina)"
+        "gnocchi_di_semolino_al_forno_001": "Gnocchi di semolino al forno (Dina)",
+        "gnocchi_di_patate_001": "Gnocchi di patate",
+        "gnocchi_di_semolino_001": "Gnocchi di semolino"
     },
     "h": {},
     "i": {},
     "j": {},
     "k": {},
-    "l": {},
+    "l": {
+        "lasagne_verdi_001": "Lasagne verdi"
+    },
     "m": {
-        "maccheroni_con_besciamella_001": "Maccheroni con besciamella (Dina)"
+        "maccheroni_con_besciamella_001": "Maccheroni con besciamella (Dina)",
+        "minestrone_001": "Minestrone"
     },
     "n": {},
     "o": {
@@ -26,12 +33,23 @@
     "p": {
         "pasta_di_semolino_in_brodo_001": "Pasta di semolino in brodo (Dina)",
         "polenta_alla_lombarda_001": "Polenta alla lombarda (Dina)",
-        "pasticcio_di_riso_001": "Pasticcio di riso (Dina)"
+        "pasticcio_di_riso_001": "Pasticcio di riso (Dina)",
+        "passatelli_alla_marchigiana_001": "Passatelli alla marchigiana",
+        "pasticcio_di_maccheroni_001": "Pasticcio di maccheroni",
+        "passatini_001": "Passatini"
     },
     "q": {},
-    "r": {},
-    "s": {},
-    "t": {},
+    "r": {
+        "risotto_con_le_poveracce_001": "Risotto con le poveracce",
+        "risotto_con_il_sanpietro_001": "Risotto con il Sanpietro",
+        "riso_e_seppia_001": "Riso e seppia"
+    },
+    "s": {
+        "spaghetti_al_tonno_001": "Spaghetti al tonno"
+    },
+    "t": {
+        "tortellini_001": "Tortellini"
+    },
     "u": {},
     "v": {},
     "w": {},

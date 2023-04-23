@@ -12,7 +12,15 @@
         "pasta_di_semolino_in_brodo_001",
         "bomba_di_riso001",
         "bomba_di_riso002",
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "passatelli_alla_marchigiana_001",
+        "cappelletti_001",
+        "tortellini_001",
+        "spaghetti_al_tonno_001",
+        "gnocchi_di_patate_001",
+        "gnocchi_di_semolino_001",
+        "riso_e_seppia_001",
+        "minestrone_001"
     ],
     "macaroni": [
         "maccheroni_con_besciamella_001"
@@ -21,11 +29,24 @@
         "maccheroni_con_besciamella_001",
         "gnocchi_di_semolino_al_forno_001",
         "pasta_di_semolino_in_brodo_001",
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "pasticcio_di_maccheroni_001",
+        "pasticcio_di_maccheroni_001",
+        "passatini_001",
+        "cappelletti_001",
+        "gnocchi_di_patate_001",
+        "gnocchi_di_semolino_001",
+        "risotto_con_le_poveracce_001",
+        "risotto_con_il_sanpietro_001",
+        "riso_e_seppia_001"
     ],
     "flour": [
         "maccheroni_con_besciamella_001",
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "passatelli_alla_marchigiana_001",
+        "pasticcio_di_maccheroni_001",
+        "lasagne_verdi_001",
+        "gnocchi_di_patate_001"
     ],
     "milk": [
         "maccheroni_con_besciamella_001",
@@ -33,73 +54,124 @@
         "pasta_di_semolino_in_brodo_001",
         "bomba_di_riso001",
         "bomba_di_riso002",
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "gnocchi_di_semolino_001"
     ],
     "parmesan": [
+        "passatelli_alla_marchigiana_001",
         "maccheroni_con_besciamella_001",
         "polenta_alla_lombarda_001",
         "gnocchi_di_semolino_al_forno_001",
         "pasta_di_semolino_in_brodo_001",
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "pasticcio_di_maccheroni_001",
+        "cappelletti_001",
+        "tortellini_001",
+        "passatini_001",
+        "gnocchi_di_patate_001",
+        "gnocchi_di_semolino_001",
+        "minestrone_001"
     ],
     "cabbage": [
-        "polenta_alla_lombarda_001"
+        "polenta_alla_lombarda_001",
+        "minestrone_001"
     ],
     "celery": [
         "polenta_alla_lombarda_001",
         "bomba_di_riso001",
-        "bomba_di_riso002"
+        "bomba_di_riso002",
+        "risotto_con_il_sanpietro_001",
+        "minestrone_001"
     ],
     "carrot": [
         "polenta_alla_lombarda_001",
         "bomba_di_riso001",
-        "bomba_di_riso002"
+        "bomba_di_riso002",
+        "risotto_con_il_sanpietro_001",
+        "minestrone_001"
     ],
     "onion": [
-        "polenta_alla_lombarda_001"
+        "polenta_alla_lombarda_001",
+        "risotto_con_le_poveracce_001",
+        "risotto_con_il_sanpietro_001",
+        "riso_e_seppia_001",
+        "minestrone_001"
     ],
     "pepper": [
-        "polenta_alla_lombarda_001"
+        "polenta_alla_lombarda_001",
+        "cappelletti_001",
+        "spaghetti_al_tonno_001",
+        "riso_e_seppia_001",
+        "minestrone_001"
     ],
     "pork": [
-        "polenta_alla_lombarda_001"
+        "polenta_alla_lombarda_001",
+        "minestrone_001"
     ],
     "tomato": [
         "polenta_alla_lombarda_001",
         "bomba_di_riso001",
-        "bomba_di_riso002"
+        "bomba_di_riso002",
+        "risotto_con_le_poveracce_001",
+        "risotto_con_il_sanpietro_001",
+        "riso_e_seppia_001",
+        "minestrone_001"
     ],
     "polenta": [
         "polenta_alla_lombarda_001"
     ],
     "semolina": [
         "gnocchi_di_semolino_al_forno_001",
-        "pasta_di_semolino_in_brodo_001"
+        "pasta_di_semolino_in_brodo_001",
+        "gnocchi_di_semolino_001"
     ],
     "egg": [
         "gnocchi_di_semolino_al_forno_001",
         "pasta_di_semolino_in_brodo_001",
         "bomba_di_riso001",
         "bomba_di_riso002",
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "passatelli_alla_marchigiana_001",
+        "pasticcio_di_maccheroni_001",
+        "lasagne_verdi_001",
+        "cappelletti_001",
+        "cappelletti_001",
+        "tortellini_001",
+        "passatini_001",
+        "gnocchi_di_patate_001",
+        "gnocchi_di_semolino_001"
     ],
     "parsley": [
-        "pasta_di_semolino_in_brodo_001"
+        "pasta_di_semolino_in_brodo_001",
+        "risotto_con_le_poveracce_001",
+        "risotto_con_il_sanpietro_001",
+        "riso_e_seppia_001",
+        "minestrone_001"
     ],
     "broth": [
-        "pasta_di_semolino_in_brodo_001"
+        "pasta_di_semolino_in_brodo_001",
+        "tortellini_001",
+        "passatini_001",
+        "minestrone_001",
+        "minestrone_001"
     ],
     "rice": [
         "bomba_di_riso001",
         "bomba_di_riso002",
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "risotto_con_le_poveracce_001",
+        "risotto_con_il_sanpietro_001",
+        "minestrone_001"
     ],
     "meat": [
         "bomba_di_riso001",
         "bomba_di_riso002"
     ],
     "ragout": [
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "lasagne_verdi_001",
+        "tortellini_001",
+        "gnocchi_di_patate_001"
     ],
     "water": [
         "pasticcio_di_riso_001",
@@ -109,9 +181,115 @@
         "pasticcio_di_riso_001"
     ],
     "nutmeg": [
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "passatelli_alla_marchigiana_001",
+        "pasticcio_di_maccheroni_001",
+        "cappelletti_001",
+        "tortellini_001",
+        "passatini_001"
     ],
     "breadcrumbs": [
-        "pasticcio_di_riso_001"
+        "pasticcio_di_riso_001",
+        "passatelli_alla_marchigiana_001",
+        "passatini_001"
+    ],
+    "rigatoni": [
+        "pasticcio_di_maccheroni_001"
+    ],
+    "sweetbread": [
+        "pasticcio_di_maccheroni_001"
+    ],
+    "truffle": [
+        "pasticcio_di_maccheroni_001"
+    ],
+    "mushroom": [
+        "pasticcio_di_maccheroni_001"
+    ],
+    "chicken": [
+        "pasticcio_di_maccheroni_001"
+    ],
+    "ham": [
+        "pasticcio_di_maccheroni_001",
+        "tortellini_001",
+        "minestrone_001"
+    ],
+    "crest": [
+        "pasticcio_di_maccheroni_001"
+    ],
+    "bean": [
+        "pasticcio_di_maccheroni_001",
+        "minestrone_001"
+    ],
+    "bechamel": [
+        "pasticcio_di_maccheroni_001",
+        "lasagne_verdi_001"
+    ],
+    "sugar": [
+        "pasticcio_di_maccheroni_001"
+    ],
+    "spinach": [
+        "lasagne_verdi_001",
+        "minestrone_001"
+    ],
+    "ricotta": [
+        "cappelletti_001"
+    ],
+    "cheese": [
+        "cappelletti_001"
+    ],
+    "capon": [
+        "cappelletti_001"
+    ],
+    "zest": [
+        "cappelletti_001"
+    ],
+    "mortadella": [
+        "tortellini_001"
+    ],
+    "beef": [
+        "tortellini_001"
+    ],
+    "lemon": [
+        "passatini_001"
+    ],
+    "oil": [
+        "spaghetti_al_tonno_001",
+        "risotto_con_le_poveracce_001",
+        "risotto_con_il_sanpietro_001",
+        "riso_e_seppia_001"
+    ],
+    "garlic": [
+        "spaghetti_al_tonno_001",
+        "risotto_con_le_poveracce_001",
+        "risotto_con_il_sanpietro_001",
+        "minestrone_001"
+    ],
+    "anchovy": [
+        "spaghetti_al_tonno_001"
+    ],
+    "puree": [
+        "spaghetti_al_tonno_001"
+    ],
+    "tuna": [
+        "spaghetti_al_tonno_001"
+    ],
+    "potato": [
+        "gnocchi_di_patate_001",
+        "minestrone_001"
+    ],
+    "clam": [
+        "risotto_con_le_poveracce_001"
+    ],
+    "wine": [
+        "risotto_con_le_poveracce_001"
+    ],
+    "sauce": [
+        "risotto_con_il_sanpietro_001"
+    ],
+    "cuttlefish": [
+        "riso_e_seppia_001"
+    ],
+    "chard": [
+        "minestrone_001"
     ]
 }
