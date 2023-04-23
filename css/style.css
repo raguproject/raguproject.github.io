@@ -1121,7 +1121,7 @@ ol,
 
 .modal-fullscreen .modal-body {
     overflow-y: auto;
-    background-color: #e9dfe1
+    background-color: #8bb0a878;
 }
 
 .modal-header .btn-close {
@@ -1176,26 +1176,44 @@ img,
 }
 
 
+
 #recipe-subtitle,
+.h4 {
+    font-family: "Playfair";
+    font-size: 14px;
+    margin-top: 2%;
+    padding: 2%;
+    border: 0.5px solid #332421;
+    color: var(--base-text);
+    background-color: #e5cbba87;
+    font-weight: lighter;
+    /* border-bottom: 1px solid var(--base-text); */
+}
+
+
 #recipe-info,
 .h4 {
     font-family: "Playfair";
     font-size: 14px;
-    padding-bottom: 4%;
+    padding: 2%;
     color: var(--base-text);
     font-weight: lighter;
-    /*border-bottom: 1px solid var(--base-text);*/
-
+    /* border-bottom: 1px solid var(--base-text); */
 }
+
+
 
 #recipe-container #container-recipe {
     box-shadow: 5px 10px 18px #888888;
     padding: 2% 8% 5% 8%;
     margin-top: 8%;
     margin-right: 10%;
-    background-color: #e7daca77;
-    ;
+    background-color: #f6eee3;
     border: 1px solid #332421;
+    background-image: url(/photos/macchia-modale.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #recipe-image {
@@ -1258,8 +1276,7 @@ img,
 }
 
 .info-recipe {
-    border-bottom: 1px solid var(--base-text);
-    border-top: 1px solid var(--base-text);
+    border-bottom: 0.75px solid var(--base-text);
     padding: 2% 0 1% 0;
     text-align: center;
 }
@@ -1270,16 +1287,14 @@ img,
 
 #rec-ingr {
     padding: 2% 0 1% 0;
-    border: 0.50px solid #332421;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    background-color: rgb(233, 223, 225);
+    border: 0.25px solid #332421;
+    background-color: #e5cbba87;
 }
 
 #rec-cook {
     padding: 5% 0 1% 0;
-    border: 0.50px solid #332421;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    background-color: rgb(233, 223, 225);
+    border: 0.25px solid #332421;
+    background-color: #e5cbba87;
 }
 
 #ingr-list,
@@ -1341,15 +1356,16 @@ ul {
 }
 
 .ingredients-recipe {
-    border-bottom: 1px solid var(--base-text);
+    border-bottom: 0.75px solid var(--base-text);
     padding-top: 4%;
     justify-content: center !important;
     padding-bottom: 4%;
 }
 
 .cooking-procedure-recipe {
-    border-bottom: 1px solid var(--base-text);
+    border-bottom: 0.75px solid var(--base-text);
     padding-top: 4%;
+    padding-bottom: 2%;
 }
 
 
@@ -1679,7 +1695,8 @@ ul {
         padding: 2% 8% 8% 8%;
         margin-top: 10%;
         margin: auto;
-        background-color: #e7daca77;
+        width: 85%;
+        background-color: #f6eee3;
         border: 1px solid #332421;
     }
 
@@ -1697,20 +1714,19 @@ ul {
     #about-recipe,
     .h2 {
         color: var(--red-text);
-        font-size: 28px;
-        padding: 0px 0px 0px;
-        margin: 0px 0px 0px;
+        font-size: 20px;
+        margin: 0px 0px 5%;
+        /* margin: 0px; */
         font-weight: bolder;
-        padding-bottom: 5%;
     }
 
     #recipe-title,
     .h3 {
         font-weight: bolder;
-        font-size: 18px;
+        font-size: 14px;
         line-height: normal;
-        padding: 0px 0px 0px;
-        margin: 0px 0px 0px;
+        padding: 0px;
+        margin: 0px;
     }
 
     #recipe-serves,
@@ -1718,7 +1734,7 @@ ul {
     #recipe-cooking,
     .h5 {
         font-family: "Playfair";
-        font-size: 12px;
+        font-size: 10px;
         color: var(--base-text);
         font-weight: lighter;
         text-align: center;
@@ -1727,11 +1743,12 @@ ul {
 
     #ingr-header,
     .h5 {
-        font-weight: bold;
-        font-size: 14px;
+        /* font-weight: bold; */
+        font-size: 12px;
         font-family: "Playfair";
         padding-top: 2%;
     }
+
 
     #recipe-ingr-photo {
         width: 20%;
@@ -1755,29 +1772,39 @@ ul {
 
     #cook-header,
     .h5 {
-        font-weight: bold;
-        font-size: 14px;
+        /* font-weight: bold; */
+        font-size: 12px;
         font-family: "Playfair";
         padding-top: 2%;
     }
 
     ul#ingr-list {
         column-count: 2;
-        font-size: 12px;
+        font-size: 10px;
+        padding: 0;
+
 
     }
 
     ul#cook-list {
         column-count: 1;
-        font-size: 12px;
+        font-size: 10px;
+        padding: 0;
+
     }
 
     #recipe-ingr-list {
-        margin-bottom: 5%;
+        /* margin-left: 15%; */
+        margin-left: 8%;
+        padding-top: 5%;
+        /* padding-bottom: 5%; */
     }
 
     #recipe-cook-list {
-        margin-bottom: 5%;
+        /* margin-left: 15%; */
+        margin-left: 8%;
+        padding-top: 5%;
+        /* padding-bottom: 5%; */
     }
 
 
@@ -1810,6 +1837,59 @@ ul {
         width: 14rem !important;
     }
 
+    img,
+    #recipe-img2,
+    #recipe-img3 {
+        width: 10% !important;
+    }
+
+    img,
+    #recipe-img1 {
+        width: 20% !important;
+    }
+
+    #recipe-serves {
+        padding-top: 0;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        outline: none;
+    }
+
+    a,
+    a:active,
+    a:focus {
+        color: var(--red-text);
+
+    }
+
+    #letter-container a {
+        font-size: 14px;
+        font-weight: lighter;
+        display: block;
+        padding-left: 5px;
+        margin-top: 5px;
+        color: var(--base-text);
+        font-family: "Garamond";
+        text-decoration: none;
+    }
+
+    .letter-container .letter_space,
+    ol,
+    .index_letters #letters_title {
+
+        color: #cc0b36;
+        padding-top: 4%;
+    }
+
+    #letters_title {
+        border-bottom: 1px solid #cc0b36;
+        padding-bottom: 2%;
+    }
 
 }
 
@@ -1823,8 +1903,9 @@ ul {
         /* text-align: center; */
         padding: 2% 8% 8%;
         margin-top: 5%;
+
         /* margin-right: 10%; */
-        background-color: rgba(231, 218, 202, 0.467);
+        background-color: #f6eee3;
         border: 1px solid rgb(51, 36, 33);
     }
 

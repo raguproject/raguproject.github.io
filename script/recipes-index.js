@@ -413,13 +413,26 @@ $(document).ready(function () {
             var preparation_list = [];
             for (var i of preparation) {
                 preparation_list.push(i + " " + "min")
-
             }
+
             var preparation_join = preparation_list.join(", ");
             $(`#preparation-bold`).html(preparation_join);
             if (preparation_join == "") {
                 $(`#preparation-bold`).html("n/s");
             }
+
+            var pages = (recipes_values[0].pagesNumber);
+            var pages_list = [];
+            for (var p of pages) {
+                pages_list.push(p)
+            }
+
+            var pages_join = pages_list.join("-");
+            if (pages_join == "") {
+                pages_join = "n/s";
+            }
+
+
             var cooking = (recipes_values[0].cookingTime);
             var cooking_list = [];
             for (var x of cooking) {
@@ -510,7 +523,7 @@ $(document).ready(function () {
 
             }
             $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
-            $(`#recipe-subtitle`).html(author + "," + " " + "<i>" + notebook_title + " " + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "(" + from_year + " - " + to_year + ")." + "</i>");
+            $(`#recipe-subtitle`).html(author + "," + " " + "<b>" + notebook_title + "</b>" + ", p. " + pages_join + ", " + "<i>" + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "(" + from_year + " - " + to_year + ")." + "</i>");
 
             $(".btn-close").click(function () {
                 $("#myModal").modal('hide');
