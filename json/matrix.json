@@ -52,5 +52,109 @@
         "other",
         "dietary fat",
         "herb"
+    ],
+    "passatelli_alla_marchigiana_001": [
+        "dairy",
+        "baked product",
+        "other",
+        "spice",
+        "cereal"
+    ],
+    "pasticcio_di_maccheroni_001": [
+        "pasta",
+        "dairy",
+        "meat",
+        "dietary fat",
+        "fungus",
+        "processed meat",
+        "legume",
+        "other",
+        "spice",
+        "sauce",
+        "cereal"
+    ],
+    "lasagne_verdi_001": [
+        "vegetable",
+        "cereal",
+        "other",
+        "sauce"
+    ],
+    "cappelletti_001": [
+        "dairy",
+        "dietary fat",
+        "meat",
+        "other",
+        "spice",
+        "vegetable"
+    ],
+    "tortellini_001": [
+        "processed meat",
+        "meat",
+        "dairy",
+        "other",
+        "spice",
+        "sauce"
+    ],
+    "passatini_001": [
+        "baked product",
+        "dairy",
+        "other",
+        "spice",
+        "dietary fat",
+        "vegetable"
+    ],
+    "spaghetti_al_tonno_001": [
+        "dietary fat",
+        "vegetable",
+        "fish",
+        "sauce",
+        "other",
+        "spice"
+    ],
+    "gnocchi_di_patate_001": [
+        "vegetable",
+        "other",
+        "dietary fat",
+        "dairy",
+        "cereal",
+        "sauce"
+    ],
+    "gnocchi_di_semolino_001": [
+        "cereal",
+        "dietary fat",
+        "dairy",
+        "other"
+    ],
+    "risotto_con_le_poveracce_001": [
+        "cereal",
+        "fish",
+        "vegetable",
+        "herb",
+        "dietary fat",
+        "vegetable",
+        "beverage"
+    ],
+    "risotto_con_il_sanpietro_001": [
+        "vegetable",
+        "herb",
+        "dietary fat",
+        "cereal",
+        "sauce"
+    ],
+    "riso_e_seppia_001": [
+        "fish",
+        "vegetable",
+        "herb",
+        "dietary fat",
+        "other",
+        "spice"
+    ],
+    "minestrone_001": [
+        "other",
+        "legume",
+        "vegetable",
+        "herb",
+        "processed meat",
+        "cereal"
     ]
 }

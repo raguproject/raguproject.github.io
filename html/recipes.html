@@ -49,15 +49,18 @@
                                 <div class="info-recipe">
                                     <div class="row">
                                         <div class="col-sm">
-                                            <h5 id="recipe-serves"> <i class="fa-solid fa-utensils"></i> serves: <span
-                                                    id="serves-bold"></span></h5>
+                                            <img id="recipe-img" style="width:40%;" src="../photos/serves.svg">
+                                            <h5 id="recipe-serves">
+                                                serves: <span id="serves-bold"></span></h5>
                                         </div>
                                         <div class="col-sm">
-                                            <h5 id="recipe-preparation"> <i class="fa-regular fa-clock"></i> preparation
+                                            <img id="recipe-img" style="width:23%;" src="../photos/prep.svg">
+                                            <h5 id="recipe-preparation"> preparation
                                                 time: <span id="preparation-bold"></span></h5>
                                         </div>
                                         <div class="col-sm">
-                                            <h5 id="recipe-cooking"> <i class="fa-solid fa-temperature-high"></i>
+                                            <img id="recipe-img" style="width:25%;" src="../photos/cook.svg">
+                                            <h5 id="recipe-cooking">
                                                 cooking time: <span id="cooking-bold"></span>
                                             </h5>
                                         </div>
@@ -67,8 +70,10 @@
                                 <div class="ingredients-recipe">
                                     <div class="row" id="ingr-row">
                                         <div class="col-md-4 col-sm-12 col-xs-12" id="recipe-ingr">
-                                            <img id="recipe-ingr-photo" src="../photos/ingredients-recipe.svg">
-                                            <h5 id="ingr-header">ingredients:</h5>
+                                            <div id="rec-ingr">
+                                                <img id="recipe-ingr-photo" src="../photos/ingredients-recipe.svg">
+                                                <h5 id="ingr-header">ingredients:</h5>
+                                            </div>
                                         </div>
                                         <div class="col-md-8 col-sm-12 col-xs-12" id="recipe-ingr-list">
                                             <ul id="ingr-list">
@@ -80,9 +85,10 @@
                                 <div class="cooking-procedure-recipe">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12" id="recipe-cook">
-
-                                            <img id="recipe-cook-photo" src="../photos/cooking-recipe.svg">
-                                            <h5 id="cook-header">cooking procedure:</h5>
+                                            <div id="rec-cook">
+                                                <img id="recipe-cook-photo" src="../photos/cooking-recipe.svg">
+                                                <h5 id="cook-header">cooking <br>procedure:</h5>
+                                            </div>
                                         </div>
                                         <div class="col-md-8 col-sm-12" id="recipe-cook-list">
                                             <ul id="cook-list">
@@ -92,6 +98,10 @@
                                         </div>
                                     </div>
 
+                                </div>
+                                <div class="variant_name_div">
+                                    <ul id="var_list">
+                                    </ul>
                                 </div>
 
                             </div>
@@ -148,7 +158,9 @@
                                 filter by
                             </h3>
                             <div id="compact-list"></div>
-                            <ul id="compact-ul"></ul>
+                            <div id="compact">
+                                <ul id="compact-ul"></ul>
+                            </div>
                             <div id="breadcrumbs-div" style="display:none">
                                 <h5 id="b-place">provenance: <span id="b-place-span"></span></h5>
                                 <h5 id="b-ingr">ingredients: <span id="b-ingr-span"></span></h5>
