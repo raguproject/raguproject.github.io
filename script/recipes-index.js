@@ -258,6 +258,7 @@ $(document).ready(function () {
                     const intersection = arr_filt.filter(element => filt_comp.includes(element));
                     const clone = y.cloneNode(true);
                     var list_rec = $("<li></li>").append(clone);
+
                     var icon_list = $("<a></a>");
                     var icon = $("<i></i>");
                     $(icon_list).attr('href', '#');
@@ -287,7 +288,9 @@ $(document).ready(function () {
                     $(list_rec).attr('id', 'list-recipes-filter');
                     $(icon_list).append(icon);
                     $(list_rec).append(icon_list);
+
                     $("#compact-ul").append(list_rec);
+
                 }
 
 
@@ -305,6 +308,8 @@ $(document).ready(function () {
             $('input[type=checkbox]').prop('checked', false);
             $('.recipe_a').show();
         });
+
+
 
     }
 
@@ -404,6 +409,9 @@ $(document).ready(function () {
             var recipes_values = (Object.values(month));
             var title_rec = (recipes_values[0].recipeTitle);
             var title_chapt = (recipes_values[0].chapter);
+            if (title_chapt == "") {
+                title_chapt = "n/s";
+            }
             var serves = (recipes_values[0].numberOfPersons);
             $(`#serves-bold`).html(serves + " people");
             if (serves == "") {
@@ -523,7 +531,7 @@ $(document).ready(function () {
 
             }
             $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
-            $(`#recipe-subtitle`).html(author + "," + " " + "<b>" + notebook_title + "</b>" + ", p. " + pages_join + ", " + "<i>" + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "(" + from_year + " - " + to_year + ")." + "</i>");
+            $(`#recipe-subtitle`).html(author + "," + " " + "<b>" + notebook_title + "</b>" + ", p. " + pages_join + ", " + "<i>" + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "[" + from_year + " - " + to_year + "]." + "</i>");
 
             $(".btn-close").click(function () {
                 $("#myModal").modal('hide');
