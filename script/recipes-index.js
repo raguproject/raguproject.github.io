@@ -217,9 +217,19 @@ $(document).ready(function () {
 
         $("#btn-compactlist").click(function () {
             $("#compact-ul").html("");
+            $("#compact").css("height", "0");
+            $("#compact").css("padding", "0");
+            $("#compact").css("margin-top", "0");
+            $("#compact").css("box-shadow", "none");
+
+
             var $this = $(this);
 
             if ($this.hasClass('btn-viewfilters')) {
+                $("#compact").css("height", "200px");
+                $("#compact").css("padding", "5%");
+                $("#compact").css("margin-top", "5%");
+                $("#compact").css("box-shadow", "inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5)");
                 if (plc != undefined) {
                     $(`#b-place-span`).html(plc.join(" or "));
                 }
@@ -299,6 +309,10 @@ $(document).ready(function () {
             }
             else if ($this.hasClass('btn-compactlist')) {
                 $("#compact-ul").html("");
+                $("#compact").css("height", "0");
+                $("#compact").css("padding", "0");
+                $("#compact").css("margin-top", "0");
+                $("#compact").css("box-shadow", "none");
                 $("#breadcrumbs-div").css("display", "none");
             }
         });

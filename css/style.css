@@ -846,6 +846,8 @@ div #provenance {
 
 #compact {
     overflow-y: scroll;
+    background-color: #f8f8f8;
+
 }
 
 .btn-light:hover {
