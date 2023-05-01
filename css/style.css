@@ -212,15 +212,14 @@ canvas {
 /* Horizontal Navbar */
 
 
-.navbar-expand-lg .navbar-nav .nav-link {
+/*.navbar-expand-lg .navbar-nav .nav-link {
     font-family: "Playfair";
     font-size: 21px;
     color: var(--base-text);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    font-family: "Playfair";
-    font-size: 21px;
+
     color: var(--red-text);
 }
 
@@ -235,6 +234,28 @@ canvas {
     padding-top: 5em;
     background-color: var(--colorbg);
     z-index: 1002;
+}*/
+
+.navbar {
+    z-index: 1002;
+    position: fixed;
+    width: 100%;
+    background-color: #f0ece9 !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navbar-nav {
+    font-family: "Playfair";
+    font-size: 18px;
+
+}
+
+.nav-link {
+    color: var(--base-text) !important;
+}
+
+.nav-link:hover {
+    color: var(--red-text) !important;
 }
 
 
@@ -378,6 +399,8 @@ h1#fadein.comingsoon.fade-in {
 }
 
 @media(min-width:320px) and (max-width:767px) {
+
+
 
     input[type="checkbox"] {
         border: 0.75px solid #332421 !important;
@@ -846,6 +869,8 @@ div #provenance {
 
 #compact {
     overflow-y: scroll;
+    background-color: #f8f8f8;
+
 }
 
 .btn-light:hover {
@@ -1146,6 +1171,10 @@ img,
     font-weight: bold;
 }
 
+#temperature-bold {
+    font-weight: bold;
+}
+
 #about-recipe,
 .h2 {
     color: var(--red-text);
@@ -1304,7 +1333,7 @@ ul {
 }
 
 #recipe-serves {
-    padding-top: 5%;
+    padding-top: 1.5%;
 }
 
 ul#ingr-list {
@@ -1451,16 +1480,22 @@ ul {
         display: none;
     }
 
+    .navbar {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
     .navbar-toggler {
         border: none;
         width: 5em;
         box-shadow: none;
+        position: absolute;
+        right: 0;
     }
 
-    .navbar-toggler-icon {
-        width: 2em;
-        border: none;
-        box-shadow: none !important;
+    #logo_ragu {
+        width: 20% !important;
     }
 
 
@@ -1558,14 +1593,14 @@ ul {
         padding: 10%;
     }
 
-    #navbarNav .icon-bar:nth-of-type(1) {
+    /*#navbarNav .icon-bar:nth-of-type(1) {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         -webkit-transform-origin: 10% 10%;
         -ms-transform-origin: 10% 10%;
         transform-origin: 10% 10%;
-    }
+    }*/
 
     #chartdiv {
         width: 100%;
@@ -1644,7 +1679,7 @@ ul {
         padding-bottom: 8%;
     }
 
-    .navbar>.container,
+    /*>.container,
     .navbar>.container-fluid,
     .navbar>.container-lg,
     .navbar>.container-md,
@@ -1670,7 +1705,7 @@ ul {
     #navbarNav .nav-link {
         padding: none;
         line-height: 0.5;
-    }
+    }*/
 
     #sidebar a {
         padding: 8px 8px 8px 32px;
@@ -1846,6 +1881,11 @@ ul {
     img,
     #recipe-img1 {
         width: 20% !important;
+    }
+
+    img,
+    #recipe-img4 {
+        width: 9% !important;
     }
 
     #recipe-serves {
