@@ -21,13 +21,14 @@ $(document).ready(function () {
         ol.classList.add("col-6");
         ol.appendChild(h1);
         h1.appendChild(document.createTextNode(i));
-        var val_ord = Object.values(links).sort();
-        var keys_ord = Object.keys(links).sort();
-        for (const link in val_ord) {
-            const ids = val_ord[link];
+        var entries = (Object.entries(links))
+        //var val_ord = Object.values(links).sort();
+        // var keys_ord = Object.keys(links).sort();
+        for (const link of entries) {
+            const ids = link[1];
             const a = document.createElement('a');
             a.appendChild(document.createTextNode(ids));
-            a.id = keys_ord[link];
+            a.id = link[0];
             a.name = "recipe_a";
             a.classList = "recipe_a";
             a.href = "#myModal";
@@ -369,190 +370,241 @@ $(document).ready(function () {
 });
 
 //---------- RECIPE MODAL ---------
+
 $(document).ready(function () {
     $("body").on("click", ".recipe_a", function (ev) {
         ev.preventDefault();
         var modalToOpen = $(this).attr("href");
         $(modalToOpen).modal('show');
         let id_rec = this.attributes[`id`].value;
-        $.getJSON(`https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/notebook_dina.json`, function (modal_recipes) {
-            var notebook_recipes = modal_recipes.recipes;
-            let month = notebook_recipes.filter(function (data) { return data.id === id_rec; });
-            var notebook_provenance = modal_recipes.provenance;
-            var from_year = modal_recipes.fromYear;
-            if (from_year == "") {
-                from_year = "n/s";
-            }
-            var to_year = modal_recipes.toYear;
-            if (to_year == "") {
-                to_year = "n/s";
-            }
-            var author = modal_recipes.author;
-            if (author == "") {
-                author = "unknown";
-            }
-            var notebook_title = modal_recipes.notebookTitle;
-            if (notebook_title == "") {
-                notebook_title = "n/s";
-            }
-            var donor = (notebook_provenance[0].donor);
-            if (donor == "") {
-                donor = "unknown";
-            }
-            var dateOfFinding = (notebook_provenance[0].dateOfFinding);
-            if (dateOfFinding == "") {
-                dateOfFinding = "n/s";
-            }
-            var placeOfFinding = (notebook_provenance[0].placeOfFinding);
-            if (placeOfFinding == "") {
-                placeOfFinding = "n/s";
-            }
-            var regionOfFinding = (notebook_provenance[0].region);
-            if (regionOfFinding == "") {
-                regionOfFinding = "n/s";
-            }
-            var countryOfFinding = (notebook_provenance[0].country);
-            if (countryOfFinding == "") {
-                countryOfFinding = "n/s";
-            }
-            var city = (notebook_provenance[0].city);
-            if (city == "") {
-                city = "n/s";
-            }
-            $(`#recipe-info`).html("This recipe was kindly donated by" + " <i>" + donor + "</i>," + " found the " + " <b>" + dateOfFinding + "</b> " + "in" + " <b>" + placeOfFinding + "</b> " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
-            var recipes_values = (Object.values(month));
-            var title_rec = (recipes_values[0].recipeTitle);
-            var title_chapt = (recipes_values[0].chapter);
-            if (title_chapt == "") {
-                title_chapt = "n/s";
-            }
-            var serves = (recipes_values[0].numberOfPersons);
-            $(`#serves-bold`).html(serves + " people");
-            if (serves == "") {
-                $(`#serves-bold`).html("n/s");
-            }
-            var preparation = (recipes_values[0].recipeTime);
-            var preparation_list = [];
-            for (var i of preparation) {
-                preparation_list.push(i + " " + "min")
-            }
+        var general_json;
+        $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/general.json", function (json) {
+            general_json = json;
+            var notebooks = general_json.notebooks;
+            var notebooks_json = Object.values(notebooks);
 
-            var preparation_join = preparation_list.join(", ");
-            $(`#preparation-bold`).html(preparation_join);
-            if (preparation_join == "") {
-                $(`#preparation-bold`).html("n/s");
-            }
+            for (var nb of notebooks_json) {
+                var get_json = $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/" + nb);
+                //accedo ai ricettari
+                var modal_recipes = get_json.responseJSON;
+                //accedo agli id dei ricettari (quaderno_2_29ago2019_sara_fornaciari)
+                var id_nb = modal_recipes.id;
+                //accedo all'id della ricetta e lo splitto al __
+                var id_rec_split = id_rec.split("__");
+                var cookbook = id_rec_split[0];
+                var recipe_number = id_rec_split[1];
+                if (cookbook == id_nb) {
+                    var notebook_recipes = modal_recipes.recipes;
+                    var recipe_dict = (notebook_recipes[recipe_number]);
+                    var notebook_provenance = modal_recipes.provenance;
+                    var from_year = modal_recipes.fromYear;
+                    if (from_year == "") {
+                        from_year = "n/s";
+                    }
+                    var to_year = modal_recipes.toYear;
+                    if (to_year == "") {
+                        to_year = "n/s";
+                    }
+                    var author = modal_recipes.author;
+                    if (author == "") {
+                        author = "unknown";
 
-            var pages = (recipes_values[0].pagesNumber);
-            var pages_list = [];
-            for (var p of pages) {
-                pages_list.push(p)
-            }
+                    }
 
-            var pages_join = pages_list.join("-");
-            if (pages_join == "") {
-                pages_join = "n/s";
-            }
+                    var notebook_title = modal_recipes.notebookTitle;
+                    if (notebook_title == "") {
+                        notebook_title = "n/s";
+                    }
+
+                    var donor = (notebook_provenance.donor);
+                    if (donor == "") {
+                        donor = "unknown";
+
+                    }
+                    var dateOfFinding = (notebook_provenance.dateOfFinding);
+                    if (dateOfFinding == "") {
+                        dateOfFinding = "n/s";
+                    }
+                    var placeOfFinding = (notebook_provenance.placeOfFinding);
+                    if (placeOfFinding == "") {
+                        placeOfFinding = "n/s";
+                    }
+                    var regionOfFinding = (notebook_provenance.region);
+                    if (regionOfFinding == "") {
+                        regionOfFinding = "n/s";
+                    }
+                    var countryOfFinding = (notebook_provenance.country);
+                    if (countryOfFinding == "") {
+                        countryOfFinding = "n/s";
+                    }
+                    var city = (notebook_provenance.city);
+                    if (city == "") {
+                        city = "n/s";
+                    }
+                    $(`#recipe-info`).html("This recipe was kindly donated by" + " <i>" + donor + "</i>," + " found the " + " <b>" + dateOfFinding + "</b> " + "in" + " <b>" + placeOfFinding + "</b> " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
+
+                    var title_rec = (recipe_dict.recipeTitle);
+                    console.log(title_rec)
+                    var title_chapt = (recipe_dict.chapter);
+                    if (title_chapt == "") {
+                        title_chapt = "n/s";
+                    }
+                    var serves = (recipe_dict.numberOfPersons);
+                    $(`#serves-bold`).html(serves + " people");
+                    if (serves == "") {
+                        $(`#serves-bold`).html("n/s");
+                    }
+                    var preparation = (recipe_dict.recipeTime);
+                    var preparation_list = [];
+                    for (var i of preparation) {
+                        if (i != "") {
+                            preparation_list.push(i + " " + "min")
+                        }
+                    }
+
+                    var preparation_join = preparation_list.join(", ");
+                    $(`#preparation-bold`).html(preparation_join);
+                    if (preparation_join == "") {
+                        $(`#preparation-bold`).html("n/s");
+                    }
+
+                    var pages = (recipe_dict.pagesNumber);
+                    var pages_list = [];
+                    for (var p of pages) {
+                        pages_list.push(p)
+                    }
+
+                    var pages_join = pages_list.join("-");
+                    if (pages_join == "") {
+                        pages_join = "n/s";
+                    }
 
 
-            var cooking = (recipes_values[0].cookingTime);
-            var cooking_list = [];
-            for (var x of cooking) {
-                cooking_list.push(x + " " + "min")
+                    var cooking = (recipe_dict.cookingTime);
+                    var cooking_list = [];
+                    for (var x of cooking) {
+                        if (x != "") {
+                            cooking_list.push(x + " " + "min")
+                        }
 
-            }
-            var cooking_join = cooking_list.join(", ");
-            $(`#cooking-bold`).html(cooking_join);
-            if (cooking_join == "") {
-                $(`#cooking-bold`).html("n/s");
-            }
-            var course = (recipes_values[0].course);
-            var ingredients_dict = (recipes_values[0].ingredients);
+                    }
+                    var cooking_join = cooking_list.join(", ");
+                    $(`#cooking-bold`).html(cooking_join);
+                    if (cooking_join == "") {
+                        $(`#cooking-bold`).html("n/s");
+                    }
 
-            var list_procedure = (recipes_values[0].cookingProcedure);
-            if (list_procedure != []) {
-                for (var procedure of list_procedure) {
+                    var temp = (recipe_dict.temperature);
+                    var temp_list = [];
+                    for (var t of temp) {
+                        if (t != "") {
+                            temp_list.push(t)
+                        }
 
-                    var cook_procedure = document.createElement('li');
-                    const ul_procedure = document.getElementById('cook-list');
-                    cook_procedure.appendChild(document.createTextNode(procedure));
-                    ul_procedure.appendChild(cook_procedure);
+                    }
+                    var temp_join = temp_list.join(", ");
+                    $(`#temperature-bold`).html(temp_join);
+                    if (temp_join == "") {
+                        $(`#temperature-bold`).html("n/s");
+                    }
+
+                    var course = (recipe_dict.course);
+                    var ingredients_dict = (recipe_dict.ingredients);
+                    var list_procedure = (recipe_dict.cookingProcedure);
+                    if (list_procedure != []) {
+                        for (var procedure of list_procedure) {
+                            if (procedure != "") {
+                                var cook_procedure = document.createElement('li');
+                                const ul_procedure = document.getElementById('cook-list');
+                                cook_procedure.appendChild(document.createTextNode(procedure));
+                                ul_procedure.appendChild(cook_procedure);
+                            }
+                        }
+                    }
+
+                    for (var ingr of ingredients_dict) {
+                        var list_ingr = document.createElement('li');
+                        const ul_ingredients = document.getElementById('ingr-list');
+                        var span = document.createElement('span');
+                        span.id = "var-italic";
+                        var span_bold = document.createElement('span');
+                        span_bold.id = "var-bold";
+                        var var_list = document.createElement('li');
+                        const var_ul = document.getElementById('var_list');
+                        //var alt_ingr = (ingr.alternativeIngredient);
+                        //var alt_ingr_name = (alt_ingr.alternativeIngredientName);
+                        var alt_ingr_name = (ingr.category);
+                        //var alt_ingr_qual = (alt_ingr.alternativeIngredientQualifier);
+                        var alt_ingr_qual = (ingr.category);
+                        var ingr_name = ingr.ingredientName;
+                        var variant_name = ingr.variantIngredientName;
+                        var ingr_qual = ingr.ingredientQualifier;
+                        var dosage = ingr.dosage.quantity + " " + ingr.dosage.unitOfMeasure + " | ";
+                        if (ingr.dosage.quantity == "") {
+                            dosage = ""
+                        }
+                        var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ") or " + alt_ingr_name;
+
+                        if (alt_ingr_name == "" && ingr_qual != "" && variant_name != "") {
+                            var ingr_complete = dosage + ingr_name + " * (" + ingr_qual + ")";
+                        }
+                        else if (alt_ingr_name == "" && ingr_qual != "" && variant_name == "") {
+                            var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ")";
+                        }
+                        else if (alt_ingr_name != "" && alt_ingr_qual != "" && ingr_qual == "" && variant_name != "") {
+                            var ingr_complete = dosage + ingr_name + " * or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
+                        }
+                        else if (alt_ingr_name != "" && alt_ingr_qual != "" && ingr_qual != "" && variant_name == "") {
+                            var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ")" + " or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
+                        }
+                        else if (alt_ingr_name != "" && alt_ingr_qual == "" && ingr_qual == "" && variant_name != "") {
+                            var ingr_complete = dosage + ingr_name + " * or " + alt_ingr_name;
+                        }
+
+                        else if (alt_ingr_name != "" && ingr_qual == "" && alt_ingr_qual == "" && variant_name == "") {
+                            var ingr_complete = dosage + ingr_name + " or " + alt_ingr_name;
+                        }
+                        else if (alt_ingr_name != "" && ingr_qual == "" && alt_ingr_qual != "" && variant_name == "") {
+                            var ingr_complete = dosage + ingr_name + " or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
+                        }
+                        else if (alt_ingr_name == "" && ingr_qual == "" && variant_name != "") {
+                            var ingr_complete = dosage + ingr_name + " *";
+                        }
+                        else if (alt_ingr_name == "" && ingr_qual == "" && variant_name == "") {
+                            var ingr_complete = dosage + ingr_name;
+                        }
+
+                        list_ingr.appendChild(document.createTextNode(ingr_complete));
+                        ul_ingredients.appendChild(list_ingr);
+                        if (variant_name != "") {
+                            span_bold.innerHTML = ingr_name;
+                            span.innerHTML = variant_name;
+                            var_list.appendChild(document.createTextNode("* "))
+                            var_list.appendChild(span_bold);
+                            var_list.appendChild(document.createTextNode(" is also known as [ "));
+                            var_list.appendChild(span);
+                            var_list.appendChild(document.createTextNode(" ]"));
+                            var_ul.appendChild(var_list);
+                        }
+
+                    }
+
+                    $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
+                    $(`#recipe-subtitle`).html(author + "," + " " + "<b>" + notebook_title + "</b>" + ", p. " + pages_join + ", " + "<i>" + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "[" + from_year + " - " + to_year + "]." + "</i>");
+
+                    $(".btn-close").click(function () {
+                        $("#myModal").modal('hide');
+                        $('#ingr-list').html('');
+                        $('#cook-list').html('');
+                        $('#var_list').html('');
+                    });
+
+
+                }
+                else {
+                    ""
                 }
             }
-
-            for (var ingr of ingredients_dict) {
-                var list_ingr = document.createElement('li');
-                const ul_ingredients = document.getElementById('ingr-list');
-                var span = document.createElement('span');
-                span.id = "var-italic";
-                var span_bold = document.createElement('span');
-                span_bold.id = "var-bold";
-                var var_list = document.createElement('li');
-                const var_ul = document.getElementById('var_list');
-                var alt_ingr = (ingr.alternativeIngredient);
-                var alt_ingr_name = (alt_ingr[0].alternativeIngredientName);
-                var alt_ingr_qual = (alt_ingr[0].alternativeIngredientQualifier);
-                var ingr_name = ingr.ingredientName;
-                var variant_name = ingr.variantIngredientName;
-                var ingr_qual = ingr.ingredientQualifier;
-                var dosage = ingr.dosage[0].quantity + " " + ingr.dosage[0].unitOfMeasure + " | ";
-                if (ingr.dosage[0].quantity == "") {
-                    dosage = ""
-                }
-                var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ") or " + alt_ingr_name;
-
-                if (alt_ingr_name == "" && ingr_qual != "" && variant_name != "") {
-                    var ingr_complete = dosage + ingr_name + " * (" + ingr_qual + ")";
-                }
-                else if (alt_ingr_name == "" && ingr_qual != "" && variant_name == "") {
-                    var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ")";
-                }
-                else if (alt_ingr_name != "" && alt_ingr_qual != "" && ingr_qual == "" && variant_name != "") {
-                    var ingr_complete = dosage + ingr_name + " * or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
-                }
-                else if (alt_ingr_name != "" && alt_ingr_qual != "" && ingr_qual != "" && variant_name == "") {
-                    var ingr_complete = dosage + ingr_name + " (" + ingr_qual + ")" + " or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
-                }
-                else if (alt_ingr_name != "" && alt_ingr_qual == "" && ingr_qual == "" && variant_name != "") {
-                    var ingr_complete = dosage + ingr_name + " * or " + alt_ingr_name;
-                }
-
-                else if (alt_ingr_name != "" && ingr_qual == "" && alt_ingr_qual == "" && variant_name == "") {
-                    var ingr_complete = dosage + ingr_name + " or " + alt_ingr_name;
-                }
-                else if (alt_ingr_name != "" && ingr_qual == "" && alt_ingr_qual != "" && variant_name == "") {
-                    var ingr_complete = dosage + ingr_name + " or " + alt_ingr_name + " (" + alt_ingr_qual + ")";
-                }
-                else if (alt_ingr_name == "" && ingr_qual == "" && variant_name != "") {
-                    var ingr_complete = dosage + ingr_name + " *";
-                }
-                else if (alt_ingr_name == "" && ingr_qual == "" && variant_name == "") {
-                    var ingr_complete = dosage + ingr_name;
-                }
-
-                list_ingr.appendChild(document.createTextNode(ingr_complete));
-                ul_ingredients.appendChild(list_ingr);
-                if (variant_name != "") {
-                    span_bold.innerHTML = ingr_name;
-                    span.innerHTML = variant_name;
-                    var_list.appendChild(document.createTextNode("* "))
-                    var_list.appendChild(span_bold);
-                    var_list.appendChild(document.createTextNode(" is also known as [ "));
-                    var_list.appendChild(span);
-                    var_list.appendChild(document.createTextNode(" ]"));
-                    var_ul.appendChild(var_list);
-                }
-
-            }
-            $(`#recipe-title`).html(title_rec + " " + "|" + " " + course);
-            $(`#recipe-subtitle`).html(author + "," + " " + "<b>" + notebook_title + "</b>" + ", p. " + pages_join + ", " + "<i>" + "(ch. " + " " + title_chapt + ")" + "</i>" + "," + " " + city + " " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + "," + " " + "years" + " " + "<i>" + "[" + from_year + " - " + to_year + "]." + "</i>");
-
-            $(".btn-close").click(function () {
-                $("#myModal").modal('hide');
-                $('#ingr-list').html('');
-                $('#cook-list').html('');
-                $('#var_list').html('');
-            });
         });
     });
 });
