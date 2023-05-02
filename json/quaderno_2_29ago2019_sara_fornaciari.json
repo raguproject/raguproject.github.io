@@ -84,7 +84,7 @@
                 },
                 {
                     "category": "fish",
-                    "ingredientName": "tuna ",
+                    "ingredientName": "tuna",
                     "ingredientQualifier": "",
                     "variantIngredientName": "",
                     "dosage": {
@@ -593,7 +593,7 @@
                 },
                 {
                     "category": "baked products",
-                    "ingredientName": "bread ",
+                    "ingredientName": "bread",
                     "ingredientQualifier": "",
                     "variantIngredientName": "",
                     "dosage": {
@@ -933,7 +933,7 @@
                 },
                 {
                     "category": "baked products",
-                    "ingredientName": "bread ",
+                    "ingredientName": "bread",
                     "ingredientQualifier": "",
                     "variantIngredientName": "",
                     "dosage": {
@@ -1525,7 +1525,7 @@
                 },
                 {
                     "category": "fish",
-                    "ingredientName": "tuna ",
+                    "ingredientName": "tuna",
                     "ingredientQualifier": "",
                     "variantIngredientName": "",
                     "dosage": {
@@ -2408,7 +2408,7 @@
                 },
                 {
                     "category": "baked products",
-                    "ingredientName": "bread ",
+                    "ingredientName": "bread",
                     "ingredientQualifier": "roll",
                     "variantIngredientName": "",
                     "dosage": {
@@ -3175,7 +3175,7 @@
             "ingredients": [
                 {
                     "category": "baked products",
-                    "ingredientName": "bread ",
+                    "ingredientName": "bread",
                     "ingredientQualifier": "sandwich",
                     "variantIngredientName": "",
                     "dosage": {
@@ -3531,7 +3531,7 @@
                 },
                 {
                     "category": "baked products",
-                    "ingredientName": "bread ",
+                    "ingredientName": "bread",
                     "ingredientQualifier": "stale",
                     "variantIngredientName": "",
                     "dosage": {
@@ -10471,7 +10471,7 @@
             "ingredients": [
                 {
                     "category": "fish",
-                    "ingredientName": "tuna ",
+                    "ingredientName": "tuna",
                     "ingredientQualifier": "",
                     "variantIngredientName": "",
                     "dosage": {
@@ -10522,7 +10522,7 @@
                 },
                 {
                     "category": "baked products",
-                    "ingredientName": "bread ",
+                    "ingredientName": "bread",
                     "ingredientQualifier": "",
                     "variantIngredientName": "",
                     "dosage": {
