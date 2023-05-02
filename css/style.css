@@ -16,6 +16,7 @@
 }
 
 
+
 /* root, header, body */
 
 header,
@@ -61,6 +62,10 @@ li#expl.explore_class {
 
 }
 
+
+#logo_ragu {
+    width: 25%;
+}
 
 /* Cookbooks and recipes images/buttons on the right */
 
@@ -1501,7 +1506,7 @@ ul {
     }
 
     #logo_ragu {
-        width: 100% !important;
+        width: 25%;
     }
 
 
@@ -1525,7 +1530,7 @@ ul {
     }
 
     #img-sidebar img {
-        width: 10%;
+        width: 10% !important;
         bottom: 3%;
         left: 5%;
         position: fixed;
@@ -1889,7 +1894,7 @@ ul {
         width: 20% !important;
     }
 
-    img,
+
     #recipe-img4 {
         width: 9% !important;
     }
