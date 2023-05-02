@@ -64,7 +64,7 @@ li#expl.explore_class {
 
 
 #logo_ragu {
-    width: 25%;
+    width: 60%;
 }
 
 /* Cookbooks and recipes images/buttons on the right */
@@ -1505,7 +1505,7 @@ ul {
         right: 0;
     }
 
-    #logo_ragu {
+    img#logo_ragu {
         width: 25%;
     }
 
@@ -1883,19 +1883,17 @@ ul {
         width: 14rem !important;
     }
 
-    img,
-    #recipe-img2,
-    #recipe-img3 {
+    img#recipe-img2,
+    img#recipe-img3 {
         width: 10% !important;
     }
 
-    img,
-    #recipe-img1 {
+    img#recipe-img1 {
         width: 20% !important;
     }
 
 
-    #recipe-img4 {
+    img#recipe-img4 {
         width: 9% !important;
     }
 
@@ -1945,6 +1943,15 @@ ul {
 }
 
 @media(min-width:768px) and (max-width:1023px) {
+
+    #macchia_discover {
+        width: 70%;
+        position: absolute;
+        top: 3%;
+        left: 27%;
+        opacity: 8%;
+        z-index: -1;
+    }
 
 
     #recipe-container #container-recipe {
