@@ -465,6 +465,7 @@ $(document).ready(function () {
                         $(`#preparation-bold`).html("n/s");
                     }
 
+
                     var pages = (recipe_dict.pagesNumber);
                     var pages_list = [];
                     for (var p of pages) {
@@ -505,7 +506,7 @@ $(document).ready(function () {
                         $(`#temperature-bold`).html("n/s");
                     }
 
-                    var course = (recipe_dict.course);
+                    var course = recipe_dict.course;
                     var ingredients_dict = (recipe_dict.ingredients);
                     var list_procedure = (recipe_dict.cookingProcedure);
                     if (list_procedure != []) {
@@ -519,6 +520,12 @@ $(document).ready(function () {
                         }
                     }
 
+                    var recipe_img = recipe_dict.img;
+                    for (var img of recipe_img) {
+                        console.log(img)
+                        $("#recipe-img").attr("src", "../photos/" + img);
+                    }
+
                     for (var ingr of ingredients_dict) {
                         var list_ingr = document.createElement('li');
                         const ul_ingredients = document.getElementById('ingr-list');
@@ -528,11 +535,9 @@ $(document).ready(function () {
                         span_bold.id = "var-bold";
                         var var_list = document.createElement('li');
                         const var_ul = document.getElementById('var_list');
-                        //var alt_ingr = (ingr.alternativeIngredient);
-                        //var alt_ingr_name = (alt_ingr.alternativeIngredientName);
-                        var alt_ingr_name = (ingr.category);
-                        //var alt_ingr_qual = (alt_ingr.alternativeIngredientQualifier);
-                        var alt_ingr_qual = (ingr.category);
+                        var alt_ingr = (ingr.alternativeIngredient);
+                        var alt_ingr_name = (alt_ingr[0].alternativeIngredientName);
+                        var alt_ingr_qual = (alt_ingr[0].alternativeIngredientQualifier);
                         var ingr_name = ingr.ingredientName;
                         var variant_name = ingr.variantIngredientName;
                         var ingr_qual = ingr.ingredientQualifier;
