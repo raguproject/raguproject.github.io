@@ -211,111 +211,112 @@ $(document).ready(function () {
         var cat = selectedFilters.category;
         var x = $('.recipe_a').hide().filter($filteredResults).show();
         var arr_filt = [];
-
         $("input[type=checkbox]:checked").each(function () {
             arr_filt.push($(this).val());
-        });
-
-        $("#btn-compactlist").click(function () {
-            $("#compact-ul").html("");
-            $("#compact").css("height", "0");
-            $("#compact").css("padding", "0");
-            $("#compact").css("margin-top", "0");
-            $("#compact").css("box-shadow", "none");
+            console.log(arr_filt)
 
 
-            var $this = $(this);
-
-            if ($this.hasClass('btn-viewfilters')) {
-                $("#compact").css("height", "200px");
-                $("#compact").css("padding", "5%");
-                $("#compact").css("margin-top", "5%");
-                $("#compact").css("box-shadow", "inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5)");
-                if (plc != undefined) {
-                    $(`#b-place-span`).html(plc.join(" or "));
-                }
-                else {
-                    $(`#b-place-span`).html("no place specified");
-                }
-                if (ingred != undefined) {
-                    $(`#b-ingr-span`).html(ingred.join(" or/and "));
-                }
-                else {
-                    $(`#b-ingr-span`).html("no ingredient specified");
-                }
-                if (cat != undefined) {
-                    $(`#b-cat-span`).html(cat.join(" or "));
-                }
-                else {
-                    $(`#b-cat-span`).html("no category specified");
-                }
-                $("#breadcrumbs-div").css("display", "block");
-
-
-
-
-                for (var y of x) {
-                    var filt = (y.dataset.allfilters);
-                    var filt_cat = (y.dataset.category);
-                    var filt_plc = (y.dataset.place);
-                    var filt_ing = (y.dataset.ingredients);
-                    var filt_cat_split = filt_cat.split(" ");
-                    var filt_plc_split = filt_plc.split(" ");
-                    var filt_ing_split = filt_ing.split(" ");
-                    var filt_comp = filt.split(" ");
-                    const intersection_ing = arr_filt.filter(element => filt_ing_split.includes(element));
-                    const intersection_cat = arr_filt.filter(element => filt_cat_split.includes(element));
-                    const intersection_plc = arr_filt.filter(element => filt_plc_split.includes(element));
-                    const intersection = arr_filt.filter(element => filt_comp.includes(element));
-                    const clone = y.cloneNode(true);
-                    var list_rec = $("<li></li>").append(clone);
-
-                    var icon_list = $("<a></a>");
-                    var icon = $("<i></i>");
-                    $(icon_list).attr('href', '#');
-                    $(icon_list).attr('data-toggle', 'tooltip');
-                    if (intersection_plc == 0 && intersection_cat == 0 && intersection_ing != 0) {
-                        $(icon_list).attr('title', "The recipe contains [" + intersection_ing.join(" and ") + "].");
-                    }
-                    else if (intersection_plc != 0 && intersection_cat == 0 && intersection_ing == 0) {
-                        $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "].");
-                    }
-                    else if (intersection_plc == 0 && intersection_cat != 0 && intersection_ing == 0) {
-                        $(icon_list).attr('title', "The recipe is a [" + intersection_cat + "].");
-                    }
-                    else if (intersection_plc != 0 && intersection_cat != 0 && intersection_ing == 0) {
-                        $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "]" + " and it is a [" + intersection_cat + "].");
-                    }
-                    else if (intersection_plc != 0 && intersection_cat == 0 && intersection_ing != 0) {
-                        $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "]" + " and contains [" + intersection_ing.join(" and ") + "].");
-                    }
-                    else if (intersection_plc == 0 && intersection_cat != 0 && intersection_ing != 0) {
-                        $(icon_list).attr('title', "The recipe contains [" + intersection_ing.join(" and ") + "]" + " and it is a [" + intersection_cat + "].");
-                    }
-                    else {
-                        $(icon_list).attr('title', "This recipe is from [" + intersection_plc + "]" + " , contains [" + intersection_ing.join(" and ") + "]" + " and it is a [" + intersection_cat + "].");
-                    }
-                    $(icon).attr('class', "fa-regular fa-circle-question icon-list");
-                    $(list_rec).attr('id', 'list-recipes-filter');
-                    $(icon_list).append(icon);
-                    $(list_rec).append(icon_list);
-
-                    $("#compact-ul").append(list_rec);
-
-                }
-
-
-
-
-            }
-            else if ($this.hasClass('btn-compactlist')) {
+            $("#btn-compactlist").click(function () {
                 $("#compact-ul").html("");
+                $("#compact-ul").css("padding", "0");
                 $("#compact").css("height", "0");
                 $("#compact").css("padding", "0");
                 $("#compact").css("margin-top", "0");
                 $("#compact").css("box-shadow", "none");
-                $("#breadcrumbs-div").css("display", "none");
-            }
+
+
+                var $this = $(this);
+                if ($this.hasClass('btn-viewfilters')) {
+                    $("#compact").css("height", "200px");
+                    $("#compact").css("padding", "5%");
+                    $("#compact").css("margin-top", "5%");
+                    $("#compact-ul").css("padding", "5%");
+
+                    $("#compact").css("box-shadow", "inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5)");
+                    if (plc != undefined) {
+                        $(`#b-place-span`).html(plc.join(" or "));
+                    }
+                    else {
+                        $(`#b-place-span`).html("no place specified");
+                    }
+                    if (ingred != undefined) {
+                        $(`#b-ingr-span`).html(ingred.join(" or/and "));
+                    }
+                    else {
+                        $(`#b-ingr-span`).html("no ingredient specified");
+                    }
+                    if (cat != undefined) {
+                        $(`#b-cat-span`).html(cat.join(" or "));
+                    }
+                    else {
+                        $(`#b-cat-span`).html("no category specified");
+                    }
+                    $("#breadcrumbs-div").css("display", "block");
+
+                    for (var y of x) {
+                        var filt = (y.dataset.allfilters);
+                        var filt_cat = (y.dataset.category);
+                        var filt_plc = (y.dataset.place);
+                        var filt_ing = (y.dataset.ingredients);
+                        var filt_cat_split = filt_cat.split(" ");
+                        var filt_plc_split = filt_plc.split(" ");
+                        var filt_ing_split = filt_ing.split(" ");
+                        var filt_comp = filt.split(" ");
+                        const intersection_ing = arr_filt.filter(element => filt_ing_split.includes(element));
+                        const intersection_cat = arr_filt.filter(element => filt_cat_split.includes(element));
+                        const intersection_plc = arr_filt.filter(element => filt_plc_split.includes(element));
+                        const intersection = arr_filt.filter(element => filt_comp.includes(element));
+                        const clone = y.cloneNode(true);
+                        var list_rec = $("<li></li>").append(clone);
+                        var icon_list = $("<a></a>");
+                        var icon = $("<i></i>");
+                        $(icon_list).attr('href', '#');
+                        $(icon_list).attr('data-toggle', 'tooltip');
+                        if (intersection_plc == 0 && intersection_cat == 0 && intersection_ing != 0) {
+                            $(icon_list).attr('title', "The recipe contains [" + intersection_ing.join(" and ") + "].");
+                        }
+                        else if (intersection_plc != 0 && intersection_cat == 0 && intersection_ing == 0) {
+                            $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "].");
+                        }
+                        else if (intersection_plc == 0 && intersection_cat != 0 && intersection_ing == 0) {
+                            $(icon_list).attr('title', "The recipe is a [" + intersection_cat + "].");
+                        }
+                        else if (intersection_plc != 0 && intersection_cat != 0 && intersection_ing == 0) {
+                            $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "]" + " and it is a [" + intersection_cat + "].");
+                        }
+                        else if (intersection_plc != 0 && intersection_cat == 0 && intersection_ing != 0) {
+                            $(icon_list).attr('title', "The recipe is from [" + intersection_plc + "]" + " and contains [" + intersection_ing.join(" and ") + "].");
+                        }
+                        else if (intersection_plc == 0 && intersection_cat != 0 && intersection_ing != 0) {
+                            $(icon_list).attr('title', "The recipe contains [" + intersection_ing.join(" and ") + "]" + " and it is a [" + intersection_cat + "].");
+                        }
+                        else {
+                            $(icon_list).attr('title', "This recipe is from [" + intersection_plc + "]" + " , contains [" + intersection_ing.join(" and ") + "]" + " and it is a [" + intersection_cat + "].");
+                        }
+
+                        $(icon).attr('class', "fa-regular fa-circle-question icon-list");
+                        $(list_rec).attr('id', 'list-recipes-filter');
+                        $(icon_list).append(icon);
+                        $(list_rec).append(icon_list);
+                        $("#compact-ul").append(list_rec);
+
+                    }
+
+
+
+
+                }
+                else if ($this.hasClass('btn-compactlist')) {
+                    $("#compact-ul").html("");
+                    $("#compact").css("height", "0");
+                    $("#compact").css("padding", "0");
+                    $("#compact").css("margin-top", "0");
+                    $("#compact").css("box-shadow", "none");
+                    $("#compact-ul").css("padding", "0");
+
+                    $("#breadcrumbs-div").css("display", "none");
+                }
+            });
         });
 
         //----------RESET FILTERS BUTTON---------
@@ -323,9 +324,6 @@ $(document).ready(function () {
             $('input[type=checkbox]').prop('checked', false);
             $('.recipe_a').show();
         });
-
-
-
     }
 
 
@@ -444,7 +442,6 @@ $(document).ready(function () {
                     $(`#recipe-info`).html("This recipe was kindly donated by" + " <i>" + donor + "</i>," + " found the " + " <b>" + dateOfFinding + "</b> " + "in" + " <b>" + placeOfFinding + "</b> " + "(" + regionOfFinding + "," + " " + " " + countryOfFinding + ")" + ".");
 
                     var title_rec = (recipe_dict.recipeTitle);
-                    console.log(title_rec)
                     var title_chapt = (recipe_dict.chapter);
                     if (title_chapt == "") {
                         title_chapt = "n/s";
