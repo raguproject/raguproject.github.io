@@ -336,7 +336,7 @@ ul,
 
 h1#fadein.comingsoon.fade-in {
     font-size: 200px;
-    line-height: 0.6 !important;
+    line-height: 0.6;
     padding: none;
 }
 
@@ -1471,6 +1471,12 @@ ul {
 
 @media(min-width:320px) and (max-width:767px) {
 
+    #fadein.comingsoon.fade-in {
+        font-size: 100px !important;
+        line-height: 0.8 !important;
+    }
+
+
     .col-6 {
         flex: 0 0 auto;
         width: 100% !important;
@@ -1495,7 +1501,7 @@ ul {
     }
 
     #logo_ragu {
-        width: 20% !important;
+        width: 50% !important;
     }
 
 
