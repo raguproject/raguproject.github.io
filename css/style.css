@@ -798,6 +798,10 @@ section#dishes.section {
     animation: fadeIn 4s;
 }
 
+.fade-in2 {
+    animation: fadeIn 2s;
+}
+
 /* Filters + Index */
 
 #filter-sidebar-heading {
@@ -1159,10 +1163,9 @@ ol,
 
 }
 
-img,
-#recipe-img {
-    width: 70%;
-}
+
+
+
 
 #serves-bold {
     font-weight: bold;
@@ -1252,6 +1255,12 @@ img,
 
 #recipe-image {
     text-align: center;
+    display: inline-block;
+}
+
+img#photo_recipe {
+    width: 50% !important;
+    margin: 2% !important;
 }
 
 
@@ -1726,13 +1735,15 @@ ul {
         transition: 0.3s;
     }
 
-    #recipe-image {
+    /*#recipe-image {
         margin-top: 8%;
         justify-content: center;
         position: relative;
         text-align: center;
         margin: auto;
-    }
+    }*/
+
+
 
     #recipe-container #container-recipe {
         box-shadow: 5px 10px 18px #888888;

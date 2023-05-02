@@ -521,9 +521,13 @@ $(document).ready(function () {
                     }
 
                     var recipe_img = recipe_dict.img;
+
                     for (var img of recipe_img) {
-                        console.log(img)
-                        $("#recipe-img").attr("src", "../photos/" + img);
+                        var img_tag = $("<img>");
+                        $(img_tag).attr("src", "../recipe_photos/" + img);
+                        $(img_tag).attr("id", "photo_recipe");
+                        img_tag.appendTo('#recipe-image');
+
                     }
 
                     for (var ingr of ingredients_dict) {
@@ -599,6 +603,7 @@ $(document).ready(function () {
                         $('#ingr-list').html('');
                         $('#cook-list').html('');
                         $('#var_list').html('');
+                        $('#recipe-image').html('');
                     });
 
 
