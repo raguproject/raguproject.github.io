@@ -376,13 +376,13 @@ $(document).ready(function () {
         $(modalToOpen).modal('show');
         let id_rec = this.attributes[`id`].value;
         var general_json;
-        $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/general.json", function (json) {
+        $.getJSON("/json/general.json", function (json) {
             general_json = json;
             var notebooks = general_json.notebooks;
             var notebooks_json = Object.values(notebooks);
 
             for (var nb of notebooks_json) {
-                var get_json = $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/" + nb);
+                var get_json = $.getJSON("/json/" + nb);
                 //accedo ai ricettari
                 var modal_recipes = get_json.responseJSON;
                 //accedo agli id dei ricettari (quaderno_2_29ago2019_sara_fornaciari)
@@ -521,9 +521,13 @@ $(document).ready(function () {
                     }
 
                     var recipe_img = recipe_dict.img;
+
                     for (var img of recipe_img) {
-                        console.log(img)
-                        $("#recipe-img").attr("src", "../photos/" + img);
+                        var img_tag = $("<img>");
+                        $(img_tag).attr("src", "../recipe_photos/" + img);
+                        $(img_tag).attr("id", "photo_recipe");
+                        img_tag.appendTo('#recipe-image');
+
                     }
 
                     for (var ingr of ingredients_dict) {
@@ -599,6 +603,7 @@ $(document).ready(function () {
                         $('#ingr-list').html('');
                         $('#cook-list').html('');
                         $('#var_list').html('');
+                        $('#recipe-image').html('');
                     });
 
 
