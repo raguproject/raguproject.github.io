@@ -1261,8 +1261,10 @@ ol,
 
 img#photo_recipe {
     width: 50% !important;
-    margin: 2% !important;
-    padding-top: 6%;
+    margin: 10% 1% 0 1% !important;
+    margin-top: 10%;
+    border: 2px solid #332421;
+    box-shadow: rgb(136, 136, 136) 5px 10px 18px;
 }
 
 
