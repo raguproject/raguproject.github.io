@@ -526,6 +526,7 @@ $(document).ready(function () {
                         var img_tag = $("<img>");
                         $(img_tag).attr("src", "../recipe_photos/" + img);
                         $(img_tag).attr("id", "photo_recipe");
+                        $(img_tag).addClass("fade-in");
                         img_tag.appendTo('#recipe-image');
 
                     }

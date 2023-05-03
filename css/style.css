@@ -1235,6 +1235,7 @@ ol,
     padding: 2%;
     color: var(--base-text);
     font-weight: lighter;
+    text-align: center;
     /* border-bottom: 1px solid var(--base-text); */
 }
 
@@ -1261,6 +1262,7 @@ ol,
 img#photo_recipe {
     width: 50% !important;
     margin: 2% !important;
+    padding-top: 6%;
 }
 
 
