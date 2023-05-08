@@ -213,7 +213,6 @@ $(document).ready(function () {
         var arr_filt = [];
         $("input[type=checkbox]:checked").each(function () {
             arr_filt.push($(this).val());
-            console.log(arr_filt)
 
 
             $("#btn-compactlist").click(function () {
@@ -376,13 +375,13 @@ $(document).ready(function () {
         $(modalToOpen).modal('show');
         let id_rec = this.attributes[`id`].value;
         var general_json;
-        $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/general.json", function (json) {
+        $.getJSON("/json/general.json", function (json) {
             general_json = json;
             var notebooks = general_json.notebooks;
             var notebooks_json = Object.values(notebooks);
 
             for (var nb of notebooks_json) {
-                var get_json = $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/" + nb);
+                var get_json = $.getJSON("/json/" + nb);
                 //accedo ai ricettari
                 var modal_recipes = get_json.responseJSON;
                 //accedo agli id dei ricettari (quaderno_2_29ago2019_sara_fornaciari)
