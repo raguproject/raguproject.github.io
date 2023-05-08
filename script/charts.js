@@ -1,50 +1,52 @@
 // ----------- COUNTER -------------
 
-fetch("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/counter.json")
-    .then(function (resp) {
-        return resp.json();
-    })
-
-    .then(function (counter_json) {
-        var cookbooks = (counter_json["cookbooks"]);
-        var recipes = (counter_json["recipes"]);
-        var ingredients = (counter_json["ingredients"]);
-        const span_cook = document.getElementById('counter-cookbook');
-        span_cook.dataset.count = cookbooks;
-        const span_rec = document.getElementById('counter-recipe');
-        span_rec.dataset.count = recipes;
-        const span_ingr = document.getElementById('counter-ingredient');
-        span_ingr.dataset.count = ingredients;
-    })
-
-var a = 0;
-$(window).scroll(function () {
-    var oTop = $('#counter').offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() > oTop) {
-        $('.counter-value').each(function () {
-            var $this = $(this),
-                countTo = $this.attr('data-count');
-            $({
-                countNum: $this.text()
-            }).animate({
-                countNum: countTo
-            },
-                {
-                    duration: 3000,
-                    easing: 'swing',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                        //alert('finished');
-                    }
-                });
-        });
-        a = 1;
-    }
+var counter;
+$.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/general.json", function (json) {
+    counter = json;
 });
 
+$(document).ready(function () {
+    counter_json = counter.counter;
+    var cookbooks = (counter_json["cookbooks"]);
+    var recipes = (counter_json["recipes"]);
+    var ingredients = (counter_json["ingredients"]);
+    const span_cook = document.getElementById('counter-cookbook');
+    span_cook.dataset.count = cookbooks;
+    const span_rec = document.getElementById('counter-recipe');
+    span_rec.dataset.count = recipes;
+    const span_ingr = document.getElementById('counter-ingredient');
+    span_ingr.dataset.count = ingredients;
+
+
+
+    var a = 0;
+    $(window).scroll(function () {
+        var oTop = $('#counter').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counter-value').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                },
+                    {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+                    });
+            });
+            a = 1;
+        }
+    });
+});
 
 
 // ----------- NETWORK -------------
