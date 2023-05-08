@@ -994,7 +994,7 @@
                     "variantIngredientName": "",
                     "dosage": {
                         "quantity": "2",
-                        "unitOfMeasure": "spoons"
+                        "unitOfMeasure": "spoon"
                     },
                     "alternativeIngredient": [
                         {
