@@ -5693,9 +5693,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "wine",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "white"
                         }
                     ]
                 }
@@ -6003,7 +6003,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "lard",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -7192,9 +7192,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "tomato",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "preserves"
                         }
                     ]
                 },
@@ -10106,9 +10106,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "cheese",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "stracchino"
                         }
                     ]
                 },
@@ -10466,7 +10466,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "vinegar",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -13533,9 +13533,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "cheese",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "primo sale"
                         }
                     ]
                 },
@@ -14786,7 +14786,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "water",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -15009,7 +15009,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "egg",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -15615,142 +15615,6 @@
                     "dosage": {
                         "quantity": "1",
                         "unitOfMeasure": "teaspoon"
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
                     },
                     "alternativeIngredient": [
                         {
@@ -16888,7 +16752,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "mascarpone",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -17259,9 +17123,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "sugar",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "icing"
                         }
                     ]
                 },
@@ -23471,9 +23335,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "sugar",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "vanilla-flavoured"
                         }
                     ]
                 }
@@ -24172,7 +24036,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "fat",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -25123,9 +24987,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "compote",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "fruit"
                         }
                     ]
                 },
@@ -26447,74 +26311,6 @@
                             "alternativeIngredientQualifier": ""
                         }
                     ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
                 }
             ]
         },
@@ -27282,7 +27078,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "pineapple",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -27435,9 +27231,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "salt",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "celery"
                         }
                     ]
                 },
@@ -27774,9 +27570,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "lemon",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "slice"
                         }
                     ]
                 }
@@ -28413,9 +28209,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "ice cream",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "cube"
                         }
                     ]
                 }

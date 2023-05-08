@@ -6012,9 +6012,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "peach",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "in syrup"
                         }
                     ]
                 },
@@ -6283,9 +6283,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "wine",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "red"
                         }
                     ]
                 }
@@ -7149,9 +7149,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "pasta",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "bucatini"
                         }
                     ]
                 },
@@ -8915,7 +8915,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "bacon",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -12125,7 +12125,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "margarine",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -12429,7 +12429,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "Marsala",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -13108,7 +13108,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "lard",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -13193,7 +13193,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "lard",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -14730,7 +14730,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "margarine",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -14781,7 +14781,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "Marsala",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -15661,7 +15661,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "milk",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -15699,23 +15699,6 @@
                 ""
             ],
             "ingredients": [
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
                 {
                     "category": "cereal",
                     "ingredientName": "flour",
@@ -15846,7 +15829,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "lard",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
