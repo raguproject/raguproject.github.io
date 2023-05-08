@@ -213,7 +213,6 @@ $(document).ready(function () {
         var arr_filt = [];
         $("input[type=checkbox]:checked").each(function () {
             arr_filt.push($(this).val());
-            console.log(arr_filt)
 
 
             $("#btn-compactlist").click(function () {

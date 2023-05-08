@@ -399,7 +399,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "sausage",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -994,7 +994,7 @@
                     "variantIngredientName": "",
                     "dosage": {
                         "quantity": "2",
-                        "unitOfMeasure": "spoons"
+                        "unitOfMeasure": "spoon"
                     },
                     "alternativeIngredient": [
                         {
@@ -2325,9 +2325,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "beef",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "marrow"
                         }
                     ]
                 },
@@ -2427,7 +2427,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "onion",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -2461,9 +2461,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "tomato",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "fresh peeled"
                         }
                     ]
                 },
@@ -3420,7 +3420,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "mayonnaise",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -3664,9 +3664,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "bean",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "dried"
                         }
                     ]
                 },
@@ -4729,23 +4729,6 @@
                             "alternativeIngredientQualifier": ""
                         }
                     ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
                 }
             ]
         },
@@ -4795,9 +4778,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "beef",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "minced"
                         }
                     ]
                 },
@@ -5050,9 +5033,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "beef",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "minced"
                         }
                     ]
                 },
@@ -5529,9 +5512,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "tomato",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "peeled"
                         }
                     ]
                 },
@@ -6754,9 +6737,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "cheese",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "mozzarella"
                         }
                     ]
                 },
@@ -7263,9 +7246,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "beef",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "slices"
                         }
                     ]
                 },
@@ -7297,7 +7280,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "stock cube",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -8575,7 +8558,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "calf",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -8867,7 +8850,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "tomato",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -11266,7 +11249,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "vinegar",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -11468,23 +11451,6 @@
                     "dosage": {
                         "quantity": "500",
                         "unitOfMeasure": "g"
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
                     },
                     "alternativeIngredient": [
                         {
@@ -16290,9 +16256,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "tomato",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "peeled"
                         }
                     ]
                 },
@@ -17482,9 +17448,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "almond",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "toasted"
                         }
                     ]
                 },
@@ -19155,23 +19121,6 @@
                             "alternativeIngredientQualifier": ""
                         }
                     ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "1 pizzico di anicini?",
-                    "dosage": {
-                        "quantity": "1",
-                        "unitOfMeasure": "pinch"
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
                 }
             ]
         },
@@ -19343,9 +19292,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "lemon",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "zest"
                         }
                     ]
                 },
@@ -19957,9 +19906,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "cherry",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "in alcohol"
                         }
                     ]
                 }
@@ -20739,7 +20688,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "hazelnut",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -21564,7 +21513,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "margarine",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -22387,8 +22336,8 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
+                            "alternativeIngredientName": "lard",
+                            "alternativeIngredientVariantName": "sogna",
                             "alternativeIngredientQualifier": ""
                         }
                     ]
@@ -22667,9 +22616,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "lard",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "cheek"
                         }
                     ]
                 },
@@ -22735,9 +22684,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "mushroom",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "porcini"
                         }
                     ]
                 },
@@ -22939,7 +22888,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "Marsala",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -23092,9 +23041,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "oil",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "seed"
                         }
                     ]
                 },
@@ -23634,7 +23583,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "rhum",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -24270,9 +24219,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "tomato",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "peeled"
                         }
                     ]
                 },
@@ -24460,7 +24409,7 @@
                     "alternativeIngredient": [
                         {
                             "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
+                            "alternativeIngredientVariantName": "ovo",
                             "alternativeIngredientQualifier": ""
                         }
                     ]
@@ -25355,7 +25304,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "rhum",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -25864,7 +25813,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "plum",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -25898,7 +25847,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "cherry",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -26986,7 +26935,7 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "stock cube",
                             "alternativeIngredientVariantName": "",
                             "alternativeIngredientQualifier": ""
                         }
@@ -27718,26 +27667,9 @@
                     },
                     "alternativeIngredient": [
                         {
-                            "alternativeIngredientName": "",
+                            "alternativeIngredientName": "radicchio",
                             "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
-                        }
-                    ]
-                },
-                {
-                    "category": "unknown category",
-                    "ingredientName": "",
-                    "ingredientQualifier": "",
-                    "variantIngredientName": "",
-                    "dosage": {
-                        "quantity": "",
-                        "unitOfMeasure": ""
-                    },
-                    "alternativeIngredient": [
-                        {
-                            "alternativeIngredientName": "",
-                            "alternativeIngredientVariantName": "",
-                            "alternativeIngredientQualifier": ""
+                            "alternativeIngredientQualifier": "red"
                         }
                     ]
                 }

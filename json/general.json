@@ -1,12 +1,16 @@
 {
     "counter": {
-        "cookbooks": "80",
-        "recipes": "140",
-        "ingredients": "221"
+        "cookbooks": 3,
+        "recipes": 464,
+        "ingredients": 214
     },
     "notebooks": {
         "quaderno_1_29ago2019_ricette_di_zia_dina": "quaderno_1_29ago2019_ricette_di_zia_dina.json",
         "quaderno_2_29ago2019_sara_fornaciari": "quaderno_2_29ago2019_sara_fornaciari.json",
         "quaderno_3_annamaria_fiori_rimini": "quaderno_3_annamaria_fiori_rimini.json"
-    }
+    },
+    "filters": [
+        "alphabet.json",
+        "ingredients.json"
+    ]
 }
