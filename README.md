@@ -2,6 +2,9 @@
 
 Check the [website](https://giuliamanganelli.github.io/ragu/index.html) of the project.
 
+[![DOI](https://zenodo.org/badge/609063438.svg)](https://zenodo.org/badge/latestdoi/609063438)
+
+
 ## Abstract
 
 Ragu is a project that aims to collect, catalog and make available to everyone a precious but little-explored heritage of the Italian culinary tradition: **family cookbooks**. These texts, written and handed down basically by women, risk being forgotten and remain in the shadows, due to their **semi-cultured nature**. To date, many recipe books have already been collected, they come from varied geographical areas and date back to different eras. This precious knowledge has flowed into a **digital archive** that aspires to preserve it and facilitate its dissemination.
