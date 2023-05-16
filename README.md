@@ -42,22 +42,23 @@ ____________________________________________
 
 **METADATA & VOCABULARIES (SPREADSHEET)**
 
-1. Access the [spreadsheet](https///docs.google.com/spreadsheets/d/1terFx_mYVspOjvDUJfcBqHR7j_OlvXVwUesHNHAl_wU/edit#gid=0);
+1. Access the project **spreadsheet**;
 
 2. Download in **.tsv** format both *metadata* and *vocabulary*, so that you have two files: "**ragu_disci - metadati.tsv**" and "**ragu_disci - vocabolari.tsv**";
 
 3. On github, access the [repository](https://github.com/raguproject/raguproject.github.io) of the Ragù project and click on **add file > upload files**;
 
-<img width="925" alt="Add file > upload file" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/c4c78567-df13-4173-a4ed-3fae3b1dac6c">
+<img width="922" alt="**add file > upload files**" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/af9c08cf-8f9a-4cdb-a556-a95c0de4f31a">
+
 
 4. Drag or add the two new files without changing the name of any file;
 
-
-<img width="1261" alt="Schermata 2023-05-16 alle 15 18 54" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/f130f045-a336-4efb-afd5-1c7ad56ef3bf">
+<img width="525" alt="Schermata 2023-05-16 alle 15 28 53" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/2b33777f-d611-46c5-8c09-0924ec74e09d">
 
 5. Commit changes, if you want by entering *data update* as commit description.
 
-<img width="1277" alt="Schermata 2023-05-16 alle 15 20 10" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/0f1852a2-e3d4-4892-81d9-8c7a5187d1a7">
+<img width="784" alt="Schermata 2023-05-16 alle 15 54 54" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/e500f3f3-7b60-4c83-a93b-7b073fa2496f">
+
 
 **THE PHOTOS**
 
