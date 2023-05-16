@@ -248,11 +248,12 @@ am5.ready(function () {
 
     series.set("heatRules", [{
         target: circleTemplate,
-        min: 10,
+        min: 5,
         max: 30,
         dataField: "value",
         key: "radius"
     }]);
+
 
 
     $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/matrix.json", function (json) {
@@ -353,7 +354,7 @@ am5.ready(function () {
 
 am4core.ready(function () {
     var mapjson;
-    $.getJSON("/json/map_prova.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/map_prova.json", function (json) {
         mapjson = json;
         for (const x of mapjson) {
             var city = x.title;
