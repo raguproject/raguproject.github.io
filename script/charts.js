@@ -97,7 +97,7 @@ am5.ready(function () {
 
 
 
-    $.getJSON("/json/network.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/network.json", function (json) {
         network = json;
         series.data.setAll(network);
         series.set("selectedDataItem", series.dataItems[0]);
@@ -354,7 +354,7 @@ am5.ready(function () {
 
 am4core.ready(function () {
     var mapjson;
-    $.getJSON("/json/map.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/map.json", function (json) {
         mapjson = json;
         for (const x of mapjson) {
             if (x.value != 0) {
