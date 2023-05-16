@@ -48,8 +48,7 @@ ____________________________________________
 
 3. On github, access the [repository](https://github.com/raguproject/raguproject.github.io) of the Ragù project and click on **add file > upload files**;
 
-<img width="922" alt="**add file > upload files**" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/af9c08cf-8f9a-4cdb-a556-a95c0de4f31a">
-
+<img width="922" alt="Schermata 2023-05-16 alle 15 26 21" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/40e6e7fe-f4e8-4d12-bc5c-c7814a171909">
 
 4. Drag or add the two new files without changing the name of any file;
 
