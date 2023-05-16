@@ -48,7 +48,7 @@ ____________________________________________
 
 3. On github, access the [repository](https://github.com/raguproject/raguproject.github.io) of the Ragù project and click on **add file > upload files**;
 
-<img width="925" alt="Add file > upload file" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/c4c78567-df13-4173-a4ed-3fae3b1dac6c" style="width: 50%">
+<img width="400" alt="Add file > upload file" src="https://github.com/raguproject/raguproject.github.io/assets/133123523/c4c78567-df13-4173-a4ed-3fae3b1dac6c">
 
 4. Drag or add the two new files without changing the name of any file;
 
