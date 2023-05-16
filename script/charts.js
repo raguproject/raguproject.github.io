@@ -1,51 +1,54 @@
+
+
+
 // ----------- COUNTER -------------
 
 var counter;
 $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/general.json", function (json) {
     counter = json;
-});
-
-$(document).ready(function () {
-    counter_json = counter.counter;
-    var cookbooks = (counter_json["cookbooks"]);
-    var recipes = (counter_json["recipes"]);
-    var ingredients = (counter_json["ingredients"]);
-    const span_cook = document.getElementById('counter-cookbook');
-    span_cook.dataset.count = cookbooks;
-    const span_rec = document.getElementById('counter-recipe');
-    span_rec.dataset.count = recipes;
-    const span_ingr = document.getElementById('counter-ingredient');
-    span_ingr.dataset.count = ingredients;
+    $(document).ready(function () {
+        counter_json = counter.counter;
+        var cookbooks = (counter_json["cookbooks"]);
+        var recipes = (counter_json["recipes"]);
+        var ingredients = (counter_json["ingredients"]);
+        const span_cook = document.getElementById('counter-cookbook');
+        span_cook.dataset.count = cookbooks;
+        const span_rec = document.getElementById('counter-recipe');
+        span_rec.dataset.count = recipes;
+        const span_ingr = document.getElementById('counter-ingredient');
+        span_ingr.dataset.count = ingredients;
 
 
 
-    var a = 0;
-    $(window).scroll(function () {
-        var oTop = $('#counter').offset().top - window.innerHeight;
-        if (a == 0 && $(window).scrollTop() > oTop) {
-            $('.counter-value').each(function () {
-                var $this = $(this),
-                    countTo = $this.attr('data-count');
-                $({
-                    countNum: $this.text()
-                }).animate({
-                    countNum: countTo
-                },
-                    {
-                        duration: 3000,
-                        easing: 'swing',
-                        step: function () {
-                            $this.text(Math.floor(this.countNum));
-                        },
-                        complete: function () {
-                            $this.text(this.countNum);
-                            //alert('finished');
-                        }
-                    });
-            });
-            a = 1;
-        }
+        var a = 0;
+        $(window).scroll(function () {
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.counter-value').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    },
+                        {
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(this.countNum);
+                                //alert('finished');
+                            }
+                        });
+                });
+                a = 1;
+            }
+        });
     });
+
 });
 
 
@@ -142,7 +145,7 @@ am5.ready(function () {
     series.ticks.template.adapters.add("forceHidden", forceHidden);
 
     function forceHidden(hidden, target) {
-        return target.dataItem.get("valuePercentTotal") == 0;
+        return target.dataItem.get("valuePercentTotal") <= 2;
     }
 
     $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/piechart.json", function (json) {
@@ -204,8 +207,7 @@ am5.ready(function () {
         })
     );
 
-    // Create series
-    // https://www.amcharts.com/docs/v5/charts/xy-chart/#Adding_series
+
     var series = chart.series.push(
         am5xy.ColumnSeries.new(root, {
             calculateAggregates: true,
@@ -231,8 +233,6 @@ am5.ready(function () {
     var circleTemplate = am5.Template.new({ radius: 5 });
 
 
-    // Add circle bullet
-    // https://www.amcharts.com/docs/v5/charts/xy-chart/series/#Bullets
     series.bullets.push(function () {
         var graphics = am5.Circle.new(
             root, {
@@ -341,90 +341,110 @@ am5.ready(function () {
         series.data.setAll(data);
         yAxis.data.setAll(ingr_1_list);
         xAxis.data.setAll(ingr_2_list);
-
-        // Make stuff animate on load
-        // https://www.amcharts.com/docs/v5/concepts/animations/#Initial_animation
         chart.appear(1000, 100);
 
 
 
     });
 
-    // ----------- MAP - AMCHARTS4 -------------
 
-    var chart = am4core.create("chartdiv_map", am4maps.MapChart);
-    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/map.json", function (json) {
-        var mapData = json
-        chart.geodata = am4geodata_worldLow;
+});
+// ----------- MAP - AMCHARTS4 -------------
 
-        // Set projection
-        chart.projection = new am4maps.projections.Miller();
+am4core.ready(function () {
+    var mapjson;
+    $.getJSON("/json/map_prova.json", function (json) {
+        mapjson = json;
+        for (const x of mapjson) {
+            var city = x.title;
+            var encoded = city.replace(/\s/g, '+');
+            $.ajax({
+                type: 'GET',
+                url: 'https://nominatim.openstreetmap.org/search?q=' + encoded + '&format=json',
+                headers: {
+                    Accept: 'application/json'
+                },
 
-        // Create map polygon series
-        var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
-        polygonSeries.exclude = ["AQ"];
-        polygonSeries.useGeodata = true;
-        polygonSeries.nonScalingStroke = true;
-        polygonSeries.strokeWidth = 0.3;
-        polygonSeries.calculateVisualCenter = true;
+                success: function (returnedJson) {
+                    cityinfo = returnedJson[0];
+                    var lon = Number(cityinfo.lon);
+                    var lat = Number(cityinfo.lat);
+                    x["longitude"] = lon;
+                    x["latitude"] = lat;
+                    var chart = am4core.create("chartdiv_map", am4maps.MapChart);
+                    chart.geodata = am4geodata_worldLow;
+                    // Set projection
+                    chart.projection = new am4maps.projections.Miller();
 
-
-        const polygonTemplate = polygonSeries.mapPolygons.template;
-        polygonTemplate.tooltipText = "{title}";
-        polygonSeries.calculateVisualCenter = true;
-        polygonTemplate.fill = am4core.color("#cc0b36");
-        polygonTemplate.fillOpacity = 0.1;
-
-        var imageSeries = chart.series.push(new am4maps.MapImageSeries());
-        imageSeries.data = mapData;
-        imageSeries.dataFields.value = "value";
-
-
-        var imageTemplate = imageSeries.mapImages.template;
-        imageTemplate.nonScaling = true;
-        imageTemplate.propertyFields.latitude = "latitude";
-        imageTemplate.propertyFields.longitude = "longitude";
-
-
-        let circle = imageTemplate.createChild(am4core.Circle);
-        circle.fillOpacity = 0.7;
-        circle.fill = am4core.color("#cc0b36");
-        circle.tooltipText = "{title}: [bold]{value}[/] recipes";
+                    // Create map polygon series
+                    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+                    polygonSeries.exclude = ["AQ"];
+                    polygonSeries.useGeodata = true;
+                    polygonSeries.nonScalingStroke = true;
+                    polygonSeries.strokeWidth = 0.3;
+                    polygonSeries.calculateVisualCenter = true;
 
 
+                    const polygonTemplate = polygonSeries.mapPolygons.template;
+                    polygonTemplate.tooltipText = "{title}";
+                    polygonSeries.calculateVisualCenter = true;
+                    polygonTemplate.fill = am4core.color("#cc0b36");
+                    polygonTemplate.fillOpacity = 0.1;
 
-        imageSeries.heatRules.push({
-            target: circle,
-            property: "radius",
-            min: 4,
-            max: 15,
-            dataField: "value",
-        });
+                    var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+                    imageSeries.data = mapjson;
+                    imageSeries.dataFields.value = "value";
 
-        imageTemplate.adapter.add("latitude", function (latitude, target) {
-            let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
-            if (polygon) {
-                return polygon.visualLatitude;
-            }
-            return latitude;
-        });
 
-        imageTemplate.adapter.add("longitude", function (longitude, target) {
-            let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
-            if (polygon) {
-                return polygon.visualLongitude;
-            }
-            return longitude;
-        });
+                    var imageTemplate = imageSeries.mapImages.template;
+                    imageTemplate.nonScaling = true;
+                    imageTemplate.propertyFields.latitude = "latitude";
+                    imageTemplate.propertyFields.longitude = "longitude";
 
-        return amChart;
+
+                    let circle = imageTemplate.createChild(am4core.Circle);
+                    circle.fillOpacity = 0.7;
+                    circle.fill = am4core.color("#cc0b36");
+                    circle.tooltipText = "{title}: [bold]{value}[/] recipes";
+
+
+
+                    imageSeries.heatRules.push({
+                        target: circle,
+                        property: "radius",
+                        min: 4,
+                        max: 15,
+                        dataField: "value",
+                    });
+
+                    imageTemplate.adapter.add("latitude", function (latitude, target) {
+                        let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
+                        if (polygon) {
+                            return polygon.visualLatitude;
+                        }
+                        return latitude;
+                    });
+
+                    imageTemplate.adapter.add("longitude", function (longitude, target) {
+                        let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
+                        if (polygon) {
+                            return polygon.visualLongitude;
+                        }
+                        return longitude;
+                    });
+
+                    return amChart;
+                }
+
+            })
+        }
+
 
     });
+
     chart.appear(1000, 100);
 
 });
-
-
 
 
 
