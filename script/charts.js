@@ -97,7 +97,7 @@ am5.ready(function () {
 
 
 
-    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/network.json", function (json) {
+    $.getJSON("/json/network.json", function (json) {
         network = json;
         series.data.setAll(network);
         series.set("selectedDataItem", series.dataItems[0]);
@@ -354,90 +354,92 @@ am5.ready(function () {
 
 am4core.ready(function () {
     var mapjson;
-    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/map_prova.json", function (json) {
+    $.getJSON("/json/map.json", function (json) {
         mapjson = json;
         for (const x of mapjson) {
-            var city = x.title;
-            var encoded = city.replace(/\s/g, '+');
-            $.ajax({
-                type: 'GET',
-                url: 'https://nominatim.openstreetmap.org/search?q=' + encoded + '&format=json',
-                headers: {
-                    Accept: 'application/json'
-                },
+            if (x.value != 0) {
+                var city = x.title;
+                var encoded = city.replace(/\s/g, '+');
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://nominatim.openstreetmap.org/search?q=' + encoded + '&format=json',
+                    headers: {
+                        Accept: 'application/json'
+                    },
 
-                success: function (returnedJson) {
-                    cityinfo = returnedJson[0];
-                    var lon = Number(cityinfo.lon);
-                    var lat = Number(cityinfo.lat);
-                    x["longitude"] = lon;
-                    x["latitude"] = lat;
-                    var chart = am4core.create("chartdiv_map", am4maps.MapChart);
-                    chart.geodata = am4geodata_worldLow;
-                    // Set projection
-                    chart.projection = new am4maps.projections.Miller();
+                    success: function (returnedJson) {
+                        cityinfo = returnedJson[0];
+                        var lon = Number(cityinfo.lon);
+                        var lat = Number(cityinfo.lat);
+                        x["longitude"] = lon;
+                        x["latitude"] = lat;
+                        var chart = am4core.create("chartdiv_map", am4maps.MapChart);
+                        chart.geodata = am4geodata_worldLow;
+                        // Set projection
+                        chart.projection = new am4maps.projections.Miller();
 
-                    // Create map polygon series
-                    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
-                    polygonSeries.exclude = ["AQ"];
-                    polygonSeries.useGeodata = true;
-                    polygonSeries.nonScalingStroke = true;
-                    polygonSeries.strokeWidth = 0.3;
-                    polygonSeries.calculateVisualCenter = true;
-
-
-                    const polygonTemplate = polygonSeries.mapPolygons.template;
-                    polygonTemplate.tooltipText = "{title}";
-                    polygonSeries.calculateVisualCenter = true;
-                    polygonTemplate.fill = am4core.color("#cc0b36");
-                    polygonTemplate.fillOpacity = 0.1;
-
-                    var imageSeries = chart.series.push(new am4maps.MapImageSeries());
-                    imageSeries.data = mapjson;
-                    imageSeries.dataFields.value = "value";
+                        // Create map polygon series
+                        var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+                        polygonSeries.exclude = ["AQ"];
+                        polygonSeries.useGeodata = true;
+                        polygonSeries.nonScalingStroke = true;
+                        polygonSeries.strokeWidth = 0.3;
+                        polygonSeries.calculateVisualCenter = true;
 
 
-                    var imageTemplate = imageSeries.mapImages.template;
-                    imageTemplate.nonScaling = true;
-                    imageTemplate.propertyFields.latitude = "latitude";
-                    imageTemplate.propertyFields.longitude = "longitude";
+                        const polygonTemplate = polygonSeries.mapPolygons.template;
+                        polygonTemplate.tooltipText = "{title}";
+                        polygonSeries.calculateVisualCenter = true;
+                        polygonTemplate.fill = am4core.color("#cc0b36");
+                        polygonTemplate.fillOpacity = 0.1;
+
+                        var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+                        imageSeries.data = mapjson;
+                        imageSeries.dataFields.value = "value";
 
 
-                    let circle = imageTemplate.createChild(am4core.Circle);
-                    circle.fillOpacity = 0.7;
-                    circle.fill = am4core.color("#cc0b36");
-                    circle.tooltipText = "{title}: [bold]{value}[/] recipes";
+                        var imageTemplate = imageSeries.mapImages.template;
+                        imageTemplate.nonScaling = true;
+                        imageTemplate.propertyFields.latitude = "latitude";
+                        imageTemplate.propertyFields.longitude = "longitude";
+
+
+                        let circle = imageTemplate.createChild(am4core.Circle);
+                        circle.fillOpacity = 0.7;
+                        circle.fill = am4core.color("#cc0b36");
+                        circle.tooltipText = "{title}: [bold]{value}[/] recipes";
 
 
 
-                    imageSeries.heatRules.push({
-                        target: circle,
-                        property: "radius",
-                        min: 4,
-                        max: 15,
-                        dataField: "value",
-                    });
+                        imageSeries.heatRules.push({
+                            target: circle,
+                            property: "radius",
+                            min: 4,
+                            max: 15,
+                            dataField: "value",
+                        });
 
-                    imageTemplate.adapter.add("latitude", function (latitude, target) {
-                        let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
-                        if (polygon) {
-                            return polygon.visualLatitude;
-                        }
-                        return latitude;
-                    });
+                        imageTemplate.adapter.add("latitude", function (latitude, target) {
+                            let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
+                            if (polygon) {
+                                return polygon.visualLatitude;
+                            }
+                            return latitude;
+                        });
 
-                    imageTemplate.adapter.add("longitude", function (longitude, target) {
-                        let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
-                        if (polygon) {
-                            return polygon.visualLongitude;
-                        }
-                        return longitude;
-                    });
+                        imageTemplate.adapter.add("longitude", function (longitude, target) {
+                            let polygon = polygonSeries.getPolygonById(target.dataItem.dataContext.id);
+                            if (polygon) {
+                                return polygon.visualLongitude;
+                            }
+                            return longitude;
+                        });
 
-                    return amChart;
-                }
+                        return amChart;
+                    }
 
-            })
+                })
+            }
         }
 
 
