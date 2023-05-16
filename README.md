@@ -1,6 +1,6 @@
 # Ragù
 
-Check the [website](https://giuliamanganelli.github.io/ragu/index.html) of the project.
+Check the [website](https://raguproject.github.io/) of the project.
 
 [![DOI](https://zenodo.org/badge/609063438.svg)](https://zenodo.org/badge/latestdoi/609063438)
 
