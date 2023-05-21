@@ -356,8 +356,11 @@ am4core.ready(function () {
     var mapjson;
     $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/map.json", function (json) {
         mapjson = json;
+        mapjsonfiltered = [];
         for (const x of mapjson) {
             if (x.value != 0) {
+                mapjsonfiltered.push(x)
+                console.log(mapjsonfiltered)
                 var city = x.title;
                 var encoded = city.replace(/\s/g, '+');
                 $.ajax({
@@ -394,7 +397,7 @@ am4core.ready(function () {
                         polygonTemplate.fillOpacity = 0.1;
 
                         var imageSeries = chart.series.push(new am4maps.MapImageSeries());
-                        imageSeries.data = mapjson;
+                        imageSeries.data = mapjsonfiltered;
                         imageSeries.dataFields.value = "value";
 
 
@@ -440,6 +443,7 @@ am4core.ready(function () {
 
                 })
             }
+
         }
 
 

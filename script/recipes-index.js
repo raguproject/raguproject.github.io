@@ -522,12 +522,15 @@ $(document).ready(function () {
                     var recipe_img = recipe_dict.img;
 
                     for (var img of recipe_img) {
-                        var img_tag = $("<img>");
-                        $(img_tag).attr("src", "../recipe_photos/" + img);
-                        $(img_tag).attr("id", "photo_recipe");
-                        $(img_tag).addClass("fade-in");
-                        img_tag.appendTo('#recipe-image');
-
+                        var img_split = img.split(";");
+                        for (var i of img_split) {
+                            var img_tag = $("<img>");
+                            $(img_tag).attr("src", "../recipe_photos/" + i);
+                            $(img_tag).attr("id", "photo_recipe");
+                            $(img_tag).attr("alt", "We are still uploading photos related to this recipe, please come back soon!");
+                            $(img_tag).addClass("fade-in");
+                            img_tag.appendTo('#recipe-image');
+                        }
                     }
 
                     for (var ingr of ingredients_dict) {
