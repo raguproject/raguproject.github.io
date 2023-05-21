@@ -33,7 +33,23 @@ In this section it is possible to access the digitized cookbooks and browse them
 
 ## Methodology
 
-//
+From a methodological point of view, it should first of all be noted that in principle it was chosen to use Github for the realization of the website. Github is a service that allows you to keep your files online for free and publish them through their Github Pages service as a static website.
+
+This choice was made because Github is a very used and extremely intuitive platform, very popular because it allows a dynamic and effective collaboration between people working on a same project. The choice to use Github will in fact allow the collaborators of the Ragu Project to update the files related to cookbooks and consequently the website very easily.
+
+Having said this, the data we have at our disposal and that have been provided to us are in tabular format. This data contains all the information related to the notebooks that have been until now found, scanned and analyzed.
+
+This is a "work in progress", that is, since the recipe books are delivered gradually and continue to be found and because the data are many, from a methodological point of view we decided to build a site with the information we have at the moment, but with the possibility of enriching it dynamically and in a simple way with new information, cookbooks, recipes. No technical knowledge is needed to upload new files to Github and to have the website updated automatically.
+
+A Github built-in technology was used, called Github Action. An "action" was therefore written in which it was stated that whenever a particular file type is updated, the configuration files that are used to display information on the site must regenerate and feed the new updated information. 
+
+The Google Sheet that has been made available to us, compiled by Roberta Balduzzi, has been studied to understand the most effective way to relate to data. The most important information to show and how to organise it was decided. The data has been therefore divided into separate configuration files and JSON extensions that are automatically created thanks to a python script that is activated by a Github Action. 
+
+Each recipe has its own JSON file and then additional JSON files have been created that contain summary information about recipes (e.g. origin of each recipe, ingredients contained in every recipe, information for the development of the charts...). These JSON files containing the summary information allow the site to be more streamlined and faster in use.
+
+The website is built using JavaScript, a programming language for developing dynamic websites, and jquery, a fast, small, and feature-rich JavaScript library. The JSON files are therefore "transformed" in Javascript objects in order to be easily manipulated and inserted dynamically within the website. 
+
+The fundamental element from a methodological point of view is therefore that of dynamism. By simply updating the files contained in the repository of the Ragu project, the site is able to update itself in a dynamic and effective way.
 
 
 ____________________________________________
