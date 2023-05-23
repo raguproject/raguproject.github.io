@@ -99,7 +99,20 @@ am5.ready(function () {
 
     $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/network.json", function (json) {
         network = json;
-        series.data.setAll(network);
+        var network_ingr = network[0].children;
+        var new_arr = [];
+        var new_dict = {};
+        var final_array = [];
+        for (var x of network_ingr) {
+            var nm = x.name;
+            if (nm != "?" && nm != "(?)" && nm != "finocchio") {
+                new_arr.push(x)
+            }
+        }
+        new_dict["name"] = "ingredients";
+        new_dict["children"] = new_arr;
+        final_array.push(new_dict)
+        series.data.setAll(final_array);
         series.set("selectedDataItem", series.dataItems[0]);
 
     })
@@ -256,14 +269,17 @@ am5.ready(function () {
 
 
 
-    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/matrix.json", function (json) {
+    $.getJSON("/json/matrix.json", function (json) {
         matrix = json;
         const ingr_cat = new Set();
         for (var m in matrix) {
             for (var x of matrix[m]) {
-                ingr_cat.add(x);
+                if (x != "?" && x != "(?)" && x != "unknown category") {
+                    ingr_cat.add(x);
+                }
             }
         }
+        console.log(ingr_cat)
         array_nospace = [];
         for (var str of ingr_cat) {
             var str_nospace = str.split(' ').join('_');
@@ -360,7 +376,6 @@ am4core.ready(function () {
         for (const x of mapjson) {
             if (x.value != 0) {
                 mapjsonfiltered.push(x)
-                console.log(mapjsonfiltered)
                 var city = x.title;
                 var encoded = city.replace(/\s/g, '+');
                 $.ajax({
