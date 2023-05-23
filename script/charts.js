@@ -269,7 +269,7 @@ am5.ready(function () {
 
 
 
-    $.getJSON("/json/matrix.json", function (json) {
+    $.getJSON("https://raw.githubusercontent.com/giuliamanganelli/ragu/main/json/matrix.json", function (json) {
         matrix = json;
         const ingr_cat = new Set();
         for (var m in matrix) {
