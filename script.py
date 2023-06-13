@@ -88,7 +88,7 @@ unique_folders = total_df.Folder.dropna().unique()
 # group dataframe by Folder
 grouped_folders = total_df.groupby(total_df.Folder)
 # open general json
-general_update = read_json('general.json')
+general_update = read_json('json/general.json')
 # empty dict for notebooks
 notebooks_dict = {}
 for f in unique_folders:
@@ -267,7 +267,7 @@ counter_values = {
 general_update['counter'] = counter_values
 
 # update general json
-update_json('general.json', general_update)
+update_json('json/general.json', general_update)
 
 # update alphabetic list
 # open file
