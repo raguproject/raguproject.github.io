@@ -16481,11 +16481,11 @@
             ]
         },
         "087": {
-            "id": "torta_di_mele_(1)_087",
+            "id": "torta_di_mele_087",
             "img": [
                 "Quaderno 2_Rimini_29ago2019_63.jpeg"
             ],
-            "recipeTitle": "Torta di Mele (1)",
+            "recipeTitle": "Torta di Mele ",
             "numberOfPersons": [
                 ""
             ],
@@ -16503,14 +16503,18 @@
             ],
             "temperature": [
                 "medium",
-                ""
+                "",
+                "60",
+                "180"
             ],
             "recipeTime": [
                 ""
             ],
             "cookingTime": [
                 "45",
-                ""
+                "",
+                "40/45",
+                "60"
             ],
             "ingredients": [
                 {
@@ -16631,41 +16635,7 @@
                             "alternativeIngredientQualifier": ""
                         }
                     ]
-                }
-            ]
-        },
-        "088": {
-            "id": "torta_di_mele_(2)_088",
-            "img": [
-                "Quaderno 2_Rimini_29ago2019_64.jpeg"
-            ],
-            "recipeTitle": "Torta di Mele (2)",
-            "numberOfPersons": [
-                ""
-            ],
-            "pagesNumber": [
-                "64"
-            ],
-            "chapter": "",
-            "course": "dessert",
-            "sideDish": [
-                ""
-            ],
-            "cookingProcedure": [
-                "in the oven",
-                ""
-            ],
-            "temperature": [
-                "60",
-                ""
-            ],
-            "recipeTime": [
-                ""
-            ],
-            "cookingTime": [
-                ""
-            ],
-            "ingredients": [
+                },
                 {
                     "category": "fruit",
                     "ingredientName": "apple",
@@ -16818,42 +16788,7 @@
                             "alternativeIngredientQualifier": ""
                         }
                     ]
-                }
-            ]
-        },
-        "089": {
-            "id": "torta_di_mele_(3)_089",
-            "img": [
-                "Quaderno 2_Rimini_29ago2019_65.jpeg"
-            ],
-            "recipeTitle": "Torta di Mele (3)",
-            "numberOfPersons": [
-                ""
-            ],
-            "pagesNumber": [
-                "65"
-            ],
-            "chapter": "",
-            "course": "dessert",
-            "sideDish": [
-                ""
-            ],
-            "cookingProcedure": [
-                "in the oven",
-                ""
-            ],
-            "temperature": [
-                "medium",
-                ""
-            ],
-            "recipeTime": [
-                ""
-            ],
-            "cookingTime": [
-                "40/45",
-                ""
-            ],
-            "ingredients": [
+                },
                 {
                     "category": "cereal",
                     "ingredientName": "flour",
@@ -17006,42 +16941,7 @@
                             "alternativeIngredientQualifier": ""
                         }
                     ]
-                }
-            ]
-        },
-        "090": {
-            "id": "torta_di_mele_(4)_090",
-            "img": [
-                "Quaderno 2_Rimini_29ago2019_66.jpeg"
-            ],
-            "recipeTitle": "Torta di Mele (4)",
-            "numberOfPersons": [
-                ""
-            ],
-            "pagesNumber": [
-                "66"
-            ],
-            "chapter": "",
-            "course": "dessert",
-            "sideDish": [
-                ""
-            ],
-            "cookingProcedure": [
-                "in the oven",
-                ""
-            ],
-            "temperature": [
-                "180",
-                ""
-            ],
-            "recipeTime": [
-                ""
-            ],
-            "cookingTime": [
-                "60",
-                ""
-            ],
-            "ingredients": [
+                },
                 {
                     "category": "cereal",
                     "ingredientName": "flour",
@@ -17231,8 +17131,8 @@
                 }
             ]
         },
-        "091": {
-            "id": "tortellini_in_brodo_091",
+        "088": {
+            "id": "tortellini_in_brodo_088",
             "img": [
                 "Quaderno 2_Rimini_29ago2019_67.jpeg"
             ],

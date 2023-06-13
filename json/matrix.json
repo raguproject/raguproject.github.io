@@ -4,443 +4,443 @@
         "?"
     ],
     "maccheroni_con_besciamella_002": [
-        "dietary fat",
-        "?",
+        "dairy",
         "pasta",
+        "?",
         "cereal",
-        "dairy"
+        "dietary fat"
     ],
     "polenta_alla_lombarda_003": [
-        "meat",
-        "?",
+        "dairy",
         "vegetable",
-        "spice",
         "cereal",
-        "dairy"
+        "?",
+        "meat",
+        "spice"
     ],
     "gnocchi_di_semolini_al_forno_004": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "pasta_di_semolino_in_brodo_005": [
-        "dietary fat",
-        "?",
+        "dairy",
         "herb",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "bomba_di_riso_006": [
-        "meat",
-        "?",
+        "dairy",
         "vegetable",
         "cereal",
-        "egg",
-        "dairy"
+        "?",
+        "meat",
+        "egg"
     ],
     "pasticcio_di_riso_007": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
-        "spice",
-        "cereal",
-        "egg",
         "sauce",
-        "dairy"
+        "cereal",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
     ],
     "passatelli_alla_marchigiana_008": [
-        "?",
+        "dairy",
         "baked products",
-        "spice",
-        "cereal",
         "egg",
-        "dairy"
+        "cereal",
+        "?",
+        "spice"
     ],
     "pasticcio_di_maccheroni_009": [
-        "dietary fat",
-        "meat",
-        "?",
-        "pasta",
+        "dairy",
+        "fungus",
         "processed meat",
+        "sauce",
+        "pasta",
+        "?",
+        "meat",
+        "legume",
         "spice",
         "cereal",
         "egg",
-        "sauce",
-        "fungus",
-        "dairy",
-        "legume"
+        "dietary fat"
     ],
     "lasagne_verdi_010": [
         "vegetable",
-        "sauce",
+        "cereal",
         "egg",
-        "cereal"
-    ],
-    "cappelletti_011": [
-        "dietary fat",
-        "meat",
-        "?",
-        "vegetable",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "tortellini_012": [
-        "meat",
-        "?",
-        "processed meat",
-        "spice",
-        "egg",
-        "sauce",
-        "dairy"
-    ],
-    "passatini_013": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "vegetable",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "spaghetti_al_tonno_014": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "spice",
-        "fish",
         "sauce"
     ],
-    "gnocchi_di_patate_015": [
-        "dietary fat",
+    "cappelletti_011": [
+        "dairy",
+        "egg",
+        "vegetable",
         "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "tortellini_012": [
+        "dairy",
+        "processed meat",
+        "sauce",
+        "?",
+        "meat",
+        "spice",
+        "egg"
+    ],
+    "passatini_013": [
+        "dairy",
+        "baked products",
+        "vegetable",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "spaghetti_al_tonno_014": [
+        "fish",
+        "sauce",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "gnocchi_di_patate_015": [
+        "dairy",
+        "sauce",
         "vegetable",
         "cereal",
+        "?",
         "egg",
-        "sauce",
-        "dairy"
+        "dietary fat"
     ],
     "gnocchi_di_semolino_016": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "risotto_con_le_poveracce_017": [
-        "dietary fat",
+        "fish",
         "beverage",
         "herb",
         "vegetable",
         "cereal",
-        "fish"
+        "dietary fat"
     ],
     "risotto_con_il_sanpietro_018": [
-        "dietary fat",
         "herb",
+        "sauce",
         "vegetable",
         "cereal",
-        "sauce"
+        "dietary fat"
     ],
     "riso_e_seppia_019": [
-        "dietary fat",
-        "?",
+        "fish",
         "herb",
         "vegetable",
+        "?",
         "spice",
-        "fish"
+        "dietary fat"
     ],
     "minestrone_020": [
-        "meat",
-        "?",
-        "processed meat",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
         "dairy",
-        "legume"
+        "processed meat",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "legume",
+        "spice"
     ],
     "suppl\u00ec_di_riso_021": [
-        "dairy",
-        "egg",
         "baked products",
+        "egg",
+        "dairy",
         "rice"
     ],
     "pollo_alla_cacciatora_022": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
         "baked products",
         "vegetable",
+        "?",
+        "meat",
+        "alcohol",
         "spice",
-        "alcohol"
+        "dietary fat"
     ],
     "roast_beef_023": [
-        "dietary fat",
         "vegetable",
+        "?",
         "meat",
-        "?"
+        "dietary fat"
     ],
     "pancetta_di_vitello_ripiena_024": [
-        "meat",
-        "?",
+        "dairy",
+        "baked products",
+        "herb",
         "unknown category",
-        "baked products",
-        "herb",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "polpettone_ripieno_025": [
-        "dietary fat",
-        "beverage",
-        "meat",
         "?",
-        "baked products",
-        "processed meat",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "trippa_di_vitello_026": [
-        "dietary fat",
         "meat",
-        "?",
-        "processed meat",
-        "herb",
-        "vegetable",
-        "dairy"
-    ],
-    "osso_buco_027": [
-        "dietary fat",
-        "meat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice"
-    ],
-    "osso_buco_028": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "vegetable",
-        "spice"
-    ],
-    "arrosto_di_vitello_029": [
-        "dietary fat",
-        "meat",
-        "?",
-        "spice",
-        "dairy"
-    ],
-    "stracotto_030": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "herb",
-        "vegetable",
-        "spice",
-        "fungus"
-    ],
-    "bistecca_fra_i_due_piatti_031": [
-        "dietary fat",
-        "meat",
-        "?",
-        "baked products",
-        "vegetable",
         "spice",
         "egg"
+    ],
+    "polpettone_ripieno_025": [
+        "dairy",
+        "beverage",
+        "processed meat",
+        "baked products",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "trippa_di_vitello_026": [
+        "dairy",
+        "processed meat",
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "dietary fat"
+    ],
+    "osso_buco_027": [
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "osso_buco_028": [
+        "beverage",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "arrosto_di_vitello_029": [
+        "dairy",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "stracotto_030": [
+        "beverage",
+        "fungus",
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "bistecca_fra_i_due_piatti_031": [
+        "baked products",
+        "egg",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "albicocche_sciroppate_032": [
         "?",
         "fruit"
     ],
     "pasticcio_di_carne_e_melanzane_033": [
-        "dietary fat",
-        "meat",
-        "?",
+        "dairy",
         "herb",
         "vegetable",
+        "?",
+        "meat",
         "spice",
-        "dairy"
+        "dietary fat"
     ],
     "cocktail_di_frutta_al_rhum_034": [
-        "alcohol",
         "?",
+        "alcohol",
         "fruit"
     ],
     "scaloppina_alla_villeroy_035": [
-        "dietary fat",
-        "meat",
-        "?",
+        "dairy",
         "cereal",
-        "dairy"
+        "?",
+        "meat",
+        "dietary fat"
     ],
     "scaloppine_al_marsala_036": [
-        "dietary fat",
-        "meat",
-        "?",
         "cereal",
-        "alcohol"
+        "?",
+        "meat",
+        "alcohol",
+        "dietary fat"
     ],
     "scaloppine_di_vitello_o_manzo_037": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
         "cereal",
-        "egg"
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
     ],
     "crostini_alla_mozzarella_e_prosciutto_038": [
-        "dairy",
-        "egg",
         "baked products",
-        "processed meat"
+        "egg",
+        "processed meat",
+        "dairy"
     ],
     "crostini_alla_mozzarella_039": [
-        "dairy",
-        "egg",
         "baked products",
-        "processed meat"
+        "egg",
+        "processed meat",
+        "dairy"
     ],
     "pasticciata_040": [
         "beverage",
-        "meat",
-        "?",
         "herb",
         "vegetable",
+        "?",
+        "meat",
         "spice"
     ],
     "pollo_alla_diavola_041": [
-        "dietary fat",
-        "meat",
         "?",
+        "meat",
+        "dietary fat",
         "spice"
     ],
     "piccioni_in_umido_042": [
-        "dietary fat",
-        "meat",
-        "?",
-        "baked products",
         "processed meat",
+        "baked products",
         "herb",
         "vegetable",
-        "spice"
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "agnello_all'uovo_043": [
-        "dietary fat",
-        "meat",
-        "?",
+        "dairy",
         "vegetable",
+        "?",
+        "meat",
         "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "testina_di_agnello_044": [
-        "dietary fat",
-        "meat",
-        "?",
         "herb",
         "vegetable",
-        "spice"
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "trippa_045": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
+        "dairy",
         "herb",
         "vegetable",
+        "?",
+        "meat",
         "spice",
-        "dairy"
+        "dietary fat"
     ],
     "brodetto_046": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "vegetable",
-        "spice",
         "fish",
-        "seasoning"
-    ],
-    "i_tre_brodetti_di_capitan_ugo_-_ricetta_1_047": [
-        "dietary fat",
-        "?",
+        "beverage",
+        "seasoning",
         "vegetable",
-        "herb",
+        "?",
         "spice",
-        "fish"
+        "dietary fat"
     ],
-    "i_tre_brodetti_di_capitan_ugo_-_ricetta_2_048": [
-        "dietary fat",
+    "i_tre_brodetti_di_capitan_ugo_047": [
+        "fish",
         "herb",
         "vegetable",
-        "fish",
-        "seasoning"
-    ],
-    "i_tre_brodetti_di_capitan_ugo_-_ricetta_3_049": [
-        "dietary fat",
-        "beverage",
         "?",
-        "vegetable",
         "spice",
+        "dietary fat"
+    ],
+    "i_tre_brodetti_di_capitan_ugo_-_2_ricetta_048": [
         "fish",
-        "seasoning"
+        "herb",
+        "vegetable",
+        "seasoning",
+        "dietary fat"
+    ],
+    "i_tre_brodetti_di_capitan_ugo_-_3_049": [
+        "fish",
+        "beverage",
+        "vegetable",
+        "seasoning",
+        "?",
+        "spice",
+        "dietary fat"
     ],
     "pollo_al_cartoccio_050": [
-        "herb",
-        "meat",
         "?",
+        "meat",
+        "herb",
         "spice"
     ],
     "finocchi_al_gratin_051": [
-        "dietary fat",
-        "dairy",
-        "finocchio",
-        "baked products"
-    ],
-    "..._di_cipolle_052": [
-        "dietary fat",
-        "?",
         "baked products",
-        "vegetable",
-        "spice",
-        "cereal",
+        "dietary fat",
+        "finocchio",
         "dairy"
     ],
+    "..._di_cipolle_052": [
+        "dairy",
+        "baked products",
+        "vegetable",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
     "fettine_alla_pizzaiola_053": [
-        "meat",
         "vegetable",
         "?",
+        "meat",
         "spice"
     ],
     "lombo_di_maiale_coi_piselli_054": [
-        "meat",
         "vegetable",
         "?",
+        "meat",
         "spice"
     ],
     "unknown_title_055": [
-        "dietary fat",
-        "meat",
-        "?",
+        "dairy",
         "baked products",
         "herb",
-        "vegetable",
-        "spice",
-        "egg",
         "sauce",
-        "dairy"
+        "egg",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "bistecche_ai_ferri_056": [
         "dietary fat",
@@ -449,591 +449,591 @@
         "herb"
     ],
     "cotolette_057": [
-        "dietary fat",
-        "meat",
         "baked products",
         "vegetable",
-        "egg"
+        "meat",
+        "egg",
+        "dietary fat"
     ],
     "polpettone_al_brodo_058": [
         "vegetable",
+        "egg",
         "meat",
-        "herb",
-        "egg"
+        "herb"
     ],
     "vitello_tonnato_059": [
-        "dietary fat",
-        "meat",
-        "?",
-        "vegetable",
         "fish",
-        "egg"
+        "vegetable",
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
     ],
     "maionese_060": [
-        "dietary fat",
-        "?",
         "vegetable",
+        "?",
         "spice",
-        "egg"
+        "egg",
+        "dietary fat"
     ],
     "crema_di_prosciutto_per_tartine_061": [
-        "dietary fat",
+        "processed meat",
         "?",
         "spice",
-        "processed meat"
+        "dietary fat"
     ],
     "salsa_verde_062": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice",
         "fish",
-        "egg"
+        "herb",
+        "vegetable",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
     ],
     "vov_063": [
-        "?",
-        "egg",
-        "fruit",
         "dairy",
-        "alcohol"
+        "fruit",
+        "?",
+        "alcohol",
+        "egg"
     ],
     "pere_sciroppate_064": [
-        "unknown category",
         "?",
+        "unknown category",
         "fruit"
     ],
     "sugo_per_spaghetti_065": [
-        "dietary fat",
-        "?",
+        "fungus",
         "processed meat",
         "vegetable",
+        "?",
         "spice",
-        "fungus"
+        "dietary fat"
     ],
     "pollo_spezzato_affogato_066": [
-        "dietary fat",
+        "dairy",
         "beverage",
-        "meat",
-        "?",
         "herb",
         "vegetable",
-        "dairy"
+        "?",
+        "meat",
+        "dietary fat"
     ],
     "sformato_di_uova_e_besciamel_067": [
-        "dietary fat",
-        "dairy",
+        "cereal",
         "egg",
-        "cereal"
+        "dietary fat",
+        "dairy"
     ],
     "fritto_di_semolino_068": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "vegetable",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "spezzatino_con_la_verza_069": [
-        "dietary fat",
-        "meat",
-        "?",
         "herb",
         "vegetable",
-        "spice"
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "spezzatino_al_vino_bianco_070": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
+        "fungus",
         "herb",
         "vegetable",
-        "spice",
         "cereal",
-        "fungus"
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "spezzatino_agli_aromi_071": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
         "herb",
         "vegetable",
-        "spice"
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "tortellini_della_fulvia_072": [
-        "dairy",
-        "meat",
+        "processed meat",
         "egg",
-        "processed meat"
+        "meat",
+        "dairy"
     ],
     "fonduta_svizzera_073": [
-        "dairy",
-        "baked products"
+        "baked products",
+        "dairy"
     ],
     "faraona_arrosto_074": [
-        "dietary fat",
-        "meat",
-        "?",
-        "spice",
         "dairy",
-        "alcohol"
+        "?",
+        "meat",
+        "alcohol",
+        "spice",
+        "dietary fat"
     ],
     "pasticcio_di_fagiolini_075": [
-        "dietary fat",
-        "meat",
-        "?",
-        "baked products",
-        "spice",
-        "cereal",
-        "egg",
-        "fungus",
         "dairy",
-        "legume"
+        "fungus",
+        "baked products",
+        "cereal",
+        "?",
+        "meat",
+        "legume",
+        "spice",
+        "egg",
+        "dietary fat"
     ],
     "sformato_di_patate,_cipolla_e_mozzarella_076": [
-        "dietary fat",
-        "?",
+        "dairy",
         "herb",
         "vegetable",
+        "?",
         "spice",
-        "dairy"
+        "dietary fat"
     ],
     "melanzane_all'agrodolce_077": [
-        "dietary fat",
-        "seasoning",
         "vegetable",
-        "?"
+        "?",
+        "dietary fat",
+        "seasoning"
     ],
     "melanzane_e_pomodori_078": [
-        "dietary fat",
-        "?",
-        "vegetable",
+        "fungus",
         "herb",
+        "vegetable",
+        "?",
         "spice",
         "egg",
-        "fungus"
+        "dietary fat"
     ],
     "souffl\u00e9_di_formaggio_079": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "flan_di_spinaci_080": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "vegetable",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "crochettine_di_patate_081": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "vegetable",
+        "?",
         "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "supl\u00ec_di_riso_082": [
-        "dairy",
-        "egg",
         "baked products",
+        "egg",
+        "dairy",
         "rice"
     ],
     "contorno_di_patate_083": [
-        "dietary fat",
-        "herb",
-        "vegetable"
-    ],
-    "fagiolini_al_burro_(e_poco_olio)_084": [
-        "dietary fat",
-        "?",
         "vegetable",
-        "spice",
-        "dairy",
-        "legume"
-    ],
-    "involtini_di_spinaci_085": [
         "dietary fat",
-        "?",
-        "processed meat",
-        "vegetable",
-        "spice",
-        "cereal",
-        "egg",
-        "sauce",
-        "dairy"
-    ],
-    "baccal\u00e0_alla_vicentina_086": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "vegetable",
-        "herb",
-        "spice",
-        "fish"
-    ],
-    "funghi_porcini_con_patate_087": [
-        "dietary fat",
-        "?",
-        "herb",
-        "vegetable",
-        "fungus"
-    ],
-    "uovo_alla_pizzaiola_088": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "spice",
-        "fish",
-        "egg",
-        "dairy"
-    ],
-    "pollo_alla_birra_089": [
-        "beverage",
-        "meat",
-        "herb",
-        "?"
-    ],
-    "pollo_all'arrabbiata_090": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "herb",
-        "vegetable",
-        "spice",
-        "cereal"
-    ],
-    "cannelloni_ripieni_di_magro_091": [
-        "dietary fat",
-        "?",
-        "pasta",
-        "vegetable",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "pasta_bianca_al_forno_092": [
-        "dietary fat",
-        "?",
-        "pasta",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "cipolle_ripiene_093": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "spice",
-        "cereal"
-    ],
-    "patate_al_forno_con_mozzarella_094": [
-        "dietary fat",
-        "?",
-        "herb",
-        "vegetable",
-        "spice",
-        "dairy"
-    ],
-    "pollo_affogato_095": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "vegetable",
         "herb"
     ],
-    "sformato_di_pomodori_096": [
-        "dietary fat",
-        "herb",
+    "fagiolini_al_burro_(e_poco_olio)_084": [
+        "dairy",
         "vegetable",
-        "egg"
+        "?",
+        "legume",
+        "spice",
+        "dietary fat"
     ],
-    "souffl\u00e9_097": [
-        "dietary fat",
+    "involtini_di_spinaci_085": [
+        "dairy",
+        "processed meat",
+        "sauce",
+        "vegetable",
+        "cereal",
         "?",
         "spice",
-        "cereal",
         "egg",
-        "dairy"
+        "dietary fat"
+    ],
+    "baccal\u00e0_alla_vicentina_086": [
+        "fish",
+        "baked products",
+        "herb",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "funghi_porcini_con_patate_087": [
+        "fungus",
+        "herb",
+        "vegetable",
+        "?",
+        "dietary fat"
+    ],
+    "uovo_alla_pizzaiola_088": [
+        "fish",
+        "dairy",
+        "vegetable",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "pollo_alla_birra_089": [
+        "?",
+        "meat",
+        "herb",
+        "beverage"
+    ],
+    "pollo_all'arrabbiata_090": [
+        "beverage",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "cannelloni_ripieni_di_magro_091": [
+        "dairy",
+        "vegetable",
+        "pasta",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "pasta_bianca_al_forno_092": [
+        "dairy",
+        "pasta",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "cipolle_ripiene_093": [
+        "vegetable",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "patate_al_forno_con_mozzarella_094": [
+        "dairy",
+        "herb",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "pollo_affogato_095": [
+        "beverage",
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "dietary fat"
+    ],
+    "sformato_di_pomodori_096": [
+        "vegetable",
+        "dietary fat",
+        "egg",
+        "herb"
+    ],
+    "souffl\u00e9_097": [
+        "dairy",
+        "cereal",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
     ],
     "polpettone_di_patate_098": [
-        "dietary fat",
+        "dairy",
         "baked products",
         "vegetable",
         "cereal",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "torta_farcita_099": [
-        "dairy",
-        "?"
+        "?",
+        "dairy"
     ],
     "semifreddo_100": [
-        "dairy",
+        "?",
         "egg",
-        "?"
+        "dairy"
     ],
     "dolce_al_mascarpone_101": [
-        "?",
-        "baked products",
-        "egg",
-        "fruit",
         "dairy",
-        "alcoholic"
+        "baked products",
+        "fruit",
+        "?",
+        "alcoholic",
+        "egg"
     ],
     "crema_dell'ada_102": [
-        "?",
+        "dairy",
         "vegetable",
         "cereal",
-        "egg",
-        "dairy"
-    ],
-    "pizza_alla_napoletana_103": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "herb",
-        "cereal",
-        "fish",
-        "dairy"
-    ],
-    "dolce_diplomatico_104": [
-        "?",
-        "baked products",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy",
-        "preserves"
-    ],
-    "latte_brul\u00e9_105": [
-        "dairy",
         "?",
         "egg"
     ],
-    "crema_al_cioccolato_106": [
-        "dietary fat",
+    "pizza_alla_napoletana_103": [
+        "fish",
         "dairy",
+        "herb",
+        "vegetable",
+        "cereal",
         "?",
-        "cereal"
+        "dietary fat"
+    ],
+    "dolce_diplomatico_104": [
+        "dairy",
+        "baked products",
+        "fruit",
+        "preserves",
+        "cereal",
+        "?",
+        "egg"
+    ],
+    "latte_brul\u00e9_105": [
+        "egg",
+        "?",
+        "dairy"
+    ],
+    "crema_al_cioccolato_106": [
+        "cereal",
+        "?",
+        "dietary fat",
+        "dairy"
     ],
     "crema_per_friggere_107": [
-        "?",
+        "dairy",
         "baked products",
         "vegetable",
         "cereal",
-        "egg",
-        "dairy"
+        "?",
+        "egg"
     ],
     "latte_brul\u00e9_o_portoghese_108": [
-        "?",
+        "dairy",
         "vegetable",
         "cereal",
-        "egg",
-        "dairy"
+        "?",
+        "egg"
     ],
     "torta_di_mele_109": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
+        "fruit",
         "vegetable",
         "cereal",
+        "?",
         "egg",
-        "fruit",
-        "dairy"
+        "dietary fat"
     ],
     "torta_di_poca_spesa_110": [
-        "dietary fat",
-        "?",
+        "dairy",
         "unknown category",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "dolce_di_riso_al_cioccolato_111": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit",
         "dairy",
-        "alcohol"
+        "fruit",
+        "cereal",
+        "?",
+        "alcohol",
+        "egg",
+        "dietary fat"
     ],
     "crocchette_di_riso_112": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
+        "fruit",
         "cereal",
+        "?",
         "egg",
+        "dietary fat"
+    ],
+    "castagnaccio_113": [
+        "cereal",
+        "?",
+        "dietary fat",
+        "fruit"
+    ],
+    "monte_nevoso_114": [
+        "?",
         "fruit",
         "dairy"
     ],
-    "castagnaccio_113": [
-        "dietary fat",
-        "?",
-        "fruit",
-        "cereal"
-    ],
-    "monte_nevoso_114": [
-        "dairy",
-        "?",
-        "fruit"
-    ],
     "le_castagne_115": [
-        "dairy",
+        "spice",
         "?",
         "fruit",
-        "spice"
+        "dairy"
     ],
     "gallettine_116": [
-        "dietary fat",
+        "cereal",
         "?",
-        "cereal"
+        "dietary fat"
     ],
     "torta_di_pesche_117": [
-        "dietary fat",
         "vegetable",
+        "cereal",
         "?",
-        "cereal"
+        "dietary fat"
     ],
     "salatini_118": [
-        "dietary fat",
+        "cereal",
         "?",
-        "cereal"
+        "dietary fat"
     ],
     "fagottini_ripieni_119": [
-        "dairy",
         "vegetable",
         "?",
-        "fruit"
+        "fruit",
+        "dairy"
     ],
     "coppa_di_mascarpone_120": [
-        "?",
-        "egg",
-        "fruit",
         "dairy",
-        "alcohol"
+        "fruit",
+        "?",
+        "alcohol",
+        "egg"
     ],
     "dolci_senza_uova_121": [
-        "dietary fat",
+        "cereal",
         "?",
-        "fruit",
-        "cereal"
+        "dietary fat",
+        "fruit"
     ],
     "salamino_122": [
-        "dietary fat",
-        "?",
         "baked products",
+        "?",
+        "alcoholic",
         "egg",
-        "alcoholic"
+        "dietary fat"
     ],
     "torta_di_riso_123": [
-        "?",
-        "baked products",
-        "cereal",
-        "egg",
-        "fruit",
         "dairy",
-        "alcoholic"
+        "baked products",
+        "fruit",
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg"
     ],
     "torta_casalinga_al_pan_di_spagna_124": [
-        "dietary fat",
         "beverage",
-        "?",
         "baked products",
+        "fruit",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "brioche_natalizie_125": [
-        "dietary fat",
-        "?",
+        "fruit",
         "cereal",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "pan_d'oro_degli_angeli_126": [
-        "?",
+        "fruit",
         "vegetable",
         "cereal",
-        "egg",
-        "fruit"
+        "?",
+        "egg"
     ],
     "panettone_casalingo_127": [
-        "dietary fat",
-        "?",
+        "fruit",
         "vegetable",
         "cereal",
+        "?",
+        "alcoholic",
         "egg",
-        "fruit",
-        "alcoholic"
+        "dietary fat"
     ],
     "moro_in_camicia_128": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "fruit",
         "egg"
     ],
     "torta_di_mele_alla_rustica_129": [
-        "?",
         "baked products",
+        "fruit",
         "cereal",
-        "egg",
-        "fruit"
+        "?",
+        "egg"
     ],
     "migliaccio_130": [
-        "dietary fat",
-        "dairy",
+        "cereal",
         "?",
-        "cereal"
+        "dietary fat",
+        "dairy"
     ],
     "liquore_di_noccioli_di_ciliegia_131": [
-        "fruit",
         "?",
-        "alcohol"
+        "alcohol",
+        "fruit"
     ],
     "polenta_132": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
-        "vegetable",
-        "spice",
-        "cereal",
         "fungus",
-        "dairy"
+        "dairy",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "sfrappole_133": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
         "vegetable",
         "cereal",
+        "?",
+        "meat",
+        "alcoholic",
         "egg",
-        "alcoholic"
+        "dietary fat"
     ],
     "zuppa_imperiale_134": [
-        "dietary fat",
-        "?",
+        "dairy",
         "vegetable",
-        "spice",
         "cereal",
+        "?",
+        "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "crema_allo_zabaglione_135": [
+        "?",
         "egg",
-        "alcohol",
-        "?"
+        "alcohol"
     ],
     "dolce_di_datteri_136": [
         "?",
@@ -1041,95 +1041,95 @@
         "egg"
     ],
     "dolce_di_datteri_(per_la_glassa)_137": [
-        "dietary fat",
-        "dairy",
         "?",
-        "alcohol"
+        "dietary fat",
+        "alcohol",
+        "dairy"
     ],
     "glassa_bianca_138": [
-        "egg",
-        "?"
+        "?",
+        "egg"
     ],
     "tortino_letizia_139": [
-        "dietary fat",
+        "dairy",
         "processed meat",
-        "spice",
         "cereal",
+        "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "souffl\u00e9_140": [
-        "dietary fat",
+        "dairy",
+        "cereal",
         "?",
         "spice",
-        "cereal",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "involtini_di_coniglio_141": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
+        "fungus",
         "processed meat",
-        "vegetable",
         "herb",
+        "vegetable",
+        "?",
+        "meat",
         "spice",
-        "fungus"
+        "dietary fat"
     ],
     "riso_al_formaggio_142": [
-        "dietary fat",
-        "baked products",
+        "dairy",
         "processed meat",
+        "baked products",
         "vegetable",
         "cereal",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "costolette_al_prosciutto_143": [
-        "dietary fat",
+        "dairy",
         "baked products",
         "processed meat",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "costolette_di_formaggio_144": [
-        "dietary fat",
+        "dairy",
         "baked products",
         "processed meat",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "marmellata_di_aranci_145": [
-        "alcohol",
         "vegetable",
-        "fruit",
-        "?"
+        "?",
+        "alcohol",
+        "fruit"
     ],
     "semifreddo,_molto_buono_146": [
-        "dietary fat",
-        "?",
         "baked products",
-        "egg",
         "fruit",
-        "alcoholic"
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
     ],
     "semifreddo,_molto_buono_(crema)_147": [
-        "dairy",
-        "?",
         "egg",
-        "cereal"
+        "cereal",
+        "?",
+        "dairy"
     ],
     "semifreddo_al_mascarpone_148": [
-        "dairy",
+        "?",
         "egg",
-        "?"
+        "dairy"
     ],
     "dose_per_fichi_sciroppati_149": [
         "vegetable",
         "?",
-        "fruit",
-        "alcohol"
+        "alcohol",
+        "fruit"
     ],
     "per_pesche_150": [
         "additive",
@@ -1137,8 +1137,8 @@
         "fruit"
     ],
     "marmellate_151": [
-        "alcohol",
         "?",
+        "alcohol",
         "fruit"
     ],
     "albicocche_152": [
@@ -1147,15 +1147,15 @@
         "fruit"
     ],
     "albicocche_153": [
-        "alcohol",
         "?",
+        "alcohol",
         "fruit"
     ],
     "fichi_sciroppati_154": [
         "vegetable",
         "?",
-        "fruit",
-        "alcohol"
+        "alcohol",
+        "fruit"
     ],
     "base_per_marmellate_155": [
         "?",
@@ -1166,336 +1166,336 @@
         "fruit"
     ],
     "dolce_di_amaretti_157": [
-        "?",
+        "dairy",
         "baked products",
-        "egg",
         "fruit",
-        "dairy"
+        "?",
+        "egg"
     ],
     "castagnole_di_wilma_158": [
-        "dietary fat",
-        "?",
         "herb",
         "cereal",
-        "egg"
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "liquore_al_caff\u00e8_159": [
-        "beverage",
         "?",
-        "alcohol"
+        "alcohol",
+        "beverage"
     ],
     "zeppole_di_san_giuseppe_160": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "dolce_al_cioccolato_fondente_161": [
-        "dietary fat",
-        "?",
-        "egg",
-        "cereal"
-    ],
-    "ossi_buchi_alla_milanese_162": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "herb",
-        "vegetable",
-        "spice",
-        "cereal"
-    ],
-    "ossibuchi_al_pomidoro_163": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal"
-    ],
-    "insalatissima_per_piatti_piccanti_o_antipasti_164": [
-        "dietary fat",
-        "vegetable",
-        "fruit",
-        "?"
-    ],
-    "budino_di_riso_e_castagne_secche_165": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "cereal",
-        "fruit",
-        "dairy"
-    ],
-    "ricetta_polpo_166": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "unknown category",
-        "herb",
-        "vegetable",
-        "spice"
-    ],
-    "spaghetti_alla_boscaiola_001": [
-        "dietary fat",
-        "?",
-        "pasta",
-        "herb",
-        "vegetable",
-        "spice",
-        "fish",
-        "fungus",
-        "dairy"
-    ],
-    "besciamella_002": [
-        "dietary fat",
-        "?",
-        "spice",
-        "cereal",
-        "dairy"
-    ],
-    "tortellini_tonino_003": [
-        "meat",
-        "?",
-        "baked products",
-        "processed meat",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "insalatissima_disintossicante_004": [
-        "dietary fat",
-        "?",
-        "processed meat",
-        "vegetable",
-        "herb",
-        "egg",
-        "fruit"
-    ],
-    "insalata_riso_005": [
-        "dietary fat",
-        "meat",
-        "?",
-        "vegetable",
-        "spice",
-        "cereal",
-        "fish",
-        "seasoning",
-        "egg"
-    ],
-    "insalata_mista_006": [
-        "dietary fat",
-        "?",
-        "finocchio",
-        "vegetable",
-        "spice",
-        "egg"
-    ],
-    "patate_fra_martino_007": [
-        "dietary fat",
-        "?",
-        "herb",
-        "vegetable",
-        "spice"
-    ],
-    "insalata_primavera_008": [
-        "dietary fat",
-        "meat",
-        "?",
-        "processed meat",
-        "vegetable",
-        "egg"
-    ],
-    "cipolle_acetose_009": [
-        "dietary fat",
-        "?",
-        "herb",
-        "vegetable",
-        "seasoning"
-    ],
-    "polpette_di_carne_mista_010": [
-        "dietary fat",
-        "meat",
-        "?",
-        "baked products",
-        "vegetable",
-        "herb",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "pomodori_ripieni_011": [
-        "dietary fat",
-        "meat",
-        "?",
-        "baked products",
-        "vegetable",
-        "spice"
-    ],
-    "pollo_ripieno_arrosto_012": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "processed meat",
-        "vegetable",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "fritatta_capuccina_013": [
-        "dietary fat",
-        "?",
-        "herb",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "fetta_di_pane_casareccio_014": [
-        "dietary fat",
         "dairy",
         "vegetable",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "dolce_al_cioccolato_fondente_161": [
+        "cereal",
+        "?",
+        "dietary fat",
+        "egg"
+    ],
+    "ossi_buchi_alla_milanese_162": [
+        "beverage",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "ossibuchi_al_pomidoro_163": [
+        "beverage",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "insalatissima_per_piatti_piccanti_o_antipasti_164": [
+        "vegetable",
+        "?",
+        "dietary fat",
+        "fruit"
+    ],
+    "budino_di_riso_e_castagne_secche_165": [
+        "dairy",
+        "baked products",
+        "fruit",
+        "cereal",
+        "?",
+        "dietary fat"
+    ],
+    "ricetta_polpo_166": [
+        "beverage",
+        "herb",
+        "unknown category",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "spaghetti_alla_boscaiola_001": [
+        "fish",
+        "dairy",
+        "fungus",
+        "herb",
+        "vegetable",
+        "pasta",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "besciamella_002": [
+        "dairy",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "tortellini_tonino_003": [
+        "dairy",
+        "processed meat",
+        "baked products",
+        "?",
+        "meat",
+        "spice",
+        "egg"
+    ],
+    "insalatissima_disintossicante_004": [
+        "processed meat",
+        "herb",
+        "fruit",
+        "vegetable",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "insalata_riso_005": [
+        "fish",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "seasoning",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "insalata_mista_006": [
+        "finocchio",
+        "egg",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "patate_fra_martino_007": [
+        "herb",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "insalata_primavera_008": [
+        "processed meat",
+        "vegetable",
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
+    ],
+    "cipolle_acetose_009": [
+        "herb",
+        "vegetable",
+        "seasoning",
+        "?",
+        "dietary fat"
+    ],
+    "polpette_di_carne_mista_010": [
+        "dairy",
+        "baked products",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
+    ],
+    "pomodori_ripieni_011": [
+        "baked products",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "pollo_ripieno_arrosto_012": [
+        "dairy",
+        "beverage",
+        "processed meat",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "fritatta_capuccina_013": [
+        "dairy",
+        "herb",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "fetta_di_pane_casareccio_014": [
+        "vegetable",
+        "dairy",
+        "dietary fat",
         "fish"
     ],
     "mozzarella_in_carrozza_015": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "herb",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "pan_carr\u00e8_016": [
+        "fish",
+        "dairy",
         "processed meat",
         "herb",
         "vegetable",
-        "spice",
-        "fish",
-        "dairy"
+        "spice"
     ],
     "torta_di_latte_017": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
-        "egg",
         "fruit",
-        "dairy"
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "frittelle_018": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit",
         "dairy",
-        "alcoholic"
+        "fruit",
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
     ],
     "unknown_title_019": [
-        "dietary fat",
+        "dairy",
         "beverage",
-        "meat",
-        "?",
         "baked products",
         "processed meat",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
-        "egg",
-        "fruit",
         "sauce",
-        "dairy",
-        "alcoholic"
+        "fruit",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "alcoholic",
+        "egg",
+        "dietary fat"
     ],
     "pesche_020": [
-        "frozen food",
         "?",
         "fruit",
+        "frozen food",
         "alcoholic"
     ],
     "pan_pepato_di_natale_021": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
+        "dairy",
         "fruit",
-        "dairy"
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "pesche_alla_fiamma_022": [
+        "dairy",
         "beverage",
-        "?",
         "baked products",
         "fruit",
-        "dairy",
+        "?",
         "alcohol"
     ],
     "pesche_farcite_023": [
+        "baked products",
         "dietary fat",
-        "beverage",
         "fruit",
-        "baked products"
+        "beverage"
     ],
     "torta_di_mele_024": [
-        "?",
+        "dairy",
+        "fruit",
         "vegetable",
         "cereal",
-        "egg",
-        "fruit",
-        "dairy"
+        "?",
+        "egg"
     ],
     "grocchetti_di_riso_025": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "vegetable",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "zucchine_impanate_026": [
-        "dietary fat",
-        "baked products",
         "processed meat",
+        "baked products",
+        "sauce",
         "vegetable",
         "cereal",
         "egg",
-        "sauce"
+        "dietary fat"
     ],
     "minestra_di_zucchine_e_uova_027": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "vegetable",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "penne_arrabiate_028": [
-        "dietary fat",
-        "herb",
         "vegetable",
-        "spice"
+        "dietary fat",
+        "spice",
+        "herb"
     ],
     "bucatini_all\u2019amatriciana_029": [
-        "dietary fat",
-        "meat",
-        "?",
-        "pasta",
+        "dairy",
         "vegetable",
+        "pasta",
+        "?",
+        "meat",
         "spice",
-        "dairy"
+        "dietary fat"
     ],
     "pasticcio_di_carne_alla_paesana_030": [
-        "dietary fat",
-        "meat",
-        "?",
         "herb",
         "vegetable",
-        "spice"
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "fritatta_degli_angeli_031": [
         "vegetable",
@@ -1503,807 +1503,784 @@
         "egg"
     ],
     "frullato_alla_panna_032": [
-        "dairy",
+        "baked products",
         "?",
         "fruit",
-        "baked products"
+        "dairy"
     ],
     "crespelle_ripiene_033": [
-        "dietary fat",
         "beverage",
-        "?",
+        "dairy",
         "processed meat",
-        "spice",
         "cereal",
+        "?",
+        "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "torta_di_farina_di_granturco_034": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "pasticcio_di_mele_035": [
-        "dietary fat",
         "beverage",
+        "dairy",
+        "fruit",
+        "cereal",
         "?",
         "spice",
-        "cereal",
-        "fruit",
-        "dairy"
+        "dietary fat"
     ],
     "coniglio_luisa_036": [
         "beverage",
-        "meat",
-        "?",
         "vegetable",
-        "spice",
-        "seasoning"
+        "seasoning",
+        "?",
+        "meat",
+        "spice"
     ],
     "coniglio_alla_senape_037": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
+        "dairy",
         "vegetable",
-        "spice",
         "cereal",
-        "condiment",
-        "dairy"
+        "?",
+        "meat",
+        "spice",
+        "dietary fat",
+        "condiment"
     ],
     "spaghetti_aglio_olio_e_peperoncino_038": [
-        "dietary fat",
-        "pasta",
         "herb",
         "vegetable",
-        "spice"
-    ],
-    "spaghetti_alla_carbonara_039": [
-        "dietary fat",
-        "meat",
-        "?",
         "pasta",
         "spice",
-        "egg",
-        "dairy"
-    ],
-    "spaghetti_alla_napoletana_040": [
-        "dietary fat",
-        "?",
-        "pasta",
-        "herb",
-        "vegetable",
-        "cheese",
-        "spice"
-    ],
-    "fegatini_di_pollo_041": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "processed meat",
-        "herb",
-        "spice",
-        "cereal"
-    ],
-    "dolce_freddo_di_fragole_042": [
-        "?",
-        "baked products",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy"
-    ],
-    "spuma_di_fragole_043": [
-        "dairy",
-        "?",
-        "fruit"
-    ],
-    "souffl\u00e8_di_fragole_044": [
-        "?",
-        "fruit",
-        "egg",
-        "baked products"
-    ],
-    "torta_di_patate_045": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "vegetable",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "patate_ripiene_046": [
-        "dairy",
-        "vegetable",
-        "fungus",
-        "processed meat"
-    ],
-    "spezzatino_di_tacchino_con_peeproni_047": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "vegetable",
-        "spice"
-    ],
-    "ossibuchi_al_pomodoro_048": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal"
-    ],
-    "polpettone_049": [
-        "dairy",
-        "egg",
-        "baked products",
-        "fish"
-    ],
-    "brasato_alla_genovese_050": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "herb",
-        "vegetable",
-        "spice"
-    ],
-    "boccone_del_povero_051": [
-        "dietary fat",
-        "beverage",
-        "meat",
-        "?",
-        "baked products",
-        "spice",
-        "cereal",
-        "dairy"
-    ],
-    "spezzatino_di_marcellino_052": [
-        "dietary fat",
-        "meat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice"
-    ],
-    "cipolline_in_agrodolce_053": [
-        "seasoning",
-        "vegetable",
-        "?",
         "dietary fat"
     ],
-    "croccante_054": [
-        "dietary fat",
+    "spaghetti_alla_carbonara_039": [
+        "dairy",
+        "pasta",
         "?",
+        "meat",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "spaghetti_alla_napoletana_040": [
+        "cheese",
+        "herb",
+        "vegetable",
+        "pasta",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "fegatini_di_pollo_041": [
+        "beverage",
+        "processed meat",
+        "herb",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "dolce_freddo_di_fragole_042": [
+        "dairy",
+        "baked products",
+        "fruit",
+        "cereal",
+        "?",
+        "egg"
+    ],
+    "spuma_di_fragole_043": [
+        "?",
+        "fruit",
+        "dairy"
+    ],
+    "souffl\u00e8_di_fragole_044": [
+        "baked products",
+        "?",
+        "fruit",
+        "egg"
+    ],
+    "torta_di_patate_045": [
+        "dairy",
+        "baked products",
+        "egg",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "patate_ripiene_046": [
+        "vegetable",
+        "processed meat",
+        "dairy",
+        "fungus"
+    ],
+    "spezzatino_di_tacchino_con_peeproni_047": [
+        "beverage",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "ossibuchi_al_pomodoro_048": [
+        "beverage",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "polpettone_049": [
+        "fish",
+        "egg",
+        "baked products",
+        "dairy"
+    ],
+    "brasato_alla_genovese_050": [
+        "beverage",
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "boccone_del_povero_051": [
+        "beverage",
+        "dairy",
+        "baked products",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "spezzatino_di_marcellino_052": [
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "cipolline_in_agrodolce_053": [
+        "vegetable",
+        "?",
+        "dietary fat",
+        "seasoning"
+    ],
+    "croccante_054": [
+        "?",
+        "dietary fat",
         "fruit"
     ],
     "svizzere_055": [
-        "dietary fat",
-        "meat",
-        "?",
         "baked products",
         "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "cipolline_sott\u2019olio_056": [
+        "vegetable",
+        "?",
+        "dietary fat",
+        "seasoning"
+    ],
+    "tortelli_di_carnevale_057": [
+        "vegetable",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "crostata_di_marmellata_058": [
+        "preserves",
+        "vegetable",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "gnocchi_di_mandorle_059": [
+        "fruit",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "pasta_tortelli_e_frappe_060": [
+        "vegetable",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_noci_061": [
+        "dairy",
+        "fruit",
+        "cereal",
+        "?",
+        "dietary fat"
+    ],
+    "chiacchere_frappe_062": [
+        "beverage",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "frappe_063": [
+        "beverage",
+        "fruit",
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_noci_064": [
+        "fruit",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_pane_065": [
+        "dairy",
+        "baked products",
+        "?",
+        "alcoholic",
+        "egg"
+    ],
+    "frappe_deliziose_066": [
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "tortelli_fritti_067": [
+        "dairy",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "tortelli_fritti_linetta_068": [
+        "vegetable",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_pane_nilde_069": [
+        "baked products",
+        "fruit",
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_pere_070": [
+        "dairy",
+        "fruit",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_mele_luisa_071": [
+        "baked products",
+        "fruit",
+        "cereal",
+        "?",
+        "egg"
+    ],
+    "torta_di_mele_edda_072": [
+        "fruit",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "tortelli_fritti_073": [
+        "?",
+        "cereal",
+        "egg",
+        "dietary fat"
+    ],
+    "tarallini_di_patate_074": [
+        "dairy",
+        "vegetable",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "frappe_iride_uride_075": [
+        "seasoning",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "frappe_milanesi_076": [
+        "?",
+        "cereal",
+        "egg",
+        "dietary fat"
+    ],
+    "chiacchere_o_frappe_di_lina_bianchi_077": [
+        "beverage",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "chiacchere_078": [
+        "beverage",
+        "vegetable",
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "frappe_079": [
+        "beverage",
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "frappe_luisa_e_adele_080": [
+        "dairy",
+        "seasoning",
+        "?",
+        "alcohol",
+        "egg",
+        "dietary fat"
+    ],
+    "chiacchere_all\u2019emiliana_081": [
+        "cereal",
+        "?",
+        "dietary fat",
+        "egg"
+    ],
+    "cenci_alla_toscana_082": [
+        "beverage",
+        "unknown category",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "ciambelline_all\u2019anice_083": [
+        "cereal",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "rombi_croccanti_allo_zucchero_084": [
+        "cereal",
+        "?",
+        "alcohol",
+        "egg",
+        "dietary fat"
+    ],
+    "frappe_maria_085": [
+        "dairy",
+        "seasoning",
+        "?",
+        "alcohol",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_mele_alfonsina_086": [
+        "dairy",
+        "fruit",
+        "vegetable",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_di_mele_087": [
+        "dairy",
+        "fruit",
+        "vegetable",
+        "cereal",
+        "?",
+        "alcohol",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "tortellini_in_brodo_088": [
+        "dairy",
+        "processed meat",
+        "?",
+        "meat",
         "spice",
         "egg"
     ],
-    "cipolline_sott\u2019olio_056": [
-        "seasoning",
+    "salsina_di_zucchini_001": [
+        "fish",
+        "herb",
+        "vegetable",
+        "cereal",
+        "seasoning"
+    ],
+    "fegato_per_antipasto_002": [
+        "fish",
+        "vegetable",
+        "meat",
+        "dietary fat"
+    ],
+    "crostini_piccanti_003": [
+        "fish",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "salatini_con_l\u2019acciuga_004": [
+        "fish",
+        "dairy",
+        "cereal",
+        "?",
+        "dietary fat"
+    ],
+    "tartine_piccanti_005": [
+        "fish",
+        "baked products",
+        "processed meat",
+        "?",
+        "egg",
+        "dietary fat",
+        "condiment"
+    ],
+    "schiuma_fredda_di_tonno_006": [
+        "fish",
+        "vegetable",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "sfogliatine_di_acciughe_007": [
+        "fish",
+        "cereal",
+        "?",
+        "dietary fat"
+    ],
+    "crostini_alla_napoletana_008": [
+        "fish",
+        "dairy",
+        "baked products",
+        "herb",
+        "vegetable",
+        "dietary fat"
+    ],
+    "crema_di_pomodoro_009": [
+        "dairy",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "spice"
+    ],
+    "sedano_alla_veronese_010": [
+        "fish",
+        "vegetable",
+        "egg",
+        "condiment"
+    ],
+    "insalata_di_maionese_e_gamberi_011": [
+        "fish",
+        "fruit",
+        "vegetable",
+        "egg",
+        "condiment"
+    ],
+    "antipasto_misto_012": [
+        "fish",
+        "fungus",
+        "processed meat",
+        "herb",
+        "egg",
+        "vegetable",
+        "meat",
+        "spice"
+    ],
+    "riso_e_verze_013": [
+        "dairy",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "pasticcio_di_macheroni_014": [
+        "dairy",
+        "pasta",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "rag\u00f9_di_tonno_015": [
+        "fish",
         "vegetable",
         "?",
         "dietary fat"
     ],
-    "tortelli_di_carnevale_057": [
-        "dietary fat",
-        "vegetable",
-        "egg",
-        "?"
-    ],
-    "crostata_di_marmellata_058": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "preserves"
-    ],
-    "gnocchi_di_mandorle_059": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit"
-    ],
-    "pasta_tortelli_e_frappe_060": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg"
-    ],
-    "torta_di_noci_061": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "fruit",
-        "dairy"
-    ],
-    "chiacchere_frappe_062": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "cereal",
-        "egg"
-    ],
-    "frappe_063": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "cereal",
-        "egg",
-        "fruit",
-        "alcoholic"
-    ],
-    "torta_di_noci_064": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit"
-    ],
-    "torta_di_pane_065": [
-        "?",
-        "baked products",
-        "egg",
-        "dairy",
-        "alcoholic"
-    ],
-    "frappe_deliziose_066": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "alcoholic"
-    ],
-    "tortelli_fritti_067": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "tortelli_fritti_linetta_068": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg"
-    ],
-    "torta_di_pane_nilde_069": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "cereal",
-        "egg",
-        "fruit",
-        "alcoholic"
-    ],
-    "torta_di_pere_070": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy"
-    ],
-    "torta_di_mele_luisa_071": [
-        "?",
-        "baked products",
-        "cereal",
-        "egg",
-        "fruit"
-    ],
-    "torta_di_mele_edda_072": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit"
-    ],
-    "tortelli_fritti_073": [
-        "dietary fat",
-        "egg",
-        "?",
-        "cereal"
-    ],
-    "tarallini_di_patate_074": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "frappe_iride_uride_075": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "seasoning",
-        "egg"
-    ],
-    "frappe_milanesi_076": [
-        "dietary fat",
-        "egg",
-        "?",
-        "cereal"
-    ],
-    "chiacchere_o_frappe_di_lina_bianchi_077": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "cereal",
-        "egg"
-    ],
-    "chiacchere_078": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "alcoholic"
-    ],
-    "frappe_079": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "cereal",
-        "egg",
-        "alcoholic"
-    ],
-    "frappe_luisa_e_adele_080": [
-        "dietary fat",
-        "?",
-        "seasoning",
-        "egg",
-        "dairy",
-        "alcohol"
-    ],
-    "chiacchere_all\u2019emiliana_081": [
-        "dietary fat",
-        "?",
-        "egg",
-        "cereal"
-    ],
-    "cenci_alla_toscana_082": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "unknown category",
-        "cereal",
-        "egg"
-    ],
-    "ciambelline_all\u2019anice_083": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "alcoholic"
-    ],
-    "rombi_croccanti_allo_zucchero_084": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "alcohol"
-    ],
-    "frappe_maria_085": [
-        "dietary fat",
-        "?",
-        "seasoning",
-        "egg",
-        "dairy",
-        "alcohol"
-    ],
-    "torta_di_mele_alfonsina_086": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy"
-    ],
-    "torta_di_mele_(1)_087": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy"
-    ],
-    "torta_di_mele_(2)_088": [
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy"
-    ],
-    "torta_di_mele_(3)_089": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "fruit"
-    ],
-    "torta_di_mele_(4)_090": [
-        "dietary fat",
-        "?",
-        "spice",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy",
-        "alcohol"
-    ],
-    "tortellini_in_brodo_091": [
-        "meat",
-        "?",
-        "processed meat",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "salsina_di_zucchini_001": [
-        "vegetable",
-        "herb",
-        "cereal",
-        "fish",
-        "seasoning"
-    ],
-    "fegato_per_antipasto_002": [
-        "dietary fat",
-        "meat",
-        "vegetable",
-        "fish"
-    ],
-    "crostini_piccanti_003": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
-        "fish"
-    ],
-    "salatini_con_l\u2019acciuga_004": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "fish",
-        "dairy"
-    ],
-    "tartine_piccanti_005": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "processed meat",
-        "fish",
-        "egg",
-        "condiment"
-    ],
-    "schiuma_fredda_di_tonno_006": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "spice",
-        "fish"
-    ],
-    "sfogliatine_di_acciughe_007": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "fish"
-    ],
-    "crostini_alla_napoletana_008": [
-        "dietary fat",
-        "baked products",
-        "herb",
-        "vegetable",
-        "fish",
-        "dairy"
-    ],
-    "crema_di_pomodoro_009": [
-        "?",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
-        "dairy"
-    ],
-    "sedano_alla_veronese_010": [
-        "condiment",
-        "vegetable",
-        "egg",
-        "fish"
-    ],
-    "insalata_di_maionese_e_gamberi_011": [
-        "vegetable",
-        "fish",
-        "condiment",
-        "fruit",
-        "egg"
-    ],
-    "antipasto_misto_012": [
-        "meat",
-        "processed meat",
-        "vegetable",
-        "herb",
-        "spice",
-        "fish",
-        "egg",
-        "fungus"
-    ],
-    "riso_e_verze_013": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
-        "dairy"
-    ],
-    "pasticcio_di_macheroni_014": [
-        "dietary fat",
-        "?",
-        "pasta",
-        "spice",
-        "cereal",
-        "dairy"
-    ],
-    "rag\u00f9_di_tonno_015": [
-        "dietary fat",
-        "vegetable",
-        "?",
-        "fish"
-    ],
     "risotto_con_patate_016": [
-        "dietary fat",
-        "meat",
-        "?",
         "vegetable",
+        "cereal",
+        "?",
+        "meat",
         "spice",
-        "cereal"
+        "dietary fat"
     ],
     "stracciatella_017": [
-        "?",
+        "dairy",
         "baked products",
+        "?",
         "spice",
-        "egg",
-        "dairy"
+        "egg"
     ],
     "minestra_lisa_018": [
-        "dietary fat",
-        "?",
         "vegetable",
-        "spice",
         "cereal",
-        "egg"
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
     ],
     "minestra_di_semolino_019": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "pasta_verde_020": [
+        "dairy",
+        "sauce",
         "vegetable",
         "cereal",
-        "egg",
-        "sauce",
-        "dairy"
+        "egg"
     ],
     "cannoli_ripieni_021": [
-        "dairy",
+        "cereal",
         "egg",
         "sauce",
-        "cereal"
+        "dairy"
     ],
     "pasta_imperiale_022": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "dadini_di_ricotta_023": [
-        "?",
+        "dairy",
         "vegetable",
+        "?",
         "spice",
-        "egg",
-        "dairy"
+        "egg"
     ],
     "lasagne_con_pesto_alla_genovese_024": [
-        "dietary fat",
-        "?",
+        "dairy",
         "herb",
-        "vegetable",
         "fruit",
-        "dairy"
+        "vegetable",
+        "?",
+        "dietary fat"
     ],
     "crema_di_gamberi_025": [
-        "dietary fat",
+        "fish",
+        "dairy",
+        "cereal",
         "?",
         "spice",
-        "cereal",
-        "fish",
-        "dairy"
+        "dietary fat"
     ],
     "riso_e_seppie_026": [
-        "dietary fat",
+        "fish",
         "beverage",
-        "?",
         "herb",
         "vegetable",
+        "?",
         "spice",
-        "fish"
+        "dietary fat"
     ],
     "tagliatelle_al_mascarpone_027": [
-        "dietary fat",
-        "dairy",
+        "pasta",
         "?",
-        "pasta"
+        "dietary fat",
+        "dairy"
     ],
     "zuppa_di_semolino_028": [
-        "dietary fat",
+        "dairy",
+        "egg",
+        "cereal",
         "?",
         "spice",
-        "cereal",
-        "egg",
-        "dairy"
+        "dietary fat"
     ],
     "zuppa_alla_veronese_029": [
-        "?",
+        "dairy",
         "baked products",
         "cereal",
-        "egg",
-        "dairy"
+        "?",
+        "egg"
     ],
     "lasagne_all\u2019essenza_di_riviera_030": [
-        "dietary fat",
-        "?",
-        "pasta",
-        "vegetable",
-        "sauce",
         "dairy",
-        "legume"
+        "sauce",
+        "vegetable",
+        "pasta",
+        "?",
+        "legume",
+        "dietary fat"
     ],
     "tagliolini_con_l\u2019astice_031": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "pasta",
-        "vegetable",
-        "herb",
-        "spice",
         "fish",
-        "alcohol"
+        "beverage",
+        "herb",
+        "vegetable",
+        "pasta",
+        "?",
+        "alcohol",
+        "spice",
+        "dietary fat"
     ],
     "maccheroncini_o_strozzapietri_032": [
-        "dietary fat",
-        "?",
-        "pasta",
+        "dairy",
         "finocchio",
         "vegetable",
+        "pasta",
+        "?",
         "spice",
-        "dairy"
+        "dietary fat"
     ],
     "maccheroni_con_anatra_e_funghi_033": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
-        "pasta",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
-        "seasoning",
         "fungus",
-        "dairy"
-    ],
-    "vitello_piccante_034": [
-        "beverage",
-        "meat",
-        "herb",
-        "vegetable",
-        "fish"
-    ],
-    "uccelletti_035": [
-        "dietary fat",
-        "meat",
-        "?",
-        "herb",
-        "vegetable",
-        "spice",
-        "egg"
-    ],
-    "coniglio_fritto_036": [
-        "dietary fat",
-        "meat",
-        "?",
-        "herb",
-        "vegetable"
-    ],
-    "arrosto_di_vitello_037": [
-        "dietary fat",
-        "meat",
-        "?",
-        "baked products",
-        "herb",
-        "vegetable",
-        "egg",
-        "dairy"
-    ],
-    "baccal\u00e0_al_gratin_038": [
-        "dietary fat",
-        "baked products",
-        "vegetable",
-        "herb",
-        "fish"
-    ],
-    "uova_in_trippa_alla_romana_039": [
         "dairy",
         "herb",
-        "egg"
+        "vegetable",
+        "pasta",
+        "seasoning",
+        "meat",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "vitello_piccante_034": [
+        "fish",
+        "beverage",
+        "herb",
+        "vegetable",
+        "meat"
+    ],
+    "uccelletti_035": [
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "coniglio_fritto_036": [
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "dietary fat"
+    ],
+    "arrosto_di_vitello_037": [
+        "dairy",
+        "baked products",
+        "herb",
+        "vegetable",
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
+    ],
+    "baccal\u00e0_al_gratin_038": [
+        "fish",
+        "baked products",
+        "herb",
+        "vegetable",
+        "dietary fat"
+    ],
+    "uova_in_trippa_alla_romana_039": [
+        "egg",
+        "herb",
+        "dairy"
     ],
     "tortino_di_patate_040": [
-        "dietary fat",
-        "?",
+        "dairy",
         "processed meat",
         "vegetable",
-        "spice",
         "cereal",
+        "?",
+        "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "sardelle_fritte_041": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "herb",
-        "cereal",
         "fish",
+        "herb",
+        "vegetable",
         "seasoning",
-        "egg"
+        "?",
+        "cereal",
+        "egg",
+        "dietary fat"
     ],
     "crema_fritta_042": [
-        "?",
+        "dairy",
         "vegetable",
         "cereal",
-        "egg",
-        "dairy"
+        "?",
+        "egg"
     ],
     "crocchette_al_formaggio_043": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "patate_con_cozze_al_forno_044": [
-        "herb",
         "vegetable",
+        "herb",
         "fish"
     ],
     "pesce_finto_045": [
@@ -2311,198 +2288,198 @@
         "fish"
     ],
     "gamberi_alla_creola_046": [
-        "dietary fat",
-        "?",
+        "fish",
         "baked products",
         "vegetable",
+        "seasoning",
+        "?",
         "spice",
-        "fish",
-        "seasoning"
+        "dietary fat"
     ],
     "involtini_di_vitello_047": [
-        "dietary fat",
-        "meat",
-        "?",
+        "dairy",
         "baked products",
         "processed meat",
         "herb",
+        "?",
+        "meat",
         "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "uova_incappucciate_048": [
-        "dietary fat",
-        "?",
-        "baked products",
+        "dairy",
         "processed meat",
+        "baked products",
+        "?",
         "spice",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "polpettone_di_tonno_049": [
-        "dietary fat",
-        "?",
-        "vegetable",
         "fish",
+        "vegetable",
+        "?",
+        "dietary fat",
         "condiment"
     ],
     "olla_podrida_050": [
-        "meat",
-        "?",
         "processed meat",
         "herb",
+        "?",
+        "meat",
         "spice"
     ],
     "lavarelli_al_burro_051": [
-        "dietary fat",
+        "fish",
         "baked products",
         "vegetable",
         "cereal",
-        "fish",
         "egg",
+        "dietary fat",
         "condiment"
     ],
     "merluzzo_alla_romana_052": [
-        "dietary fat",
+        "fish",
+        "dairy",
         "herb",
         "cereal",
-        "fish",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "scampi_fritti_053": [
-        "dietary fat",
-        "?",
+        "fish",
         "baked products",
         "herb",
         "vegetable",
-        "fish",
-        "egg"
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "scampi_alla_romana_054": [
-        "dietary fat",
-        "?",
-        "cereal",
         "fish",
-        "dairy"
+        "dairy",
+        "cereal",
+        "?",
+        "dietary fat"
     ],
     "costolette_alla_romana_055": [
-        "dietary fat",
-        "?",
         "processed meat",
         "herb",
-        "vegetable"
+        "vegetable",
+        "?",
+        "dietary fat"
     ],
     "fegato_di_vitello_all\u2019inglese_056": [
-        "dietary fat",
-        "meat",
+        "fish",
         "vegetable",
-        "fish"
+        "meat",
+        "dietary fat"
     ],
     "rognoni_di_vitello_allo_champagne_057": [
-        "dietary fat",
-        "meat",
-        "?",
-        "cereal",
         "seasoning",
-        "alcohol"
+        "cereal",
+        "?",
+        "meat",
+        "alcohol",
+        "dietary fat"
     ],
     "agnello_alla_romana_058": [
+        "fish",
         "beverage",
-        "meat",
-        "?",
         "herb",
         "vegetable",
-        "spice",
-        "fish"
-    ],
-    "cervella_di_vitello_059": [
-        "dietary fat",
-        "meat",
         "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "animelle_060": [
-        "dietary fat",
         "meat",
-        "?",
-        "baked products",
-        "vegetable",
-        "egg"
-    ],
-    "uccelletti_alla_lombarda_061": [
-        "dietary fat",
-        "meat",
-        "?"
-    ],
-    "melanzane_ripiene_alla_romana_062": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "egg",
-        "fungus",
-        "dairy"
-    ],
-    "chateaubriand_063": [
-        "dietary fat",
-        "meat",
-        "?",
         "spice"
     ],
-    "filetto_di_manzo_e_maionese_064": [
-        "dietary fat",
-        "meat",
-        "?",
+    "cervella_di_vitello_059": [
+        "dairy",
         "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
+    ],
+    "animelle_060": [
+        "baked products",
+        "vegetable",
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
+    ],
+    "uccelletti_alla_lombarda_061": [
+        "?",
+        "meat",
+        "dietary fat"
+    ],
+    "melanzane_ripiene_alla_romana_062": [
+        "dairy",
+        "fungus",
+        "vegetable",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "chateaubriand_063": [
+        "?",
+        "spice",
+        "meat",
+        "dietary fat"
+    ],
+    "filetto_di_manzo_e_maionese_064": [
+        "vegetable",
+        "?",
+        "meat",
+        "dietary fat",
         "condiment"
     ],
     "pomodori_ripieni_065": [
-        "dietary fat",
-        "dairy",
-        "vegetable",
-        "egg"
-    ],
-    "passato_di_patate_066": [
-        "dietary fat",
-        "dairy",
-        "vegetable",
-        "?"
-    ],
-    "salsa_tonnata_067": [
-        "dietary fat",
-        "vegetable",
-        "fish"
-    ],
-    "salsa_maionese_068": [
-        "dietary fat",
         "vegetable",
         "egg",
-        "?"
-    ],
-    "salsa_balsamella_(besciamella)_069": [
         "dietary fat",
-        "?",
-        "spice",
-        "cereal",
         "dairy"
     ],
-    "salsa_verde_070": [
-        "dietary fat",
-        "?",
+    "passato_di_patate_066": [
         "vegetable",
+        "?",
+        "dietary fat",
+        "dairy"
+    ],
+    "salsa_tonnata_067": [
+        "fish",
+        "vegetable",
+        "dietary fat"
+    ],
+    "salsa_maionese_068": [
+        "vegetable",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "salsa_balsamella_(besciamella)_069": [
+        "dairy",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
+    ],
+    "salsa_verde_070": [
         "herb",
-        "egg"
+        "vegetable",
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "fritti_di_mele_071": [
-        "dietary fat",
-        "meat",
-        "?",
+        "fruit",
         "vegetable",
         "cereal",
-        "fruit"
+        "?",
+        "meat",
+        "dietary fat"
     ],
     "insalata_russa_072": [
         "vegetable",
@@ -2510,168 +2487,168 @@
         "fish"
     ],
     "bombe_di_patate_073": [
-        "dairy",
         "vegetable",
+        "cereal",
         "?",
-        "cereal"
+        "dairy"
     ],
     "mozzarelle_in_carrozza_074": [
-        "dairy",
-        "meat",
         "baked products",
-        "processed meat"
+        "meat",
+        "processed meat",
+        "dairy"
     ],
     "sarda_in_teglia_075": [
-        "dietary fat",
-        "?",
+        "fish",
         "baked products",
         "herb",
         "vegetable",
+        "?",
         "spice",
-        "fish"
+        "dietary fat"
     ],
     "pizza_napoletana_076": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "herb",
-        "spice",
-        "cereal",
         "fish",
-        "dairy"
+        "dairy",
+        "herb",
+        "vegetable",
+        "cereal",
+        "?",
+        "spice",
+        "dietary fat"
     ],
     "polpettone_077": [
-        "meat",
-        "?",
-        "baked products",
+        "dairy",
         "processed meat",
+        "baked products",
         "herb",
         "vegetable",
-        "spice",
-        "egg",
-        "dairy"
-    ],
-    "donzelletti_078": [
-        "dietary fat",
-        "dairy",
-        "vegetable",
-        "cereal"
-    ],
-    "pizzette_tonde_079": [
-        "dietary fat",
         "?",
-        "cereal",
-        "fish",
-        "dairy"
-    ],
-    "bign\u00e9es_al_formaggio_080": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "calzoni_alla_napoletana_081": [
-        "dietary fat",
         "meat",
-        "?",
-        "processed meat",
         "spice",
-        "cereal",
-        "dairy"
-    ],
-    "pasticcio_freddo_di_fegato_082": [
-        "dietary fat",
-        "meat",
-        "?",
-        "processed meat",
-        "herb",
-        "vegetable",
-        "dairy",
-        "alcohol"
-    ],
-    "bitokes_083": [
-        "meat",
-        "?",
-        "baked products",
-        "cheese",
-        "spice",
-        "cereal",
-        "egg",
-        "sauce",
-        "dairy"
-    ],
-    "frittata_americana_084": [
-        "dietary fat",
-        "baked products",
-        "processed meat",
-        "egg",
-        "dairy"
-    ],
-    "pizza_svedese_085": [
-        "dietary fat",
-        "meat",
-        "?",
-        "processed meat",
-        "vegetable",
-        "spice",
-        "cereal",
-        "egg",
-        "dairy"
-    ],
-    "patate_a_neve_086": [
-        "dietary fat",
-        "meat",
-        "vegetable"
-    ],
-    "asparagi_con_maionese_087": [
-        "condiment",
-        "vegetable",
-        "?"
-    ],
-    "polpette_di_melanzane_alla_palermitana_088": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "vegetable",
-        "egg",
-        "dairy"
-    ],
-    "burro_di_scampi_089": [
-        "dietary fat",
-        "?",
-        "spice",
-        "fish"
-    ],
-    "burro_di_tonno_090": [
-        "dietary fat",
-        "vegetable",
-        "fish"
-    ],
-    "salsa_bianca_091": [
-        "dietary fat",
-        "?",
-        "spice",
-        "cereal",
         "egg"
     ],
-    "salsa_bruna_092": [
+    "donzelletti_078": [
+        "vegetable",
+        "cereal",
         "dietary fat",
+        "dairy"
+    ],
+    "pizzette_tonde_079": [
+        "fish",
+        "dairy",
+        "cereal",
         "?",
+        "dietary fat"
+    ],
+    "bign\u00e9es_al_formaggio_080": [
+        "dairy",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "calzoni_alla_napoletana_081": [
+        "dairy",
+        "processed meat",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
+    ],
+    "pasticcio_freddo_di_fegato_082": [
+        "dairy",
+        "processed meat",
         "herb",
         "vegetable",
-        "spice",
+        "?",
+        "meat",
+        "alcohol",
+        "dietary fat"
+    ],
+    "bitokes_083": [
+        "cheese",
+        "dairy",
+        "baked products",
+        "sauce",
+        "egg",
         "cereal",
-        "seasoning"
+        "?",
+        "meat",
+        "spice"
+    ],
+    "frittata_americana_084": [
+        "dairy",
+        "baked products",
+        "processed meat",
+        "egg",
+        "dietary fat"
+    ],
+    "pizza_svedese_085": [
+        "dairy",
+        "processed meat",
+        "vegetable",
+        "cereal",
+        "?",
+        "meat",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "patate_a_neve_086": [
+        "vegetable",
+        "meat",
+        "dietary fat"
+    ],
+    "asparagi_con_maionese_087": [
+        "vegetable",
+        "?",
+        "condiment"
+    ],
+    "polpette_di_melanzane_alla_palermitana_088": [
+        "dairy",
+        "baked products",
+        "vegetable",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "burro_di_scampi_089": [
+        "fish",
+        "?",
+        "dietary fat",
+        "spice"
+    ],
+    "burro_di_tonno_090": [
+        "fish",
+        "vegetable",
+        "dietary fat"
+    ],
+    "salsa_bianca_091": [
+        "cereal",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
+    ],
+    "salsa_bruna_092": [
+        "herb",
+        "vegetable",
+        "cereal",
+        "seasoning",
+        "?",
+        "spice",
+        "dietary fat"
     ],
     "salsa_spagnola_093": [
-        "dietary fat",
-        "meat",
-        "?",
+        "sauce",
         "herb",
         "vegetable",
+        "?",
+        "meat",
         "spice",
-        "sauce"
+        "dietary fat"
     ],
     "salsa_madera_094": [
         "sauce",
@@ -2680,9 +2657,9 @@
     "tartine_all\u2019uovo_095": [
         "baked products",
         "processed meat",
-        "condiment",
+        "sauce",
         "egg",
-        "sauce"
+        "condiment"
     ],
     "pur\u00e8_di_mele_(arrosto_maiale)_096": [
         "vegetable",
@@ -2690,122 +2667,122 @@
         "fruit"
     ],
     "burro_bruciante_097": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "alcoholic"
     ],
     "torta_di_riso_098": [
-        "dietary fat",
-        "?",
+        "dairy",
+        "fruit",
         "vegetable",
         "cereal",
+        "?",
+        "alcoholic",
         "egg",
-        "fruit",
-        "dairy",
-        "alcoholic"
+        "dietary fat"
     ],
     "latte_alla_portoghese_(rovesciato)_099": [
-        "dairy",
-        "?",
-        "egg",
-        "vegetable"
-    ],
-    "torta_preziosa_100": [
-        "dietary fat",
-        "?",
         "vegetable",
-        "cereal",
-        "egg",
-        "fruit",
-        "alcoholic"
-    ],
-    "mele_in_sorpresa_101": [
-        "dietary fat",
         "?",
-        "cereal",
         "egg",
-        "fruit",
-        "preserves"
-    ],
-    "dolce_torino_102": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "egg",
-        "fruit",
-        "dairy",
-        "alcoholic"
-    ],
-    "biscotti_103": [
-        "dietary fat",
-        "?",
-        "unknown category",
-        "cereal",
         "dairy"
     ],
-    "budino_di_ricotta_104": [
+    "torta_preziosa_100": [
+        "fruit",
+        "vegetable",
+        "cereal",
         "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "mele_in_sorpresa_101": [
+        "fruit",
+        "preserves",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "dolce_torino_102": [
+        "dairy",
+        "baked products",
+        "fruit",
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
+    ],
+    "biscotti_103": [
+        "dairy",
+        "unknown category",
+        "cereal",
+        "?",
+        "dietary fat"
+    ],
+    "budino_di_ricotta_104": [
+        "dairy",
         "baked products",
         "vegetable",
-        "egg",
-        "dairy",
-        "alcoholic"
+        "?",
+        "alcoholic",
+        "egg"
     ],
     "biscotto_rotolato_(tronco_d\u2019albero)_105": [
-        "egg",
         "?",
+        "egg",
         "cereal"
     ],
     "torta_alla_nocciola_106": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "fruit",
-        "dairy"
+        "?",
+        "dietary fat"
     ],
     "tronco_d\u2019albero_107": [
-        "dietary fat",
-        "egg",
         "?",
+        "egg",
+        "dietary fat",
         "cereal"
     ],
     "croccantino_romagnolo_108": [
-        "dietary fat",
-        "?",
         "vegetable",
         "cereal",
-        "egg"
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "castagnole_109": [
-        "dietary fat",
-        "?",
         "cereal",
+        "?",
+        "alcohol",
         "egg",
-        "alcohol"
+        "dietary fat"
     ],
     "fiorellini_dolci_110": [
+        "cereal",
         "?",
-        "preserves",
         "egg",
-        "cereal"
+        "preserves"
     ],
     "torta_farcita_111": [
-        "dietary fat",
+        "fruit",
         "?",
         "yeast",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "pallottine_di_castagne_112": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "fruit",
         "alcoholic"
     ],
     "ponch_al_caff\u00e8_113": [
         "vegetable",
-        "beverage",
         "?",
+        "beverage",
         "alcoholic"
     ],
     "cioccolatini_alle_mandorle_114": [
@@ -2814,106 +2791,106 @@
         "alcoholic"
     ],
     "dolce_al_caff\u00e9_115": [
-        "dietary fat",
         "beverage",
-        "?",
         "baked products",
+        "fruit",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "dolce_al_cioccolato_116": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "egg"
     ],
     "brutti_117": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "pasta_frolla_per_1_uovo_118": [
         "egg"
     ],
     "pasta_frolla_119": [
-        "dietary fat",
-        "?",
+        "fruit",
         "cereal",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "pasta_frolla_per_4_uova_120": [
         "?"
     ],
     "pasta_frolla_per_12_uova_121": [
-        "dietary fat",
-        "?",
+        "fruit",
         "cereal",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "pasta_frolla_per_2_uova_122": [
-        "dietary fat",
+        "cereal",
         "?",
-        "egg",
-        "cereal"
+        "dietary fat",
+        "egg"
     ],
     "cannoli_alla_sicialiana_123": [
-        "dietary fat",
         "beverage",
+        "dairy",
+        "fruit",
+        "cereal",
+        "?",
         "meat",
+        "egg",
+        "dietary fat"
+    ],
+    "pasticcini_a_freddo_124": [
+        "dairy",
+        "baked products",
+        "fruit",
+        "?",
+        "alcoholic",
+        "egg"
+    ],
+    "unknown_title_125": [
+        "beverage",
+        "baked products",
+        "?",
+        "alcohol",
+        "egg",
+        "dietary fat"
+    ],
+    "frittelle_dolci_126": [
         "?",
         "cereal",
         "egg",
-        "fruit",
-        "dairy"
-    ],
-    "pasticcini_a_freddo_124": [
-        "?",
-        "baked products",
-        "egg",
-        "fruit",
-        "dairy",
-        "alcoholic"
-    ],
-    "unknown_title_125": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "baked products",
-        "egg",
-        "alcohol"
-    ],
-    "frittelle_dolci_126": [
-        "dietary fat",
-        "egg",
-        "?",
-        "cereal"
+        "dietary fat"
     ],
     "torta_di_cioccolato_127": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "egg"
     ],
     "torta_di_arancio_128": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
+        "dairy",
         "fruit",
-        "dairy"
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "bign\u00e8_129": [
-        "dietary fat",
+        "cereal",
         "?",
-        "egg",
-        "cereal"
+        "dietary fat",
+        "egg"
     ],
     "crema_di_mascarpone_130": [
-        "dairy",
+        "egg",
         "?",
-        "egg"
+        "dairy"
     ],
     "amaretti_131": [
         "?",
@@ -2921,126 +2898,126 @@
         "egg"
     ],
     "kri_kri_132": [
-        "dietary fat",
-        "?",
-        "egg",
         "fruit",
-        "alcohol"
+        "?",
+        "alcohol",
+        "egg",
+        "dietary fat"
     ],
     "bastoncini_con_noci_133": [
-        "dietary fat",
-        "?",
-        "cereal",
-        "egg",
+        "dairy",
         "fruit",
-        "dairy"
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "rotolo_di_cioccolata_134": [
-        "dietary fat",
-        "?",
         "baked products",
+        "?",
+        "alcoholic",
         "egg",
-        "alcoholic"
+        "dietary fat"
     ],
     "bonbons_di_castagne_alle_mandorle_135": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "fruit",
         "alcoholic"
     ],
     "budino_di_castagne_secche_136": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "egg",
-        "fruit",
         "dairy",
-        "alcohol"
+        "baked products",
+        "fruit",
+        "?",
+        "alcohol",
+        "egg",
+        "dietary fat"
     ],
     "pastine_all\u2019uvetta_137": [
-        "dietary fat",
-        "?",
+        "fruit",
         "cereal",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "lingue_di_gatto_138": [
-        "dietary fat",
-        "?",
         "vegetable",
         "cereal",
-        "egg"
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "torta_\u201cbocca_di_dama\u201d_139": [
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
-        "fruit"
-    ],
-    "torta_ricciolina_140": [
-        "dietary fat",
-        "meat",
-        "?",
-        "cereal",
-        "egg",
-        "fruit"
-    ],
-    "royal_cake_141": [
-        "dietary fat",
-        "?",
-        "vegetable",
-        "cereal",
-        "egg",
         "fruit",
-        "dairy"
-    ],
-    "pastine_delizia_142": [
-        "dietary fat",
-        "dairy",
+        "vegetable",
+        "cereal",
         "?",
-        "cereal"
-    ],
-    "crema_di_mascarpone_(ii)_143": [
-        "dairy",
-        "?",
-        "alcohol",
         "egg"
     ],
-    "riccio_144": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "egg",
+    "torta_ricciolina_140": [
         "fruit",
+        "cereal",
+        "?",
+        "meat",
+        "egg",
+        "dietary fat"
+    ],
+    "royal_cake_141": [
+        "dairy",
+        "fruit",
+        "vegetable",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "pastine_delizia_142": [
+        "cereal",
+        "?",
+        "dietary fat",
+        "dairy"
+    ],
+    "crema_di_mascarpone_(ii)_143": [
+        "egg",
+        "?",
         "alcohol",
-        "alcoholic"
+        "dairy"
+    ],
+    "riccio_144": [
+        "baked products",
+        "fruit",
+        "?",
+        "alcohol",
+        "alcoholic",
+        "egg",
+        "dietary fat"
     ],
     "margherite_(da_the)_145": [
-        "dietary fat",
-        "?",
+        "preserves",
         "cereal",
+        "?",
         "egg",
-        "preserves"
+        "dietary fat"
     ],
     "dolce_adriana_146": [
-        "?",
+        "dairy",
         "baked products",
         "vegetable",
-        "egg",
-        "dairy",
-        "alcoholic"
+        "?",
+        "alcoholic",
+        "egg"
     ],
     "coppa_di_marroni_147": [
-        "?",
-        "flower",
-        "fruit",
         "dairy",
-        "alcohol"
+        "fruit",
+        "?",
+        "alcohol",
+        "flower"
     ],
     "palline_di_castagne_148": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "fruit",
         "alcoholic"
     ],
@@ -3050,147 +3027,147 @@
         "alcoholic"
     ],
     "crema_etiopia_150": [
-        "dietary fat",
+        "dairy",
+        "fruit",
         "?",
         "egg",
-        "fruit",
-        "dairy"
+        "dietary fat"
     ],
     "caff\u00e8_di_mascarpone_151": [
-        "?",
-        "baked products",
-        "egg",
-        "fruit",
         "dairy",
-        "alcohol"
-    ],
-    "ghiaccia_152": [
-        "dietary fat",
-        "dairy",
-        "?"
-    ],
-    "panettone_di_natale_153": [
-        "dietary fat",
-        "?",
-        "yeast",
-        "vegetable",
-        "cereal",
-        "egg",
-        "fruit",
-        "dairy"
-    ],
-    "budino_di_briosce_154": [
-        "?",
-        "baked products",
-        "vegetable",
-        "egg",
-        "dairy",
-        "alcoholic"
-    ],
-    "charlotte_di_castagne_155": [
-        "dietary fat",
-        "?",
         "baked products",
         "fruit",
-        "alcohol"
-    ],
-    "charlotte_mandorle_156": [
-        "dietary fat",
         "?",
-        "baked products",
-        "fruit",
-        "dairy",
-        "alcoholic"
-    ],
-    "pasta_sfoglia_157": [
-        "dietary fat",
-        "beverage",
-        "?",
-        "cereal",
+        "alcohol",
         "egg"
     ],
-    "torta_all\u2019arancio_158": [
+    "ghiaccia_152": [
         "?",
-        "baked products",
-        "egg",
+        "dietary fat",
+        "dairy"
+    ],
+    "panettone_di_natale_153": [
+        "dairy",
         "fruit",
-        "alcoholic"
+        "vegetable",
+        "cereal",
+        "?",
+        "yeast",
+        "egg",
+        "dietary fat"
+    ],
+    "budino_di_briosce_154": [
+        "dairy",
+        "baked products",
+        "vegetable",
+        "?",
+        "alcoholic",
+        "egg"
+    ],
+    "charlotte_di_castagne_155": [
+        "baked products",
+        "fruit",
+        "?",
+        "alcohol",
+        "dietary fat"
+    ],
+    "charlotte_mandorle_156": [
+        "dairy",
+        "baked products",
+        "fruit",
+        "?",
+        "alcoholic",
+        "dietary fat"
+    ],
+    "pasta_sfoglia_157": [
+        "beverage",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "torta_all\u2019arancio_158": [
+        "baked products",
+        "fruit",
+        "?",
+        "alcoholic",
+        "egg"
     ],
     "pudding_159": [
-        "dietary fat",
-        "?",
-        "baked products",
-        "spice",
-        "cereal",
-        "egg",
-        "fruit",
         "dairy",
-        "alcohol"
+        "baked products",
+        "fruit",
+        "cereal",
+        "?",
+        "alcohol",
+        "spice",
+        "egg",
+        "dietary fat"
     ],
     "savoiardi_160": [
-        "vegetable",
-        "egg",
         "?",
-        "cereal"
+        "cereal",
+        "egg",
+        "vegetable"
     ],
     "frittelle_alla_romana_161": [
-        "dietary fat",
-        "?",
         "baked products",
+        "fruit",
         "vegetable",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "pudding_di_banana_162": [
-        "?",
+        "dairy",
         "baked products",
-        "vegetable",
-        "egg",
         "fruit",
-        "dairy"
+        "vegetable",
+        "?",
+        "egg"
     ],
     "pudding_di_semolino_163": [
-        "dietary fat",
-        "?",
+        "dairy",
+        "fruit",
         "vegetable",
         "cereal",
+        "?",
         "egg",
-        "fruit",
-        "dairy"
+        "dietary fat"
     ],
     "strudel_di_cioccolata_164": [
-        "dietary fat",
-        "?",
+        "fruit",
         "cereal",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "cassata_siciliana_165": [
-        "?",
+        "dairy",
         "baked products",
         "fruit",
-        "dairy",
+        "?",
         "alcoholic"
     ],
     "fragole_alla_panna_166": [
-        "dairy",
+        "baked products",
         "?",
         "fruit",
-        "baked products"
+        "dairy"
     ],
     "crema_alla_diplomatica_167": [
-        "baked products",
-        "vegetable",
-        "fruit",
         "dairy",
+        "baked products",
+        "fruit",
+        "vegetable",
         "alcoholic"
     ],
     "crema_di_banana_168": [
-        "?",
-        "egg",
-        "fruit",
         "dairy",
-        "alcoholic"
+        "fruit",
+        "?",
+        "alcoholic",
+        "egg"
     ],
     "ghiaccia_all\u2019arrak_169": [
         "?",
@@ -3198,38 +3175,38 @@
     ],
     "banane_alla_neve_170": [
         "vegetable",
+        "?",
         "egg",
-        "fruit",
-        "?"
+        "fruit"
     ],
     "lamponi_alla_neve_171": [
         "vegetable",
+        "?",
         "egg",
-        "fruit",
-        "?"
+        "fruit"
     ],
     "gelatina_di_mandorle_172": [
-        "dairy",
         "?",
-        "fruit"
+        "fruit",
+        "dairy"
     ],
     "gelatina_di_arancia_o_limone_173": [
         "beverage",
-        "?",
-        "vegetable",
-        "fruit",
+        "dairy",
         "sauce",
-        "dairy"
+        "fruit",
+        "vegetable",
+        "?"
     ],
     "salsa_alla_vaniglia_174": [
-        "dairy",
+        "cereal",
         "?",
-        "cereal"
+        "dairy"
     ],
     "ghiaccia_al_caff\u00e8_175": [
-        "beverage",
+        "egg",
         "?",
-        "egg"
+        "beverage"
     ],
     "ghiaccia_all\u2019albume_176": [
         "vegetable",
@@ -3237,85 +3214,85 @@
         "egg"
     ],
     "pasticcini_alla_cioccolata_177": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "riccioli_di_schiller_178": [
-        "dairy",
+        "egg",
         "?",
         "unknown category",
-        "egg"
+        "dairy"
     ],
     "maritozzi_179": [
-        "dietary fat",
         "?",
+        "dietary fat",
         "fruit",
         "alcoholic"
     ],
     "pastine_da_the_180": [
-        "dietary fat",
+        "cereal",
         "?",
         "spice",
-        "cereal",
-        "egg"
+        "egg",
+        "dietary fat"
     ],
     "soffioni_181": [
-        "dietary fat",
+        "dairy",
+        "cereal",
+        "?",
+        "egg",
+        "dietary fat"
+    ],
+    "cialdoni_182": [
         "?",
         "cereal",
         "egg",
-        "dairy"
-    ],
-    "cialdoni_182": [
-        "vegetable",
-        "egg",
-        "?",
-        "cereal"
+        "vegetable"
     ],
     "crackers_183": [
-        "dietary fat",
-        "dairy",
+        "cereal",
         "?",
-        "cereal"
+        "dietary fat",
+        "dairy"
     ],
     "bowle_di_frutta_184": [
-        "beverage",
         "?",
         "fruit",
+        "beverage",
         "alcoholic"
     ],
     "succo_di_pomodoro_185": [
-        "?",
-        "vegetable",
-        "spice",
         "sauce",
-        "alcoholic"
+        "vegetable",
+        "?",
+        "alcoholic",
+        "spice"
     ],
     "sciroppo_soda_champagne_186": [
-        "beverage",
-        "?",
-        "fruit",
         "(?)",
+        "beverage",
+        "fruit",
+        "?",
         "alcohol"
     ],
     "ghiacciata_di_t\u00e8_187": [
-        "beverage",
+        "vegetable",
         "?",
         "alcohol",
-        "vegetable"
+        "beverage"
     ],
     "caff\u00e8_ghiacciato_188": [
-        "beverage",
-        "?"
+        "?",
+        "beverage"
     ],
     "sciroppo_per_bibite_189": [
-        "beverage",
+        "vegetable",
         "?",
-        "vegetable"
+        "beverage"
     ],
     "marenata_190": [
         "?",
@@ -3326,132 +3303,132 @@
         "?"
     ],
     "cobbler_al_marsala_192": [
-        "?",
-        "vegetable",
         "fruit",
+        "vegetable",
+        "?",
         "alcohol",
         "alcoholic"
     ],
     "t\u00e8_ghiacciato_193": [
-        "beverage",
         "?",
+        "frozen food",
         "fruit",
-        "frozen food"
+        "beverage"
     ],
     "bomba_di_riso_194": [
-        "dietary fat",
+        "dairy",
+        "sauce",
+        "cereal",
         "?",
         "spice",
-        "cereal",
         "egg",
-        "sauce",
-        "dairy"
+        "dietary fat"
     ],
     "piccioni_in_salm\u00ec_195": [
-        "dietary fat",
         "beverage",
-        "meat",
-        "?",
-        "vegetable",
         "herb",
-        "spice"
+        "vegetable",
+        "?",
+        "meat",
+        "spice",
+        "dietary fat"
     ],
     "pesche_alla_crema_196": [
+        "dairy",
         "beverage",
-        "?",
-        "vegetable",
-        "egg",
         "fruit",
-        "dairy"
+        "vegetable",
+        "?",
+        "egg"
     ],
     "pallottoline_197": [
-        "dietary fat",
+        "dairy",
+        "cereal",
         "?",
         "spice",
-        "cereal",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "cavolfiori_al_prosciutto_198": [
-        "dietary fat",
-        "?",
+        "dairy",
         "processed meat",
-        "vegetable",
-        "spice",
-        "cereal",
-        "egg",
         "fruit",
-        "dairy"
+        "vegetable",
+        "cereal",
+        "?",
+        "spice",
+        "egg",
+        "dietary fat"
     ],
     "arrosto_vienense_199": [
+        "meat",
         "dietary fat",
         "beverage",
-        "meat",
         "herb"
     ],
     "mele_fantasia_200": [
         "beverage",
-        "?",
         "baked products",
+        "fruit",
         "vegetable",
-        "egg",
-        "fruit"
+        "?",
+        "egg"
     ],
     "crostata_al_cioccolato_201": [
-        "dietary fat",
-        "?",
+        "dairy",
         "cereal",
+        "?",
         "egg",
-        "dairy"
+        "dietary fat"
     ],
     "dolce_freddo_di_savoiardi_202": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
-        "egg",
         "fruit",
-        "dairy"
+        "?",
+        "egg",
+        "dietary fat"
     ],
     "insalata_di_aranci_e_banane_203": [
-        "?",
-        "vegetable",
-        "fruit",
         "dairy",
+        "fruit",
+        "vegetable",
+        "?",
         "alcohol"
     ],
     "turbante_di_crepes_204": [
-        "cereal",
-        "egg",
-        "fruit",
-        "flower",
         "dairy",
-        "alcoholic"
+        "fruit",
+        "cereal",
+        "alcoholic",
+        "egg",
+        "flower"
     ],
     "souffl\u00e9_al_liquore_205": [
-        "dietary fat",
-        "?",
         "baked products",
-        "egg",
         "sauce",
-        "alcoholic"
+        "?",
+        "alcoholic",
+        "egg",
+        "dietary fat"
     ],
     "torta_di_mele_206": [
-        "dietary fat",
-        "?",
+        "fruit",
         "cereal",
+        "?",
         "egg",
-        "fruit"
+        "dietary fat"
     ],
     "marmellata_alla_francese_207": [
         "?",
         "fruit"
     ],
     "torta_di_pane_208": [
-        "dietary fat",
-        "?",
+        "dairy",
         "baked products",
-        "egg",
         "fruit",
-        "dairy"
+        "?",
+        "egg",
+        "dietary fat"
     ]
 }
