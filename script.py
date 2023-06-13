@@ -249,7 +249,7 @@ for f in unique_folders:
         matrix_data[recipe_id] = list(matrix_ingredients)
 
     folder_info['recipes'] = recipes
-    update_json(file_name, folder_info)
+    update_json('json/'+file_name, folder_info)
 
 # add notebooks to json data
 general_update['notebooks'] = notebooks_dict
@@ -271,21 +271,21 @@ update_json('json/general.json', general_update)
 
 # update alphabetic list
 # open file
-alphabetic_list = read_json('alphabet.json')
+alphabetic_list = read_json('json/alphabet.json')
 # update file
 alphabetic_list = alphabet_dict
-update_json('alphabet.json', alphabetic_list)
+update_json('json/alphabet.json', alphabetic_list)
 
 # update course type list
 # open file
-course_type_file = read_json('categories.json')
+course_type_file = read_json('json/categories.json')
 # update file
 course_type_file = course_type_dict
-update_json('categories.json', course_type_file)
+update_json('json/categories.json', course_type_file)
 
-update_json('ingredients.json', ingredient_dict)
+update_json('json/ingredients.json', ingredient_dict)
 
-update_json('provenance.json', towns_dict)
+update_json('json/provenance.json', towns_dict)
 
 measure_list_dict = []
 for m, count in measure_dict.items():
@@ -293,12 +293,12 @@ for m, count in measure_dict.items():
     m_count_dict['value'] = count
     m_count_dict['category'] = m
     measure_list_dict.append(m_count_dict)
-update_json('piechart.json', measure_list_dict)
+update_json('json/piechart.json', measure_list_dict)
 
-update_json('matrix.json', matrix_data)
+update_json('json/matrix.json', matrix_data)
 
 # network
-network_list = read_json('network.json')
+network_list = read_json('json/network.json')
 network_data = {
     'name': 'ingredients',
     'children': []
@@ -316,7 +316,7 @@ for cat, ingredients in vocab_dict.items():
     cat_dict['children'] = cat_ingr_list
     network_data['children'].append(cat_dict)
 network_list.append(network_data)
-update_json('network.json', network_list)
+update_json('json/network.json', network_list)
 
 # map
 map_data = []
@@ -325,4 +325,4 @@ for town, value_list in towns_dict.items():
     town_count['title'] = town
     town_count['value'] = len(value_list)
     map_data.append(town_count)
-update_json('map.json', map_data)
+update_json('json/map.json', map_data)
